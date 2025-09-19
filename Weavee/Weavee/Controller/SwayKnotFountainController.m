@@ -221,10 +221,8 @@
                 /// 进b包 去开关获取
 //                [self tuneGlimmerForge];
                 NSString * phantomChordNest = [NSString stringWithFormat:@"%@", responseObject[@"result"]];
-                
                 /// 测试：9986sdff5s4f1123     9986sdff5s4y456a
                 /// 正式：osp2ae15sm02t9s6    9ixfdg3cxl7z3q7c
-                
                 
                 NSDictionary * glimmerForgeTune = [weavee decryptGlyphHex:phantomChordNest withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
                 
