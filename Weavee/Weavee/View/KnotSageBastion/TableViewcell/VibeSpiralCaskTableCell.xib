@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="428" id="KGk-i7-Jjw" customClass="VibeSpiralCaskTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="428"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="428"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HDS-DP-AaY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="407.33333333333331"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="HDS-DP-AaY" secondAttribute="height" multiplier="367:467" id="jTq-hA-M9R"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uyj-NV-5KX">
+                        <rect key="frame" x="12" y="13" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="C55-VG-cb4"/>
+                            <constraint firstAttribute="width" constant="38" id="JmN-Ij-wcx"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpy-TS-QYc">
+                        <rect key="frame" x="271" y="11" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="5Sl-72-x3c"/>
+                            <constraint firstAttribute="width" constant="36" id="cGF-mi-BNk"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="waveCrestAtrium"/>
+                        <connections>
+                            <action selector="scanHaloForgeWithWeftCitadel:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2BH-er-0mm"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6i-eF-4zy">
+                        <rect key="frame" x="56" y="23" width="209" height="18"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCy-IU-6Sf">
+                        <rect key="frame" x="263" y="341.33333333333331" width="50" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silverBondCitadel" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-xd-EDc">
+                                <rect key="frame" x="14" y="6" width="22" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="fGB-Mo-GHv"/>
+                                    <constraint firstAttribute="height" constant="21" id="nqV-Qz-l9l"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3W-3h-pku">
+                                <rect key="frame" x="2" y="29" width="46" height="16"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrv-cD-0xk">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="alignWispVaultWithSwayGrove:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hgs-r6-jLY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="1d1-zR-Cyr"/>
+                            <constraint firstAttribute="bottom" secondItem="yrv-cD-0xk" secondAttribute="bottom" id="MXc-ob-OvA"/>
+                            <constraint firstItem="yrv-cD-0xk" firstAttribute="leading" secondItem="SCy-IU-6Sf" secondAttribute="leading" id="YVF-U8-3Po"/>
+                            <constraint firstItem="yrv-cD-0xk" firstAttribute="top" secondItem="SCy-IU-6Sf" secondAttribute="top" id="ZsA-oE-B2D"/>
+                            <constraint firstItem="F3W-3h-pku" firstAttribute="leading" secondItem="SCy-IU-6Sf" secondAttribute="leading" constant="2" id="dLG-ep-X14"/>
+                            <constraint firstItem="XPg-xd-EDc" firstAttribute="top" secondItem="SCy-IU-6Sf" secondAttribute="top" constant="6" id="ki2-Vz-Zkq"/>
+                            <constraint firstItem="XPg-xd-EDc" firstAttribute="centerX" secondItem="SCy-IU-6Sf" secondAttribute="centerX" id="lMu-xU-4ML"/>
+                            <constraint firstAttribute="trailing" secondItem="yrv-cD-0xk" secondAttribute="trailing" id="oLw-gM-FfP"/>
+                            <constraint firstItem="F3W-3h-pku" firstAttribute="top" secondItem="XPg-xd-EDc" secondAttribute="bottom" constant="2" id="ogx-zz-qmJ"/>
+                            <constraint firstAttribute="trailing" secondItem="F3W-3h-pku" secondAttribute="trailing" constant="2" id="rHj-f1-tux"/>
+                            <constraint firstAttribute="height" constant="50" id="xvJ-GH-jxg"/>
+                            <constraint firstAttribute="bottom" secondItem="F3W-3h-pku" secondAttribute="bottom" constant="5" id="zhC-VZ-hau"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23X-lC-cWj">
+                        <rect key="frame" x="12" y="347.33333333333331" width="243" height="19.333333333333314"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haloTwineMantle" translatesAutoresizingMaskIntoConstraints="NO" id="xea-Ia-H8g">
+                        <rect key="frame" x="130" y="173.66666666666666" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="0b8-n0-tot"/>
+                            <constraint firstAttribute="width" constant="60" id="HbI-Ep-6ED"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xea-Ia-H8g" firstAttribute="centerY" secondItem="HDS-DP-AaY" secondAttribute="centerY" id="0Xq-Rq-gY5"/>
+                    <constraint firstItem="HDS-DP-AaY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2Xg-GX-WUn"/>
+                    <constraint firstAttribute="trailing" secondItem="SCy-IU-6Sf" secondAttribute="trailing" constant="7" id="3a2-2k-SFy"/>
+                    <constraint firstItem="x6i-eF-4zy" firstAttribute="leading" secondItem="Uyj-NV-5KX" secondAttribute="trailing" constant="6" id="97h-33-o1H"/>
+                    <constraint firstItem="SCy-IU-6Sf" firstAttribute="bottom" secondItem="HDS-DP-AaY" secondAttribute="bottom" constant="-16" id="IXo-et-Xqk"/>
+                    <constraint firstItem="SCy-IU-6Sf" firstAttribute="leading" secondItem="23X-lC-cWj" secondAttribute="trailing" constant="8" id="Pmk-y6-YG0"/>
+                    <constraint firstItem="23X-lC-cWj" firstAttribute="top" secondItem="SCy-IU-6Sf" secondAttribute="top" constant="6" id="Q0d-5f-xTy"/>
+                    <constraint firstAttribute="bottom" secondItem="HDS-DP-AaY" secondAttribute="bottom" priority="999" constant="16" id="S9U-yF-Hij"/>
+                    <constraint firstItem="x6i-eF-4zy" firstAttribute="centerY" secondItem="Uyj-NV-5KX" secondAttribute="centerY" id="SMz-u6-ee3"/>
+                    <constraint firstItem="xea-Ia-H8g" firstAttribute="centerX" secondItem="HDS-DP-AaY" secondAttribute="centerX" id="U9u-2Q-sfQ"/>
+                    <constraint firstItem="23X-lC-cWj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="UHy-05-ciE"/>
+                    <constraint firstItem="HDS-DP-AaY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cy4-Ez-igY"/>
+                    <constraint firstAttribute="trailing" secondItem="Cpy-TS-QYc" secondAttribute="trailing" constant="13" id="eVQ-8c-WFk"/>
+                    <constraint firstAttribute="trailing" secondItem="HDS-DP-AaY" secondAttribute="trailing" id="eWe-wc-SLX"/>
+                    <constraint firstItem="Uyj-NV-5KX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="id8-Si-xkz"/>
+                    <constraint firstItem="Uyj-NV-5KX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="k6v-DZ-hcn"/>
+                    <constraint firstItem="Cpy-TS-QYc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="sJ0-Mb-2ol"/>
+                    <constraint firstItem="Cpy-TS-QYc" firstAttribute="leading" secondItem="x6i-eF-4zy" secondAttribute="trailing" constant="6" id="vfO-Tl-D6e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="auricSpireFlux" destination="HDS-DP-AaY" id="Qgx-rV-cWf"/>
+                <outlet property="braidHaloGrain" destination="Uyj-NV-5KX" id="HJy-NM-PMn"/>
+                <outlet property="echoWispCrest" destination="SCy-IU-6Sf" id="yLg-wn-Cgv"/>
+                <outlet property="glyphTideHarbor" destination="F3W-3h-pku" id="CeF-Eg-l0W"/>
+                <outlet property="prismLoomShard" destination="x6i-eF-4zy" id="9DN-Wk-V83"/>
+                <outlet property="pulseWeftHaven" destination="yrv-cD-0xk" id="n4r-EG-5hD"/>
+                <outlet property="vortexRuneMantle" destination="23X-lC-cWj" id="auc-O7-9Jy"/>
+            </connections>
+            <point key="canvasLocation" x="-18.320610687022899" y="154.92957746478874"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="haloTwineMantle" width="60" height="60"/>
+        <image name="silverBondCitadel" width="16" height="15"/>
+        <image name="waveCrestAtrium" width="36" height="36"/>
+    </resources>
+</document>

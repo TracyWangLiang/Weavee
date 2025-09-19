@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KnotSageCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="72" height="98"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fif-we-ywL">
+                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efl-Tb-dyd">
+                                <rect key="frame" x="6" y="6" width="60" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-oK-cRX">
+                                        <rect key="frame" x="4" y="4" width="52" height="52"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TPh-oK-cRX" firstAttribute="leading" secondItem="efl-Tb-dyd" secondAttribute="leading" constant="4" id="CIu-Cl-GXC"/>
+                                    <constraint firstItem="TPh-oK-cRX" firstAttribute="top" secondItem="efl-Tb-dyd" secondAttribute="top" constant="4" id="U4s-De-JKB"/>
+                                    <constraint firstAttribute="trailing" secondItem="TPh-oK-cRX" secondAttribute="trailing" constant="4" id="Zax-PT-ZwB"/>
+                                    <constraint firstAttribute="bottom" secondItem="TPh-oK-cRX" secondAttribute="bottom" constant="4" id="Zox-i8-1f7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1I-IT-ho3">
+                                <rect key="frame" x="19" y="52" width="34" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="Ua4-ML-dTD"/>
+                                    <constraint firstAttribute="height" constant="20" id="z6p-Fu-QJD"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="runeCrestMantle"/>
+                                <state key="selected" image="runeCrestMantle"/>
+                                <connections>
+                                    <action selector="filterRuneHavenWithTideForge:" destination="gTV-IL-0wX" eventType="touchUpInside" id="kLE-1d-fSH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="72" id="DXx-e0-Acb"/>
+                            <constraint firstAttribute="bottom" secondItem="efl-Tb-dyd" secondAttribute="bottom" constant="6" id="PSA-n1-IAz"/>
+                            <constraint firstItem="I1I-IT-ho3" firstAttribute="centerX" secondItem="Fif-we-ywL" secondAttribute="centerX" id="SAh-LY-JcR"/>
+                            <constraint firstAttribute="bottom" secondItem="I1I-IT-ho3" secondAttribute="bottom" id="VR1-rr-6CK"/>
+                            <constraint firstItem="efl-Tb-dyd" firstAttribute="leading" secondItem="Fif-we-ywL" secondAttribute="leading" constant="6" id="YEz-Hs-jAO"/>
+                            <constraint firstItem="efl-Tb-dyd" firstAttribute="top" secondItem="Fif-we-ywL" secondAttribute="top" constant="6" id="cRg-IU-QvL"/>
+                            <constraint firstAttribute="trailing" secondItem="efl-Tb-dyd" secondAttribute="trailing" constant="6" id="xCH-nq-OV8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wS-fD-VX8">
+                        <rect key="frame" x="0.0" y="81" width="72" height="17"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
+                        <color key="textColor" red="0.81176470588235294" green="0.62352941176470589" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="Fif-we-ywL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Yc-tH-frd"/>
+                <constraint firstItem="Fif-we-ywL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NNU-j6-hEE"/>
+                <constraint firstAttribute="trailing" secondItem="1wS-fD-VX8" secondAttribute="trailing" id="TMv-XE-0t2"/>
+                <constraint firstAttribute="trailing" secondItem="Fif-we-ywL" secondAttribute="trailing" id="doc-q6-vjI"/>
+                <constraint firstItem="1wS-fD-VX8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pQf-SM-QRZ"/>
+                <constraint firstAttribute="bottom" secondItem="1wS-fD-VX8" secondAttribute="bottom" id="weS-vx-JAx"/>
+            </constraints>
+            <connections>
+                <outlet property="auricSpireFlux" destination="Fif-we-ywL" id="a9D-qO-muz"/>
+                <outlet property="braidHaloGrain" destination="efl-Tb-dyd" id="hdz-aC-omI"/>
+                <outlet property="echoWispCrest" destination="1wS-fD-VX8" id="vbe-6Y-h7k"/>
+                <outlet property="glyphTideAerie" destination="I1I-IT-ho3" id="IrM-Ik-PGX"/>
+                <outlet property="prismLoomShard" destination="TPh-oK-cRX" id="Vyj-8Y-m6k"/>
+            </connections>
+            <point key="canvasLocation" x="-24.427480916030532" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="runeCrestMantle" width="36" height="22"/>
+    </resources>
+</document>

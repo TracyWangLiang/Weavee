@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17F0A60B26B8B1B2EE1F440A /* Pods_Weavee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA44D20E9DB95797AB8476C /* Pods_Weavee.framework */; };
+		333BEABE2E7A47A2001B0C50 /* FibreCrestBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */; };
+		33DDD49A2E7810B700EC690B /* SwayKnotFountainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */; };
+		33DDD49D2E78165500EC690B /* WeftDreamBeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD49C2E78165500EC690B /* WeftDreamBeaconController.m */; };
+		33FCB6B52E7009A3004211B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6AB2E7009A3004211B7 /* Assets.xcassets */; };
+		33FCB6B62E7009A3004211B7 /* KnotBastionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6902E7009A3004211B7 /* KnotBastionCollectionCell.xib */; };
+		33FCB6B72E7009A3004211B7 /* KnotSageBastionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB69D2E7009A3004211B7 /* KnotSageBastionTableCell.xib */; };
+		33FCB6B82E7009A3004211B7 /* VibeSpiralCaskTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6A32E7009A3004211B7 /* VibeSpiralCaskTableCell.xib */; };
+		33FCB6B92E7009A3004211B7 /* AuraKnotFountainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB68A2E7009A3004211B7 /* AuraKnotFountainView.xib */; };
+		33FCB6BA2E7009A3004211B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6AE2E7009A3004211B7 /* LaunchScreen.storyboard */; };
+		33FCB6BB2E7009A3004211B7 /* KnotBastionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB69A2E7009A3004211B7 /* KnotBastionTableCell.xib */; };
+		33FCB6BC2E7009A3004211B7 /* AuraKnotCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6842E7009A3004211B7 /* AuraKnotCollectionCell.xib */; };
+		33FCB6BD2E7009A3004211B7 /* AuraKnotEmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6872E7009A3004211B7 /* AuraKnotEmptyCell.xib */; };
+		33FCB6BE2E7009A3004211B7 /* KnotSageBastionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6932E7009A3004211B7 /* KnotSageBastionCollectionCell.xib */; };
+		33FCB6BF2E7009A3004211B7 /* KnotSageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6962E7009A3004211B7 /* KnotSageCollectionCell.xib */; };
+		33FCB6C02E7009A3004211B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6B12E7009A3004211B7 /* Main.storyboard */; };
+		33FCB6C12E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB68D2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib */; };
+		33FCB6C22E7009A3004211B7 /* KnotSageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6A02E7009A3004211B7 /* KnotSageTableCell.xib */; };
+		33FCB6C32E7009A3004211B7 /* KnotBastionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB68F2E7009A3004211B7 /* KnotBastionCollectionCell.m */; };
+		33FCB6C42E7009A3004211B7 /* KnotSageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB69F2E7009A3004211B7 /* KnotSageTableCell.m */; };
+		33FCB6C52E7009A3004211B7 /* AuraKnotFountainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB66F2E7009A3004211B7 /* AuraKnotFountainController.m */; };
+		33FCB6C62E7009A3004211B7 /* AuraKnotFountainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6892E7009A3004211B7 /* AuraKnotFountainView.m */; };
+		33FCB6C72E7009A3004211B7 /* KnotSageBastionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6922E7009A3004211B7 /* KnotSageBastionCollectionCell.m */; };
+		33FCB6C82E7009A3004211B7 /* KnotBastionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6992E7009A3004211B7 /* KnotBastionTableCell.m */; };
+		33FCB6C92E7009A3004211B7 /* KnotSageBastionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6752E7009A3004211B7 /* KnotSageBastionController.m */; };
+		33FCB6CA2E7009A3004211B7 /* VibeSpiralCaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6792E7009A3004211B7 /* VibeSpiralCaskController.m */; };
+		33FCB6CB2E7009A3004211B7 /* AuraKnotEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6862E7009A3004211B7 /* AuraKnotEmptyCell.m */; };
+		33FCB6CC2E7009A3004211B7 /* AuraChordCourtController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB66D2E7009A3004211B7 /* AuraChordCourtController.m */; };
+		33FCB6CD2E7009A3004211B7 /* VibeSpiralCaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6A22E7009A3004211B7 /* VibeSpiralCaskTableCell.m */; };
+		33FCB6CE2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB68C2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m */; };
+		33FCB6CF2E7009A3004211B7 /* KnotSageBastionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB69C2E7009A3004211B7 /* KnotSageBastionTableCell.m */; };
+		33FCB6D02E7009A3004211B7 /* WeaveeSpecialFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6A72E7009A3004211B7 /* WeaveeSpecialFlowLayout.m */; };
+		33FCB6D12E7009A3004211B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6AF2E7009A3004211B7 /* main.m */; };
+		33FCB6D22E7009A3004211B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6AA2E7009A3004211B7 /* AppDelegate.m */; };
+		33FCB6D32E7009A3004211B7 /* Weavee.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6802E7009A3004211B7 /* Weavee.m */; };
+		33FCB6D42E7009A3004211B7 /* KnotSageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6952E7009A3004211B7 /* KnotSageCollectionCell.m */; };
+		33FCB6D52E7009A3004211B7 /* MindEchoCompanion.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB67C2E7009A3004211B7 /* MindEchoCompanion.m */; };
+		33FCB6D62E7009A3004211B7 /* PulseSketchMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB67E2E7009A3004211B7 /* PulseSketchMessenger.m */; };
+		33FCB6D72E7009A3004211B7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6B32E7009A3004211B7 /* SceneDelegate.m */; };
+		33FCB6D82E7009A3004211B7 /* FibreCrestBeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6712E7009A3004211B7 /* FibreCrestBeaconController.m */; };
+		33FCB6D92E7009A3004211B7 /* LinkFibreCascadeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6772E7009A3004211B7 /* LinkFibreCascadeController.m */; };
+		33FCB6DA2E7009A3004211B7 /* FlareWispHollowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6732E7009A3004211B7 /* FlareWispHollowController.m */; };
+		33FCB6DB2E7009A3004211B7 /* AuraKnotCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6832E7009A3004211B7 /* AuraKnotCollectionCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		330C96332E790D21007B85E4 /* Weavee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Weavee.entitlements; sourceTree = "<group>"; };
+		333BEABC2E7A47A2001B0C50 /* FibreCrestBeacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeacon.h; sourceTree = "<group>"; };
+		333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeacon.m; sourceTree = "<group>"; };
+		3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weavee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DDD4982E7810B700EC690B /* SwayKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwayKnotFountainController.h; sourceTree = "<group>"; };
+		33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwayKnotFountainController.m; sourceTree = "<group>"; };
+		33DDD49B2E78165500EC690B /* WeftDreamBeaconController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeftDreamBeaconController.h; sourceTree = "<group>"; };
+		33DDD49C2E78165500EC690B /* WeftDreamBeaconController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeftDreamBeaconController.m; sourceTree = "<group>"; };
+		33FCB66C2E7009A3004211B7 /* AuraChordCourtController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraChordCourtController.h; sourceTree = "<group>"; };
+		33FCB66D2E7009A3004211B7 /* AuraChordCourtController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraChordCourtController.m; sourceTree = "<group>"; };
+		33FCB66E2E7009A3004211B7 /* AuraKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraKnotFountainController.h; sourceTree = "<group>"; };
+		33FCB66F2E7009A3004211B7 /* AuraKnotFountainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraKnotFountainController.m; sourceTree = "<group>"; };
+		33FCB6702E7009A3004211B7 /* FibreCrestBeaconController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeaconController.h; sourceTree = "<group>"; };
+		33FCB6712E7009A3004211B7 /* FibreCrestBeaconController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeaconController.m; sourceTree = "<group>"; };
+		33FCB6722E7009A3004211B7 /* FlareWispHollowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlareWispHollowController.h; sourceTree = "<group>"; };
+		33FCB6732E7009A3004211B7 /* FlareWispHollowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlareWispHollowController.m; sourceTree = "<group>"; };
+		33FCB6742E7009A3004211B7 /* KnotSageBastionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageBastionController.h; sourceTree = "<group>"; };
+		33FCB6752E7009A3004211B7 /* KnotSageBastionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageBastionController.m; sourceTree = "<group>"; };
+		33FCB6762E7009A3004211B7 /* LinkFibreCascadeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkFibreCascadeController.h; sourceTree = "<group>"; };
+		33FCB6772E7009A3004211B7 /* LinkFibreCascadeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkFibreCascadeController.m; sourceTree = "<group>"; };
+		33FCB6782E7009A3004211B7 /* VibeSpiralCaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VibeSpiralCaskController.h; sourceTree = "<group>"; };
+		33FCB6792E7009A3004211B7 /* VibeSpiralCaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VibeSpiralCaskController.m; sourceTree = "<group>"; };
+		33FCB67B2E7009A3004211B7 /* MindEchoCompanion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindEchoCompanion.h; sourceTree = "<group>"; };
+		33FCB67C2E7009A3004211B7 /* MindEchoCompanion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindEchoCompanion.m; sourceTree = "<group>"; };
+		33FCB67D2E7009A3004211B7 /* PulseSketchMessenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PulseSketchMessenger.h; sourceTree = "<group>"; };
+		33FCB67E2E7009A3004211B7 /* PulseSketchMessenger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulseSketchMessenger.m; sourceTree = "<group>"; };
+		33FCB67F2E7009A3004211B7 /* Weavee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weavee.h; sourceTree = "<group>"; };
+		33FCB6802E7009A3004211B7 /* Weavee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weavee.m; sourceTree = "<group>"; };
+		33FCB6822E7009A3004211B7 /* AuraKnotCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraKnotCollectionCell.h; sourceTree = "<group>"; };
+		33FCB6832E7009A3004211B7 /* AuraKnotCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraKnotCollectionCell.m; sourceTree = "<group>"; };
+		33FCB6842E7009A3004211B7 /* AuraKnotCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuraKnotCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB6852E7009A3004211B7 /* AuraKnotEmptyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraKnotEmptyCell.h; sourceTree = "<group>"; };
+		33FCB6862E7009A3004211B7 /* AuraKnotEmptyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraKnotEmptyCell.m; sourceTree = "<group>"; };
+		33FCB6872E7009A3004211B7 /* AuraKnotEmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuraKnotEmptyCell.xib; sourceTree = "<group>"; };
+		33FCB6882E7009A3004211B7 /* AuraKnotFountainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraKnotFountainView.h; sourceTree = "<group>"; };
+		33FCB6892E7009A3004211B7 /* AuraKnotFountainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraKnotFountainView.m; sourceTree = "<group>"; };
+		33FCB68A2E7009A3004211B7 /* AuraKnotFountainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuraKnotFountainView.xib; sourceTree = "<group>"; };
+		33FCB68B2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeaconCollectionCell.h; sourceTree = "<group>"; };
+		33FCB68C2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeaconCollectionCell.m; sourceTree = "<group>"; };
+		33FCB68D2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FibreCrestBeaconCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB68E2E7009A3004211B7 /* KnotBastionCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotBastionCollectionCell.h; sourceTree = "<group>"; };
+		33FCB68F2E7009A3004211B7 /* KnotBastionCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotBastionCollectionCell.m; sourceTree = "<group>"; };
+		33FCB6902E7009A3004211B7 /* KnotBastionCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotBastionCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB6912E7009A3004211B7 /* KnotSageBastionCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageBastionCollectionCell.h; sourceTree = "<group>"; };
+		33FCB6922E7009A3004211B7 /* KnotSageBastionCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageBastionCollectionCell.m; sourceTree = "<group>"; };
+		33FCB6932E7009A3004211B7 /* KnotSageBastionCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotSageBastionCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB6942E7009A3004211B7 /* KnotSageCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageCollectionCell.h; sourceTree = "<group>"; };
+		33FCB6952E7009A3004211B7 /* KnotSageCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageCollectionCell.m; sourceTree = "<group>"; };
+		33FCB6962E7009A3004211B7 /* KnotSageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotSageCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB6982E7009A3004211B7 /* KnotBastionTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotBastionTableCell.h; sourceTree = "<group>"; };
+		33FCB6992E7009A3004211B7 /* KnotBastionTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotBastionTableCell.m; sourceTree = "<group>"; };
+		33FCB69A2E7009A3004211B7 /* KnotBastionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotBastionTableCell.xib; sourceTree = "<group>"; };
+		33FCB69B2E7009A3004211B7 /* KnotSageBastionTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageBastionTableCell.h; sourceTree = "<group>"; };
+		33FCB69C2E7009A3004211B7 /* KnotSageBastionTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageBastionTableCell.m; sourceTree = "<group>"; };
+		33FCB69D2E7009A3004211B7 /* KnotSageBastionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotSageBastionTableCell.xib; sourceTree = "<group>"; };
+		33FCB69E2E7009A3004211B7 /* KnotSageTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageTableCell.h; sourceTree = "<group>"; };
+		33FCB69F2E7009A3004211B7 /* KnotSageTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageTableCell.m; sourceTree = "<group>"; };
+		33FCB6A02E7009A3004211B7 /* KnotSageTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotSageTableCell.xib; sourceTree = "<group>"; };
+		33FCB6A12E7009A3004211B7 /* VibeSpiralCaskTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VibeSpiralCaskTableCell.h; sourceTree = "<group>"; };
+		33FCB6A22E7009A3004211B7 /* VibeSpiralCaskTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VibeSpiralCaskTableCell.m; sourceTree = "<group>"; };
+		33FCB6A32E7009A3004211B7 /* VibeSpiralCaskTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VibeSpiralCaskTableCell.xib; sourceTree = "<group>"; };
+		33FCB6A62E7009A3004211B7 /* WeaveeSpecialFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeaveeSpecialFlowLayout.h; sourceTree = "<group>"; };
+		33FCB6A72E7009A3004211B7 /* WeaveeSpecialFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeaveeSpecialFlowLayout.m; sourceTree = "<group>"; };
+		33FCB6A92E7009A3004211B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33FCB6AA2E7009A3004211B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33FCB6AB2E7009A3004211B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33FCB6AC2E7009A3004211B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33FCB6AD2E7009A3004211B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33FCB6AF2E7009A3004211B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33FCB6B02E7009A3004211B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33FCB6B22E7009A3004211B7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		33FCB6B32E7009A3004211B7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		36F74B92174671099CD5F405 /* Pods-Weavee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weavee.debug.xcconfig"; path = "Target Support Files/Pods-Weavee/Pods-Weavee.debug.xcconfig"; sourceTree = "<group>"; };
+		89E0146DB62421C856511960 /* Pods-Weavee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weavee.release.xcconfig"; path = "Target Support Files/Pods-Weavee/Pods-Weavee.release.xcconfig"; sourceTree = "<group>"; };
+		EAA44D20E9DB95797AB8476C /* Pods_Weavee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weavee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3388A6A42E4F0EEA00DA5FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F0A60B26B8B1B2EE1F440A /* Pods_Weavee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3388A69E2E4F0EEA00DA5FE9 = {
+			isa = PBXGroup;
+			children = (
+				33FCB6B42E7009A3004211B7 /* Weavee */,
+				3388A6A82E4F0EEA00DA5FE9 /* Products */,
+				F0D3A22BC339B044E1A60B3D /* Pods */,
+				8113D48A8479CD0698AD32B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3388A6A82E4F0EEA00DA5FE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33FCB67A2E7009A3004211B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33FCB66C2E7009A3004211B7 /* AuraChordCourtController.h */,
+				33FCB66D2E7009A3004211B7 /* AuraChordCourtController.m */,
+				33FCB66E2E7009A3004211B7 /* AuraKnotFountainController.h */,
+				33FCB66F2E7009A3004211B7 /* AuraKnotFountainController.m */,
+				33FCB6702E7009A3004211B7 /* FibreCrestBeaconController.h */,
+				33FCB6712E7009A3004211B7 /* FibreCrestBeaconController.m */,
+				33FCB6722E7009A3004211B7 /* FlareWispHollowController.h */,
+				33FCB6732E7009A3004211B7 /* FlareWispHollowController.m */,
+				33FCB6742E7009A3004211B7 /* KnotSageBastionController.h */,
+				33FCB6752E7009A3004211B7 /* KnotSageBastionController.m */,
+				33FCB6762E7009A3004211B7 /* LinkFibreCascadeController.h */,
+				33FCB6772E7009A3004211B7 /* LinkFibreCascadeController.m */,
+				33FCB6782E7009A3004211B7 /* VibeSpiralCaskController.h */,
+				33FCB6792E7009A3004211B7 /* VibeSpiralCaskController.m */,
+				33DDD4982E7810B700EC690B /* SwayKnotFountainController.h */,
+				33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */,
+				33DDD49B2E78165500EC690B /* WeftDreamBeaconController.h */,
+				33DDD49C2E78165500EC690B /* WeftDreamBeaconController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33FCB6812E7009A3004211B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33FCB67B2E7009A3004211B7 /* MindEchoCompanion.h */,
+				33FCB67C2E7009A3004211B7 /* MindEchoCompanion.m */,
+				33FCB67D2E7009A3004211B7 /* PulseSketchMessenger.h */,
+				33FCB67E2E7009A3004211B7 /* PulseSketchMessenger.m */,
+				33FCB67F2E7009A3004211B7 /* Weavee.h */,
+				33FCB6802E7009A3004211B7 /* Weavee.m */,
+				333BEABC2E7A47A2001B0C50 /* FibreCrestBeacon.h */,
+				333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33FCB6972E7009A3004211B7 /* CollectionViewcell */ = {
+			isa = PBXGroup;
+			children = (
+				33FCB6822E7009A3004211B7 /* AuraKnotCollectionCell.h */,
+				33FCB6832E7009A3004211B7 /* AuraKnotCollectionCell.m */,
+				33FCB6842E7009A3004211B7 /* AuraKnotCollectionCell.xib */,
+				33FCB6852E7009A3004211B7 /* AuraKnotEmptyCell.h */,
+				33FCB6862E7009A3004211B7 /* AuraKnotEmptyCell.m */,
+				33FCB6872E7009A3004211B7 /* AuraKnotEmptyCell.xib */,
+				33FCB6882E7009A3004211B7 /* AuraKnotFountainView.h */,
+				33FCB6892E7009A3004211B7 /* AuraKnotFountainView.m */,
+				33FCB68A2E7009A3004211B7 /* AuraKnotFountainView.xib */,
+				33FCB68B2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.h */,
+				33FCB68C2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m */,
+				33FCB68D2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib */,
+				33FCB68E2E7009A3004211B7 /* KnotBastionCollectionCell.h */,
+				33FCB68F2E7009A3004211B7 /* KnotBastionCollectionCell.m */,
+				33FCB6902E7009A3004211B7 /* KnotBastionCollectionCell.xib */,
+				33FCB6912E7009A3004211B7 /* KnotSageBastionCollectionCell.h */,
+				33FCB6922E7009A3004211B7 /* KnotSageBastionCollectionCell.m */,
+				33FCB6932E7009A3004211B7 /* KnotSageBastionCollectionCell.xib */,
+				33FCB6942E7009A3004211B7 /* KnotSageCollectionCell.h */,
+				33FCB6952E7009A3004211B7 /* KnotSageCollectionCell.m */,
+				33FCB6962E7009A3004211B7 /* KnotSageCollectionCell.xib */,
+			);
+			path = CollectionViewcell;
+			sourceTree = "<group>";
+		};
+		33FCB6A42E7009A3004211B7 /* TableViewcell */ = {
+			isa = PBXGroup;
+			children = (
+				33FCB6982E7009A3004211B7 /* KnotBastionTableCell.h */,
+				33FCB6992E7009A3004211B7 /* KnotBastionTableCell.m */,
+				33FCB69A2E7009A3004211B7 /* KnotBastionTableCell.xib */,
+				33FCB69B2E7009A3004211B7 /* KnotSageBastionTableCell.h */,
+				33FCB69C2E7009A3004211B7 /* KnotSageBastionTableCell.m */,
+				33FCB69D2E7009A3004211B7 /* KnotSageBastionTableCell.xib */,
+				33FCB69E2E7009A3004211B7 /* KnotSageTableCell.h */,
+				33FCB69F2E7009A3004211B7 /* KnotSageTableCell.m */,
+				33FCB6A02E7009A3004211B7 /* KnotSageTableCell.xib */,
+				33FCB6A12E7009A3004211B7 /* VibeSpiralCaskTableCell.h */,
+				33FCB6A22E7009A3004211B7 /* VibeSpiralCaskTableCell.m */,
+				33FCB6A32E7009A3004211B7 /* VibeSpiralCaskTableCell.xib */,
+			);
+			path = TableViewcell;
+			sourceTree = "<group>";
+		};
+		33FCB6A52E7009A3004211B7 /* KnotSageBastion */ = {
+			isa = PBXGroup;
+			children = (
+				33FCB6972E7009A3004211B7 /* CollectionViewcell */,
+				33FCB6A42E7009A3004211B7 /* TableViewcell */,
+			);
+			path = KnotSageBastion;
+			sourceTree = "<group>";
+		};
+		33FCB6A82E7009A3004211B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33FCB6A52E7009A3004211B7 /* KnotSageBastion */,
+				33FCB6A62E7009A3004211B7 /* WeaveeSpecialFlowLayout.h */,
+				33FCB6A72E7009A3004211B7 /* WeaveeSpecialFlowLayout.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33FCB6B42E7009A3004211B7 /* Weavee */ = {
+			isa = PBXGroup;
+			children = (
+				330C96332E790D21007B85E4 /* Weavee.entitlements */,
+				33FCB67A2E7009A3004211B7 /* Controller */,
+				33FCB6812E7009A3004211B7 /* Model */,
+				33FCB6A82E7009A3004211B7 /* View */,
+				33FCB6A92E7009A3004211B7 /* AppDelegate.h */,
+				33FCB6AA2E7009A3004211B7 /* AppDelegate.m */,
+				33FCB6AB2E7009A3004211B7 /* Assets.xcassets */,
+				33FCB6AC2E7009A3004211B7 /* Info.plist */,
+				33FCB6AE2E7009A3004211B7 /* LaunchScreen.storyboard */,
+				33FCB6AF2E7009A3004211B7 /* main.m */,
+				33FCB6B12E7009A3004211B7 /* Main.storyboard */,
+				33FCB6B22E7009A3004211B7 /* SceneDelegate.h */,
+				33FCB6B32E7009A3004211B7 /* SceneDelegate.m */,
+			);
+			path = Weavee;
+			sourceTree = "<group>";
+		};
+		8113D48A8479CD0698AD32B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAA44D20E9DB95797AB8476C /* Pods_Weavee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0D3A22BC339B044E1A60B3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36F74B92174671099CD5F405 /* Pods-Weavee.debug.xcconfig */,
+				89E0146DB62421C856511960 /* Pods-Weavee.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3388A6A62E4F0EEA00DA5FE9 /* Weavee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3388A6BF2E4F0EEB00DA5FE9 /* Build configuration list for PBXNativeTarget "Weavee" */;
+			buildPhases = (
+				4D38CB0191173DDEA95F4670 /* [CP] Check Pods Manifest.lock */,
+				3388A6A32E4F0EEA00DA5FE9 /* Sources */,
+				3388A6A42E4F0EEA00DA5FE9 /* Frameworks */,
+				3388A6A52E4F0EEA00DA5FE9 /* Resources */,
+				A24B956A49BF83A6BE886B0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weavee;
+			productName = Weavee;
+			productReference = 3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3388A69F2E4F0EEA00DA5FE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					3388A6A62E4F0EEA00DA5FE9 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 3388A6A22E4F0EEA00DA5FE9 /* Build configuration list for PBXProject "Weavee" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3388A69E2E4F0EEA00DA5FE9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3388A6A82E4F0EEA00DA5FE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3388A6A62E4F0EEA00DA5FE9 /* Weavee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3388A6A52E4F0EEA00DA5FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FCB6B52E7009A3004211B7 /* Assets.xcassets in Resources */,
+				33FCB6B62E7009A3004211B7 /* KnotBastionCollectionCell.xib in Resources */,
+				33FCB6B72E7009A3004211B7 /* KnotSageBastionTableCell.xib in Resources */,
+				33FCB6B82E7009A3004211B7 /* VibeSpiralCaskTableCell.xib in Resources */,
+				33FCB6B92E7009A3004211B7 /* AuraKnotFountainView.xib in Resources */,
+				33FCB6BA2E7009A3004211B7 /* LaunchScreen.storyboard in Resources */,
+				33FCB6BB2E7009A3004211B7 /* KnotBastionTableCell.xib in Resources */,
+				33FCB6BC2E7009A3004211B7 /* AuraKnotCollectionCell.xib in Resources */,
+				33FCB6BD2E7009A3004211B7 /* AuraKnotEmptyCell.xib in Resources */,
+				33FCB6BE2E7009A3004211B7 /* KnotSageBastionCollectionCell.xib in Resources */,
+				33FCB6BF2E7009A3004211B7 /* KnotSageCollectionCell.xib in Resources */,
+				33FCB6C02E7009A3004211B7 /* Main.storyboard in Resources */,
+				33FCB6C12E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib in Resources */,
+				33FCB6C22E7009A3004211B7 /* KnotSageTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D38CB0191173DDEA95F4670 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weavee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24B956A49BF83A6BE886B0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3388A6A32E4F0EEA00DA5FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FCB6C32E7009A3004211B7 /* KnotBastionCollectionCell.m in Sources */,
+				33FCB6C42E7009A3004211B7 /* KnotSageTableCell.m in Sources */,
+				33FCB6C52E7009A3004211B7 /* AuraKnotFountainController.m in Sources */,
+				33FCB6C62E7009A3004211B7 /* AuraKnotFountainView.m in Sources */,
+				33FCB6C72E7009A3004211B7 /* KnotSageBastionCollectionCell.m in Sources */,
+				33FCB6C82E7009A3004211B7 /* KnotBastionTableCell.m in Sources */,
+				33FCB6C92E7009A3004211B7 /* KnotSageBastionController.m in Sources */,
+				33FCB6CA2E7009A3004211B7 /* VibeSpiralCaskController.m in Sources */,
+				33FCB6CB2E7009A3004211B7 /* AuraKnotEmptyCell.m in Sources */,
+				33FCB6CC2E7009A3004211B7 /* AuraChordCourtController.m in Sources */,
+				33FCB6CD2E7009A3004211B7 /* VibeSpiralCaskTableCell.m in Sources */,
+				33FCB6CE2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m in Sources */,
+				33FCB6CF2E7009A3004211B7 /* KnotSageBastionTableCell.m in Sources */,
+				33FCB6D02E7009A3004211B7 /* WeaveeSpecialFlowLayout.m in Sources */,
+				33FCB6D12E7009A3004211B7 /* main.m in Sources */,
+				33FCB6D22E7009A3004211B7 /* AppDelegate.m in Sources */,
+				33FCB6D32E7009A3004211B7 /* Weavee.m in Sources */,
+				33FCB6D42E7009A3004211B7 /* KnotSageCollectionCell.m in Sources */,
+				33FCB6D52E7009A3004211B7 /* MindEchoCompanion.m in Sources */,
+				33FCB6D62E7009A3004211B7 /* PulseSketchMessenger.m in Sources */,
+				33FCB6D72E7009A3004211B7 /* SceneDelegate.m in Sources */,
+				33FCB6D82E7009A3004211B7 /* FibreCrestBeaconController.m in Sources */,
+				33FCB6D92E7009A3004211B7 /* LinkFibreCascadeController.m in Sources */,
+				33DDD49A2E7810B700EC690B /* SwayKnotFountainController.m in Sources */,
+				33FCB6DA2E7009A3004211B7 /* FlareWispHollowController.m in Sources */,
+				33DDD49D2E78165500EC690B /* WeftDreamBeaconController.m in Sources */,
+				333BEABE2E7A47A2001B0C50 /* FibreCrestBeacon.m in Sources */,
+				33FCB6DB2E7009A3004211B7 /* AuraKnotCollectionCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33FCB6AE2E7009A3004211B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33FCB6AD2E7009A3004211B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		33FCB6B12E7009A3004211B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33FCB6B02E7009A3004211B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3388A6C02E4F0EEB00DA5FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36F74B92174671099CD5F405 /* Pods-Weavee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Weavee/Weavee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 989CM2LH2W;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Weavee/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos for posting content and updating your profile picture.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to help you discover nearby friends and enhance chat experiences.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select images for posting content and updating your profile picture";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use tracking permission to deliver more relevant ads and personalized app experiences.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3388A6C12E4F0EEB00DA5FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E0146DB62421C856511960 /* Pods-Weavee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Weavee/Weavee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 989CM2LH2W;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Weavee/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos for posting content and updating your profile picture.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to help you discover nearby friends and enhance chat experiences.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select images for posting content and updating your profile picture";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use tracking permission to deliver more relevant ads and personalized app experiences.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3388A6C22E4F0EEB00DA5FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3388A6C32E4F0EEB00DA5FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3388A6A22E4F0EEA00DA5FE9 /* Build configuration list for PBXProject "Weavee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3388A6C22E4F0EEB00DA5FE9 /* Debug */,
+				3388A6C32E4F0EEB00DA5FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3388A6BF2E4F0EEB00DA5FE9 /* Build configuration list for PBXNativeTarget "Weavee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3388A6C02E4F0EEB00DA5FE9 /* Debug */,
+				3388A6C12E4F0EEB00DA5FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3388A69F2E4F0EEA00DA5FE9 /* Project object */;
+}
