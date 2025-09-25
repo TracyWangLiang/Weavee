@@ -413,9 +413,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,6 +502,7 @@
 				INFOPLIST_FILE = Weavee/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos for posting content and updating your profile picture.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to help you discover nearby friends and enhance chat experiences.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to record audio for live streaming and video content.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select images for posting content and updating your profile picture";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use tracking permission to deliver more relevant ads and personalized app experiences.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -511,7 +516,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.outfit.Weavee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -538,6 +543,7 @@
 				INFOPLIST_FILE = Weavee/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos for posting content and updating your profile picture.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to help you discover nearby friends and enhance chat experiences.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to record audio for live streaming and video content.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select images for posting content and updating your profile picture";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use tracking permission to deliver more relevant ads and personalized app experiences.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -551,7 +557,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.outfit.Weavee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
