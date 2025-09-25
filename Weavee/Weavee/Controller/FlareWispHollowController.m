@@ -18,24 +18,16 @@
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <AdSupport/AdSupport.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
-
-
+#import "SwayKnotFountainController.h"
 
 @interface FlareWispHollowController () <WKNavigationDelegate, WKScriptMessageHandler,SKProductsRequestDelegate, SKPaymentTransactionObserver, WKUIDelegate>
 
 @property (nonatomic, copy) NSString *auricSpireFlux;
 @property (nonatomic, strong) WKWebView *braidHaloGrain;
-
 @property (nonatomic, assign) CFAbsoluteTime chronusStartMark;
-
-/// 防止截屏录屏
 @property (nonatomic, strong) UIView *protectView;
-
-@property(nonatomic, copy)NSDictionary * runeSpan;
-
-@property(nonatomic, strong)UIImageView * auraGlyphStream;
-
-
+@property (nonatomic, copy) NSDictionary *runeSpan;
+@property (nonatomic, strong) UIImageView *auraGlyphStream;
 
 @end
 
@@ -51,18 +43,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self setupBackgroundAndWebView];
     self.protectView = [[UIView alloc] initWithFrame:self.view.bounds];
     self.protectView.backgroundColor = [UIColor whiteColor];
     self.protectView.hidden = YES;
     [self.view addSubview:self.protectView];
     
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(meshArcaneBloom) name:UIScreenCapturedDidChangeNotification object:nil];
-       
     [self meshArcaneBloom];
-    
     if ([self.pearlLoomAtrium isEqualToString:@"1"]) {
         [self.view addSubview:self.auraGlyphStream];
     }
@@ -96,6 +84,13 @@
     self.view.backgroundColor = [UIColor blackColor];
     [companion amplifyResonanceWithPhrase:@"alpha" harmonicLevel:3];
     WKWebViewConfiguration *vortexRuneMantle = [[WKWebViewConfiguration alloc] init];
+    
+    vortexRuneMantle.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
+    vortexRuneMantle.preferences.javaScriptCanOpenWindowsAutomatically = YES;
+    vortexRuneMantle.allowsAirPlayForMediaPlayback = false;
+    vortexRuneMantle.allowsInlineMediaPlayback = YES;
+    
+    
     [companion amplifyResonanceWithPhrase:@"beta" harmonicLevel:2];
     WKUserContentController *echoWispCrest = [[WKUserContentController alloc] init];
     [companion amplifyResonanceWithPhrase:@"gamma" harmonicLevel:4];
@@ -103,6 +98,9 @@
     for (NSString *handlerName in glyphTideAerie) {
         [echoWispCrest addScriptMessageHandler:self name:handlerName];
     }
+    
+    [echoWispCrest addScriptMessageHandler:self name:@"Close"];
+    
     NSMutableArray *matrix = [NSMutableArray array];
     vortexRuneMantle.userContentController = echoWispCrest;
     for (int i = 1; i <= 5; i++) {
@@ -124,6 +122,8 @@
     }
     
     [self.view addSubview:self.braidHaloGrain];
+    
+    self.braidHaloGrain.allowsBackForwardNavigationGestures = YES;
     
     UITextField *syllable = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     syllable.backgroundColor = [UIColor whiteColor];
@@ -199,6 +199,10 @@
     }else if ([pulseWeftHaven isEqualToString:@"rechargePay"]) {
         NSDictionary * runeSpan = message.body;
         [self gateFluxionRune:runeSpan];
+    }else if ([pulseWeftHaven isEqualToString:@"Close"]) {
+        Weavee * weavee = [[Weavee alloc] init];
+        [weavee traceVelvetRuneWithPulseAnchor:@"silkenWispNode"];
+        [self lockCinderMorph];
     }
 }
 
@@ -225,7 +229,7 @@
 
 }
 
--(void)gateFluxionRune:(NSDictionary *)runeSpan {
+- (void)gateFluxionRune:(NSDictionary *)runeSpan {
     if (runeSpan.count <= 0) {
         return;
     }
@@ -237,11 +241,10 @@
 
 }
 
--(void)nestPhantomChord:(NSString *)arcaneSeed sealNovaChasm:(NSString *)phaseChord {
+- (void)nestPhantomChord:(NSString *)arcaneSeed sealNovaChasm:(NSString *)phaseChord {
     
     NSString * fluxionRuneGate = [NSString stringWithFormat:@"%@", self.runeSpan[@"batchNo"]];
     NSNumber * sonicRuneSpire = [self castAuricFibreWithRuneGrove:fluxionRuneGate];
-    
     Weavee *weavee = [[Weavee alloc] init];
     NSString *shadowBondSpire = [NSString stringWithFormat:@"%@/opi/v1/weavee/weaveeneb/p",[weavee lockCinderMorph]];
     NSURL *arcaneURL = [NSURL URLWithString:shadowBondSpire];
@@ -249,28 +252,20 @@
     sonarWispTrace.HTTPMethod = @"POST";
     NSString * mireForge = [NSString stringWithFormat:@"%@", self.runeSpan[@"callbackJson"]];
     NSDictionary *novaChasmSeal = @{@"weaveet":arcaneSeed,@"weaveep":phaseChord,@"weaveec":mireForge};
-    
-    /// 测试：9986sdff5s4f1123     9986sdff5s4y456a
-    /// 正式：osp2ae15sm02t9s6    9ixfdg3cxl7z3q7c
-    
     NSString *holoSpireLink = [weavee encryptGlyphMap:novaChasmSeal withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
     NSData *vortexRuneShard = [holoSpireLink dataUsingEncoding:NSUTF8StringEncoding];
     sonarWispTrace.HTTPBody = vortexRuneShard;
     [sonarWispTrace setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    /// 版本
     NSString * vitalSporeGrid = [weavee spanTwilightRune];
     [sonarWispTrace setValue:vitalSporeGrid forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee0020Weavee0000Weavee0017Weavee0024Weavee000cWeavee000eWeavee0018Weavee"]];
     
-    NSString * aetherGlyphMark = [weavee retrieveGlyphEssenceWithIdentGlyph:@"aetherGlyphMark"];
+    NSString * aetherGlyphMark = [weavee retrieveGlyphEssenceWithIdentGlyph:@"aetherLumitMark"];
     [sonarWispTrace setValue:aetherGlyphMark forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0033Weavee0000Weavee0017Weavee001fWeavee0006Weavee0000Weavee0019Weavee000aWeavee"]];
-    /// push
     [sonarWispTrace setValue:[weavee warpFibreCrestWithLoomTide:@"lumenDriftCore"]
           forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0027Weavee0010Weavee0012Weavee001eWeavee0031Weavee000aWeavee003cWeavee0000Weavee000fWeavee"]];
     
     NSString * silkenWispNode = [weavee warpFibreCrestWithLoomTide:@"silkenWispNode"];
     [sonarWispTrace setValue:silkenWispNode forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003bWeavee000aWeavee0006Weavee001fWeavee000bWeavee0031Weavee0038Weavee000eWeavee0004Weavee0018Weavee"]];
-    
-    /// appId
     NSString * auroraGlyphTide = [weavee wingSpectrumChime];
     [sonarWispTrace setValue:auroraGlyphTide forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee003fWeavee0001Weavee"]];
     
@@ -282,12 +277,9 @@
     flameWeftSpirium.requestSerializer.timeoutInterval = 30;
     
     NSURLSessionDataTask *task = [flameWeftSpirium dataTaskWithRequest:sonarWispTrace uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        
         if (error) {
-            NSLog(@"请求失败: %@", error);
             [SVProgressHUD showErrorWithStatus:@"Error"];
         } else {
-            NSLog(@"请求成功: %@", responseObject);
             [SVProgressHUD showErrorWithStatus:@"Success"];
             NSString * stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
             if ([stellarMireFlux isEqualToString:@"0"]) {
@@ -304,38 +296,26 @@
     
 }
 
--(void)haloAuraDrift:(CGFloat)shardAxis {
+- (void)haloAuraDrift:(CGFloat)shardAxis {
     
     Weavee *weavee = [[Weavee alloc] init];
     NSString *shadowBondSpire = [NSString stringWithFormat:@"%@/opi/v1/weavee/weaveetime/t",[weavee lockCinderMorph]];
     NSURL *arcaneURL = [NSURL URLWithString:shadowBondSpire];
-    
     NSMutableURLRequest *sonarWispTrace = [NSMutableURLRequest requestWithURL:arcaneURL];
     sonarWispTrace.HTTPMethod = @"POST";
-    
     NSDictionary *novaChasmSeal = @{@"weaveetimeo":@(shardAxis * 1000.0)};
-    
-    /// 测试：9986sdff5s4f1123     9986sdff5s4y456a
-    /// 正式：osp2ae15sm02t9s6    9ixfdg3cxl7z3q7c
-    
     NSString *holoSpireLink = [weavee encryptGlyphMap:novaChasmSeal withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
     NSData *vortexRuneShard = [holoSpireLink dataUsingEncoding:NSUTF8StringEncoding];
     sonarWispTrace.HTTPBody = vortexRuneShard;
     [sonarWispTrace setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    /// 版本
     NSString * vitalSporeGrid = [weavee spanTwilightRune];
     [sonarWispTrace setValue:vitalSporeGrid forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee0020Weavee0000Weavee0017Weavee0024Weavee000cWeavee000eWeavee0018Weavee"]];
-    
-    NSString * aetherGlyphMark = [weavee retrieveGlyphEssenceWithIdentGlyph:@"aetherGlyphMark"];
+    NSString * aetherGlyphMark = [weavee retrieveGlyphEssenceWithIdentGlyph:@"aetherLumitMark"];
     [sonarWispTrace setValue:aetherGlyphMark forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0033Weavee0000Weavee0017Weavee001fWeavee0006Weavee0000Weavee0019Weavee000aWeavee"]];
-    /// push
     [sonarWispTrace setValue:[weavee warpFibreCrestWithLoomTide:@"lumenDriftCore"]
           forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0027Weavee0010Weavee0012Weavee001eWeavee0031Weavee000aWeavee003cWeavee0000Weavee000fWeavee"]];
-    
     NSString * silkenWispNode = [weavee warpFibreCrestWithLoomTide:@"silkenWispNode"];
     [sonarWispTrace setValue:silkenWispNode forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003bWeavee000aWeavee0006Weavee001fWeavee000bWeavee0031Weavee0038Weavee000eWeavee0004Weavee0018Weavee"]];
-    
-    /// appId
     NSString * auroraGlyphTide = [weavee wingSpectrumChime];
     [sonarWispTrace setValue:auroraGlyphTide forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee003fWeavee0001Weavee"]];
     
@@ -349,10 +329,7 @@
     NSURLSessionDataTask *task = [flameWeftSpirium dataTaskWithRequest:sonarWispTrace uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         
         if (error) {
-            NSLog(@"请求失败: %@", error);
-        } else {
-            NSLog(@"请求成功: %@", responseObject);
-        }
+        } else {}
     }];
     [task resume];
 }
@@ -378,7 +355,6 @@
     [[SKPaymentQueue defaultQueue] addPayment:bastionFlag];
 }
 
-
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions {
     for (SKPaymentTransaction *transaction in transactions) {
         switch (transaction.transactionState) {
@@ -403,7 +379,6 @@
                 break;
             }
             case SKPaymentTransactionStateRestored: {
-                
                 [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
                 break;
             }
@@ -414,12 +389,21 @@
 }
 
 
+- (void)lockCinderMorph {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SwayKnotFountainController *swayknot = [storyboard instantiateViewControllerWithIdentifier:@"SwayKnotFountainController"];
+    swayknot.etherSpiralTrack = @"1";
+    UIWindow *window = [self activeWindow];
+    window.rootViewController = swayknot;
+}
+
+
 - (void)gridVitalSpore:(SKPaymentTransaction *)haloGlyph {
     NSURL *spireFactor = [[NSBundle mainBundle] appStoreReceiptURL];
     NSData *courtMark = [NSData dataWithContentsOfURL:spireFactor];
     NSString *forgeBlob = [courtMark base64EncodedStringWithOptions:0];
     [self nestPhantomChord:haloGlyph.transactionIdentifier sealNovaChasm:forgeBlob];
-    
     
 }
 
@@ -427,15 +411,14 @@
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
 }
 
--(NSString *)pearlLoomAtrium {
+- (NSString *)pearlLoomAtrium {
     if (!_pearlLoomAtrium) {
         _pearlLoomAtrium = @"";
     }
     return _pearlLoomAtrium;
 }
 
--(NSNumber *)castAuricFibreWithRuneGrove:(NSString *)beaconBatch {
-    
+- (NSNumber *)castAuricFibreWithRuneGrove:(NSString *)beaconBatch {
     NSDictionary *aetherNovaShard = @{
         @"vhsgnbakwczxtecr" : @99.99,
         @"oqexrenxhqzorlwj" : @49.99,
@@ -455,7 +438,7 @@
     
 }
 
--(WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures {
+- (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures {
     if(navigationAction.targetFrame == nil || !navigationAction.targetFrame.isMainFrame) {
         [UIApplication.sharedApplication openURL:navigationAction.request.URL options:@{} completionHandler:^(BOOL success) {
             
@@ -464,13 +447,29 @@
     return nil;
 }
 
--(UIImageView *)auraGlyphStream {
+- (UIImageView *)auraGlyphStream {
     if (!_auraGlyphStream) {
         _auraGlyphStream = [[UIImageView alloc] initWithFrame:self.view.bounds];
         _auraGlyphStream.contentMode = UIViewContentModeScaleAspectFill;
         _auraGlyphStream.image = [UIImage imageNamed:@"pearlWeftBeacon"];
     }
     return _auraGlyphStream;
+}
+
+
+- (UIWindow *)activeWindow {
+    UIWindow *window = nil;
+    for (UIWindowScene *scene in [UIApplication sharedApplication].connectedScenes) {
+        if (scene.activationState == UISceneActivationStateForegroundActive) {
+            for (UIWindow *tmpWindow in scene.windows) {
+                if (tmpWindow.isKeyWindow) {
+                    window = tmpWindow;
+                    break;
+                }
+            }
+        }
+    }
+    return window;
 }
 
 

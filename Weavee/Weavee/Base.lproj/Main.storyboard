@@ -24,6 +24,21 @@
             </objects>
             <point key="canvasLocation" x="856" y="-23"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6aj-hD-1dF">
+            <objects>
+                <navigationController storyboardIdentifier="HaloTwineGroveController" navigationBarHidden="YES" id="BYc-Qr-ndb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y30-k4-o4N">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="S5y-hs-RKu" kind="relationship" relationship="rootViewController" id="96m-De-Mbu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gY6-mM-p70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2265" y="-23"/>
+        </scene>
         <!--Aura Chord Court Controller-->
         <scene sceneID="6Vc-PN-sFV">
             <objects>
@@ -43,7 +58,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qp-kP-Pi9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1819" y="-23"/>
+            <point key="canvasLocation" x="3236" y="-23"/>
         </scene>
         <!--Knot Sage Bastion Controller-->
         <scene sceneID="xvx-vP-Una">
@@ -106,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdi-Kw-oR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2722.9007633587785" y="-327.46478873239437"/>
+            <point key="canvasLocation" x="4772" y="-443"/>
         </scene>
         <!--Fibre Crest Beacon Controller-->
         <scene sceneID="jMS-G2-3g9">
@@ -348,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CO1-rs-DgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2722.9007633587785" y="388.73239436619718"/>
+            <point key="canvasLocation" x="4773" y="395"/>
         </scene>
         <!--Vibe Spiral Cask Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -427,7 +442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817.5572519083969" y="791.54929577464793"/>
+            <point key="canvasLocation" x="3236" y="825"/>
         </scene>
         <!--Aura Knot Fountain Controller-->
         <scene sceneID="nWA-4K-3c1">
@@ -472,7 +487,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIM-il-2is" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855.72519083969462" y="791.54929577464793"/>
+            <point key="canvasLocation" x="1963" y="825"/>
         </scene>
         <!--Link Fibre Cascade Controller-->
         <scene sceneID="IPZ-Vb-fUg">
@@ -638,7 +653,7 @@
         <!--Sway Knot Fountain Controller-->
         <scene sceneID="79v-UB-ZRc">
             <objects>
-                <viewController id="ZJL-4K-emp" customClass="SwayKnotFountainController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwayKnotFountainController" id="ZJL-4K-emp" customClass="SwayKnotFountainController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d8l-Qb-qo1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

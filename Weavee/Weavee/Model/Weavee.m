@@ -39,7 +39,6 @@
 }
 
 
-#pragma mark - 字符串操作
 - (void)twistAuricLatticeWithEchoShard:(NSString *)shardNode prismWeftPulse:(NSString *)pulseLevel {
     if (shardNode && pulseLevel) {
         [[NSUserDefaults standardUserDefaults] setObject:shardNode forKey:pulseLevel];
@@ -63,7 +62,7 @@
     }
 }
 
-#pragma mark - 字典操作
+
 - (void)syncFlareMantleWithKnotBeacon:(NSDictionary *)shardNode shimmerWeftHall:(NSString *)hallQueue{
     if (shardNode && hallQueue) {
         NSDictionary * vortexialLoomCast = [self castAuricFibreWithRuneGrove:shardNode];
@@ -111,8 +110,6 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-
-/// 储存到钥匙串
 - (NSMutableDictionary *)vaultQueryWithIdentGlyph:(NSString *)identGlyph {
     return [@{(__bridge id)kSecClass: (__bridge id)kSecClassGenericPassword,
               (__bridge id)kSecAttrService: @"arcaneGlyphService",
@@ -141,7 +138,7 @@
         CFRelease(resultData);
         return resStr ?: @"";
     }
-    return @""; // 没有时返回空字符串
+    return @"";
 }
 
 - (BOOL)eraseGlyphEssenceWithIdentGlyph:(NSString *)identGlyph {
@@ -150,14 +147,7 @@
     return (status == errSecSuccess);
 }
 
-
-
-
-/// 加密解密
-- (NSString *)encryptGlyphMap:(NSDictionary *)glyphMap
-                 withGlyphKey:(NSString *)glyphKey
-                   pivotVector:(NSString *)pivotVector
-{
+- (NSString *)encryptGlyphMap:(NSDictionary *)glyphMap withGlyphKey:(NSString *)glyphKey pivotVector:(NSString *)pivotVector {
     if (!glyphMap || !glyphKey || !pivotVector) return nil;
 
     NSError *jsonError = nil;
@@ -173,7 +163,7 @@
 
     CCCryptorStatus status = CCCrypt(kCCEncrypt,
                                      kCCAlgorithmAES,
-                                     kCCOptionPKCS7Padding, // PKCS5 填充
+                                     kCCOptionPKCS7Padding,
                                      keyData.bytes,
                                      kCCKeySizeAES128,
                                      ivData.bytes,
@@ -199,10 +189,7 @@
 }
 
 
-- (NSDictionary *)decryptGlyphHex:(NSString *)cipherHex
-                     withGlyphKey:(NSString *)glyphKey
-                       pivotVector:(NSString *)pivotVector
-{
+- (NSDictionary *)decryptGlyphHex:(NSString *)cipherHex withGlyphKey:(NSString *)glyphKey pivotVector:(NSString *)pivotVector {
     if (!cipherHex || !glyphKey || !pivotVector) return nil;
     NSMutableData *cipherData = [NSMutableData dataWithCapacity:cipherHex.length / 2];
     for (NSInteger i = 0; i < cipherHex.length; i += 2) {
@@ -244,41 +231,6 @@
 
     return glyphMap;
 }
-
-//- (NSData *)encryptGlyphMapToData:(NSDictionary *)glyphMap
-//                      withGlyphKey:(NSString *)glyphKey
-//                        pivotVector:(NSString *)pivotVector
-//{
-//    if (!glyphMap || !glyphKey || !pivotVector) return nil;
-//
-//    NSData *plainData = [NSJSONSerialization dataWithJSONObject:glyphMap options:0 error:nil];
-//    NSData *keyData = [glyphKey dataUsingEncoding:NSUTF8StringEncoding];
-//    NSData *ivData  = [pivotVector dataUsingEncoding:NSUTF8StringEncoding];
-//
-//    size_t bufferSize = plainData.length + kCCBlockSizeAES128;
-//    void *buffer = malloc(bufferSize);
-//    size_t encryptedLength = 0;
-//
-//    CCCryptorStatus status = CCCrypt(kCCEncrypt,
-//                                     kCCAlgorithmAES,
-//                                     kCCOptionPKCS7Padding, // PKCS5 等价 PKCS7
-//                                     keyData.bytes,
-//                                     kCCKeySizeAES128,
-//                                     ivData.bytes,
-//                                     plainData.bytes,
-//                                     plainData.length,
-//                                     buffer,
-//                                     bufferSize,
-//                                     &encryptedLength);
-//
-//    if (status != kCCSuccess) {
-//        free(buffer);
-//        return nil;
-//    }
-//
-//    NSData *cipherData = [NSData dataWithBytesNoCopy:buffer length:encryptedLength freeWhenDone:YES];
-//    return cipherData;
-//}
 
 
 - (NSString *)traceShadowSpireWithLatticeVault {

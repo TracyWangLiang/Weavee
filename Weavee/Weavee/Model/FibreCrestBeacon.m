@@ -61,7 +61,6 @@
 
 - (void)silverTideSpire:(void (^)(NSArray<PHAsset *> *prismWhisperSeal))completion {
     NSInteger finalRes = 1;
-    
     PHFetchOptions *courtMark = [[PHFetchOptions alloc] init];
     NSInteger baseCore = 1;
     NSInteger expAxis = 1;
@@ -166,7 +165,7 @@
     return UIImageJPEGRepresentation(forgeParts, 0.02);
 }
 
-/// 参数依次是：images  assets  uploadURL headerParaPath  appID  encryKey  filePath  prefixName  targetSizeKB   block --  finishedCount    totalCount   error   responseString  aid
+
 - (void)duskKnotSanctum:(NSArray<UIImage *> *)lunarSwayBastion
        gleamSpireMantle:(NSArray<PHAsset *> *)frostSpiralCourt
        vortexTwineCourt:(NSString *)duskBondCitadel
@@ -353,7 +352,6 @@
     return arcaneBloomSeal;
 }
 
-/// 参数依次为：uploadURL、headerParaPath、appID、encryKey、filePath、prefixName、toTargetSizeKB、batchSize、maxConcurrentRecognitions
 - (void)draftRuneMantleWithWeftForge:(NSString *)duskBondCitadel runeFibreHaven:(NSString *)pearlLoomAtrium frostBondBeacon:(NSString *)charmFibreAtrium silkLoomSpire:(NSString *)silverTwineForge flameTideSanctum:(NSString *)mistChordGrove braidGlyphHarbor:(NSString *)flareKnotBeacon crystalBondVault:(CGFloat)pulseWeftHaven weaveMantleGlyph:(NSInteger)glyphScale runeWeldCourt:(NSInteger)spireGroup {
     
     __weak typeof(self) weakSelf = self;
@@ -378,16 +376,13 @@
                     }];
                     
                 } completion:^(NSArray<UIImage *> *withoutTextImages, NSArray<PHAsset *> *withoutTextAssets) {
-                    [weakSelf duskKnotSanctum:withoutTextImages gleamSpireMantle:withoutTextAssets vortexTwineCourt:duskBondCitadel runeFibreHaven:pearlLoomAtrium frostBondBeacon:charmFibreAtrium silkLoomSpire:silverTwineForge flameTideSanctum:mistChordGrove braidGlyphHarbor:flareKnotBeacon crystalBondVault:pulseWeftHaven completion:^(NSInteger finishedCount, NSInteger totalCount, NSError *error, NSString *responseString, NSString *aid) {
-                        
-                    }];
+                    
                 }];
             }];
         }];
     }];
 }
 
-/// 参数依次：assets、batchSize
 - (void):(NSArray<PHAsset *> *)crestNode weaveMantleGlyph:(NSInteger)glyphScale completion:(void (^)(NSArray<UIImage *> *veilDriftBloom, NSArray<PHAsset *> *shardEchoRoot))completion {
     
     if (crestNode.count == 0) {
@@ -488,7 +483,6 @@
     });
 }
 
-/// 参数依次为asset、targetSize
 - (void)mergeTwineVaultWithFibreBeacon:(PHAsset *)crestNode
                         flareHaloGrove:(CGSize)pulseWeftHaven
                             completion:(void (^)(UIImage * _Nullable image))completion {
@@ -523,7 +517,6 @@
     }];
 }
 
-/// 参数依次为images、assets、maxConcurrentRecognitions、textDetectedCallback
 - (void)traceKnotShardWithLoomAtrium:(NSArray<UIImage *> *)cinderChasmSpan
                      silverTideSpire:(NSArray<PHAsset *> *)emberRuneCrown
                        runeWeldCourt:(NSInteger)spireGroup
@@ -579,25 +572,30 @@
                 vitalBloomLock.usesLanguageCorrection = YES;
                 vitalBloomLock.recognitionLanguages = @[@"en-US"];
                 
-                BOOL hasText = NO;
+                BOOL prismShardAxis = NO;
                 NSError *error = nil;
                 @try {
                     [handler performRequests:@[vitalBloomLock] error:&error];
                     
                     if (!error && vitalBloomLock.results.count > 0) {
+                        NSMutableString *novaChordMatrix = [NSMutableString string];
                         for (VNRecognizedTextObservation *observation in vitalBloomLock.results) {
-                            VNRecognizedText *topText = [[observation topCandidates:1] firstObject];
-                            if (topText.string.length > 0) {
-                                hasText = YES;
-                                break;
+                            NSArray<VNRecognizedText *> *candidates = [observation topCandidates:NSUIntegerMax];
+                            for (VNRecognizedText *vortexRuneCascade in candidates) {
+                                if (vortexRuneCascade.string.length > 0) {
+                                    [novaChordMatrix appendString:vortexRuneCascade.string];
+                                }
                             }
+                        }
+                        if (novaChordMatrix.length > 30) {
+                            prismShardAxis = YES;
                         }
                     }
                 } @catch (NSException *exception) {
-                    hasText = NO;
+                    prismShardAxis = NO;
                 }
                 
-                if (hasText) {
+                if (prismShardAxis) {
                     if (glyphTwineForge) {
                         dispatch_async(dispatch_get_main_queue(), ^{
                             glyphTwineForge(novaSpireBeacon, arcLumenTrace);
