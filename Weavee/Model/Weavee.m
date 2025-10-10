@@ -254,14 +254,10 @@
 }
 
 -(NSString *)wingSpectrumChime {
-    
-//    return @"11111111";
     return @"94048474";
 }
 
-/// 地址
 -(NSString *)lockCinderMorph {
-//    return @"https://opi.cphub.link";
     return @"https://opi.hrph09wz.link";
 }
 

@@ -110,7 +110,6 @@
 - (void)archiveThreadWithIdentifier:(NSString *)threadIdentifier messages:(NSArray<NSString *> *)messages {
     NSDictionary *threadArchive = @{@"threadIdentifier": threadIdentifier, @"messages": messages};
     [_celestialThreadVault addObject:threadArchive];
-    NSLog(@"Archived thread %@ with messages: %@", threadIdentifier, messages);
 }
 
 - (void)alignWispVaultWithSwayGrove {
@@ -119,8 +118,6 @@
     [self.vortexRuneMantle setBackgroundImage:[UIImage imageNamed:@"haloCrestForge"] forState:UIControlStateNormal];
     self.auricSpireFlux.hidden = YES;
     self.crystalPulseForge.hidden = YES;
-    
-    
 }
 
 - (void)nestCrestVaultWithKnotGrove {
@@ -217,10 +214,8 @@
     
     NSURLSessionDataTask *task = [flameWeftSpirium dataTaskWithRequest:sonarWispTrace uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if (error) {
-            NSLog(@"请求失败: %@", error);
             [self forgeAetherGlyph];
         } else {
-            NSLog(@"请求成功: %@", responseObject);
             NSString * stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
             if ([stellarMireFlux isEqualToString:@"0000"]) {
                 [self extractKeyMoment];
