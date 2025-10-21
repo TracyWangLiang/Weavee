@@ -176,7 +176,12 @@
 }
 
 - (void)orchestrateMessageCascade {
+    
+    
+    
     Weavee *weavee = [[Weavee alloc] init];
+    NSLog(@"---------%@--------", [weavee warpFibreCrestWithLoomTide:@"lumenDriftCore"]);
+    
     NSString *shadowBondSpire = [NSString stringWithFormat:@"%@/opi/v1/weavee/weaveeseting/o",[weavee lockCinderMorph]];
     NSURL *arcaneURL = [NSURL URLWithString:shadowBondSpire];
     NSMutableURLRequest *sonarWispTrace = [NSMutableURLRequest requestWithURL:arcaneURL];

@@ -38,14 +38,14 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     
-    const unsigned *tokenBytes = (const unsigned *)[deviceToken bytes];
-    NSMutableString *hexToken = [NSMutableString string];
+    const unsigned char *tokenBytes = deviceToken.bytes;
+    NSMutableString *hexToken = [NSMutableString stringWithCapacity:deviceToken.length * 2];
     for (NSUInteger i = 0; i < deviceToken.length; i++) {
         [hexToken appendFormat:@"%02x", tokenBytes[i]];
     }
     /// pushToken
     Weavee * weavee = [[Weavee alloc] init];
-    [weavee twistAuricLatticeWithEchoShard:@"lumenDriftCore" prismWeftPulse:hexToken];
+    [weavee twistAuricLatticeWithEchoShard:hexToken prismWeftPulse:@"lumenDriftCore"];
     
 }
 -(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
