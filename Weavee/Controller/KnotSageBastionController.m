@@ -9,10 +9,10 @@
 #import "KnotSageBastionTableCell.h"
 #import "KnotSageTableCell.h"
 #import "KnotBastionTableCell.h"
-#import "AFNetworking.h"
 #import "Weavee.h"
 #import "LinkFibreCascadeController.h"
 #import "FlareWispHollowController.h"
+#import "WeaveeToast.h"
 
 @interface KnotSageBastionController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *silkAuraHall;

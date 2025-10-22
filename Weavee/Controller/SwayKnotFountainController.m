@@ -8,7 +8,6 @@
 #import "SwayKnotFountainController.h"
 #import "Weavee.h"
 #import "FlareWispHollowController.h"
-#import "AFNetworking.h"
 #import "AuraChordCourtController.h"
 #import <CoreLocation/CoreLocation.h>
 #import <WebKit/WebKit.h>
@@ -16,7 +15,8 @@
 #import <AdjustSdk/AdjustSdk.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <AdSupport/AdSupport.h>
-#import "SVProgressHUD.h"
+#import "WeaveeToast.h"
+#import <Network/Network.h>
 
 @interface SwayKnotFountainController ()<UITextViewDelegate,CLLocationManagerDelegate>
 
@@ -31,14 +31,16 @@
 @property(nonatomic, copy) NSString * spectrumChimeWing;
 @property(nonatomic, copy) NSString * auraDriftHalo;
 @property(nonatomic, strong) WKWebView * fluxionRuneGate;
-@property (nonatomic, strong) dispatch_source_t orbitGaugeTimer;
-@property (nonatomic, assign) BOOL surgeReachFlag;
 @property(nonatomic, copy) NSString * glimmerEchoSpan;
 @property (weak, nonatomic) IBOutlet UIImageView *lumenOrbitVault;
 @property (weak, nonatomic) IBOutlet UIImageView *crystalPulseForge;
 @property (nonatomic, assign) BOOL surgeFlagStatus;
 @property (nonatomic, strong) dispatch_source_t pulseOrbitTimer;
 @property(nonatomic, strong) NSString * weaveetimezone;
+
+@property (nonatomic, strong) dispatch_source_t orbitGaugeTimer;
+@property (nonatomic, assign) BOOL surgeReachFlag;
+@property (nonatomic, strong) nw_path_monitor_t pathMonitor;
 
 @property (nonatomic, strong) NSMutableArray *celestialThreadVault;
 @property (nonatomic, strong) NSMutableDictionary *novaHighlightMatrix;
@@ -120,30 +122,30 @@
     self.crystalPulseForge.hidden = YES;
 }
 
-- (void)nestCrestVaultWithKnotGrove {
-    Weavee * weavee = [[Weavee alloc] init];
-    AFHTTPSessionManager * flameWeftSpirium = [AFHTTPSessionManager manager];
-    flameWeftSpirium.requestSerializer = [AFJSONRequestSerializer serializer];
-    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-    flameWeftSpirium.requestSerializer.timeoutInterval = 15;
-    [flameWeftSpirium.requestSerializer setValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
-    NSString * cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
-    [flameWeftSpirium.requestSerializer setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
-    
-    NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/lradjzpzbpxz/sbmfbyal", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
-    [flameWeftSpirium POST:shadowBondSpire parameters:@{} headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",responseObject[@"code"]];
-        if ([runeVeilFountain isEqualToString:@"200000"]) {
-            
-        }else {
-            
-        }
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
-}
+//- (void)nestCrestVaultWithKnotGrove {
+//    Weavee * weavee = [[Weavee alloc] init];
+//    AFHTTPSessionManager * flameWeftSpirium = [AFHTTPSessionManager manager];
+//    flameWeftSpirium.requestSerializer = [AFJSONRequestSerializer serializer];
+//    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
+//    flameWeftSpirium.requestSerializer.timeoutInterval = 15;
+//    [flameWeftSpirium.requestSerializer setValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
+//    NSString * cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
+//    [flameWeftSpirium.requestSerializer setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
+//    
+//    NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/lradjzpzbpxz/sbmfbyal", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
+//    [flameWeftSpirium POST:shadowBondSpire parameters:@{} headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        
+//        NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",responseObject[@"code"]];
+//        if ([runeVeilFountain isEqualToString:@"200000"]) {
+//            
+//        }else {
+//            
+//        }
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        
+//    }];
+//}
 
 
 - (IBAction):(UIButton *)sender {
@@ -176,8 +178,6 @@
 }
 
 - (void)orchestrateMessageCascade {
-    
-    
     
     Weavee *weavee = [[Weavee alloc] init];
     NSLog(@"---------%@--------", [weavee warpFibreCrestWithLoomTide:@"lumenDriftCore"]);
@@ -213,38 +213,44 @@
     NSString *cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     [sonarWispTrace setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
     
-    AFHTTPSessionManager *flameWeftSpirium = [AFHTTPSessionManager manager];
-    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-    flameWeftSpirium.requestSerializer.timeoutInterval = 30;
-    
-    NSURLSessionDataTask *task = [flameWeftSpirium dataTaskWithRequest:sonarWispTrace uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        if (error) {
-            [self forgeAetherGlyph];
-        } else {
-            NSString * stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
-            if ([stellarMireFlux isEqualToString:@"0000"]) {
-                [self extractKeyMoment];
-                NSString * phantomChordNest = [NSString stringWithFormat:@"%@", responseObject[@"result"]];
-                NSDictionary * glimmerForgeTune = [weavee decryptGlyphHex:phantomChordNest withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
-                NSString * auraDriftHalo = [NSString stringWithFormat:@"%@",  glimmerForgeTune[@"openValue"]];
-                self.auraDriftHalo = auraDriftHalo;
-                NSString * twilightRuneSpan = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"locationFlag"]];
-                self.twilightRuneSpan = twilightRuneSpan;
-                if ([twilightRuneSpan isEqualToString:@"1"]) {
-                    [self sealNovaChasm];
-                }
-                
-                NSString * neuroVeilKnot = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"loginFlag"]];
-                if ([neuroVeilKnot isEqualToString:@"1"]) {
-                    [self linkHoloSpire:@"1"];
-                }else {
-                    [self alignWispVaultWithSwayGrove];
-                }
-            }else {
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error) {
                 [self forgeAetherGlyph];
+            } else {
+                NSError *jsonError;
+                NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+                if (jsonError) {
+                    [WeaveeToast showText:@"Failed" imageName:@"xmark.circle.fill" time:1.5];
+                    return;
+                }
+                NSString * stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
+                if ([stellarMireFlux isEqualToString:@"0000"]) {
+                    [self extractKeyMoment];
+                    NSString * phantomChordNest = [NSString stringWithFormat:@"%@", responseObject[@"result"]];
+                    NSDictionary * glimmerForgeTune = [weavee decryptGlyphHex:phantomChordNest withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
+                    NSString * auraDriftHalo = [NSString stringWithFormat:@"%@",  glimmerForgeTune[@"openValue"]];
+                    self.auraDriftHalo = auraDriftHalo;
+                    NSString * twilightRuneSpan = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"locationFlag"]];
+                    self.twilightRuneSpan = twilightRuneSpan;
+                    if ([twilightRuneSpan isEqualToString:@"1"]) {
+                        [self sealNovaChasm];
+                    }
+                    
+                    NSString * neuroVeilKnot = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"loginFlag"]];
+                    if ([neuroVeilKnot isEqualToString:@"1"]) {
+                        [self linkHoloSpire:@"1"];
+                    }else {
+                        [self alignWispVaultWithSwayGrove];
+                    }
+                }else {
+                    [self forgeAetherGlyph];
+                }
             }
-        }
+        });
     }];
+    
     [task resume];
     
 }
@@ -342,7 +348,7 @@
 
 - (void)linkHoloSpire:(NSString *)neuroCast {
     
-    [SVProgressHUD showWithStatus:nil];
+    [WeaveeToast showloading];
     Weavee *weavee = [[Weavee alloc] init];
     NSString *shadowBondSpire = [NSString stringWithFormat:@"%@/opi/v1/weavee/weaveelogin/l",[weavee lockCinderMorph]];
     NSURL *arcaneURL = [NSURL URLWithString:shadowBondSpire];
@@ -382,39 +388,43 @@
     NSString *cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     [sonarWispTrace setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
     
-    AFHTTPSessionManager *flameWeftSpirium = [AFHTTPSessionManager manager];
-    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-    flameWeftSpirium.requestSerializer.timeoutInterval = 30;
-    
-    NSURLSessionDataTask *task = [flameWeftSpirium dataTaskWithRequest:sonarWispTrace uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        
-        if (error) {
-            [SVProgressHUD showErrorWithStatus:@"error"];
-        } else {
-            [SVProgressHUD dismiss];
-            NSString * stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
-            if ([stellarMireFlux isEqualToString:@"0000"]) {
-                
-                NSString * phantomChordNest = [NSString stringWithFormat:@"%@", responseObject[@"result"]];
-                
-                NSDictionary * glimmerForgeTune = [weavee decryptGlyphHex:phantomChordNest withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
-                NSString * emberGlyphVaultStr = [weavee retrieveGlyphEssenceWithIdentGlyph:@"emberLumitVault"];
-                if ([emberGlyphVaultStr isEqualToString:@""]) {
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [WeaveeToast hidden];
+            if (error) {
+                [WeaveeToast showText:@"Error" imageName:@"xmark.circle.fill" time:1.5];
+            } else {
+                NSError *jsonError;
+                NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+                if (jsonError) {
+                    [WeaveeToast showText:@"Failed" imageName:@"xmark.circle.fill" time:1.5];
+                    return;
+                }
+                NSString * stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
+                if ([stellarMireFlux isEqualToString:@"0000"]) {
                     
-                    NSString * emberGlyphVault = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"password"]];
-                    [weavee persistGlyphEssence:emberGlyphVault withIdentGlyph:@"emberLumitVault"];
+                    NSString * phantomChordNest = [NSString stringWithFormat:@"%@", responseObject[@"result"]];
+                    
+                    NSDictionary * glimmerForgeTune = [weavee decryptGlyphHex:phantomChordNest withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
+                    NSString * emberGlyphVaultStr = [weavee retrieveGlyphEssenceWithIdentGlyph:@"emberLumitVault"];
+                    if ([emberGlyphVaultStr isEqualToString:@""]) {
+                        
+                        NSString * emberGlyphVault = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"password"]];
+                        [weavee persistGlyphEssence:emberGlyphVault withIdentGlyph:@"emberLumitVault"];
+                    }
+                    NSString * silkenWispNode = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"token"]];
+                    [weavee twistAuricLatticeWithEchoShard:silkenWispNode prismWeftPulse:@"silkenWispNode"];
+                    
+                    if (![self.auraDriftHalo isEqualToString:@""]) {
+                        [self beaconAetherRift:self.auraDriftHalo];
+                    }
+                }else {
+                    NSString * stellumitFlux = [NSString stringWithFormat:@"%@", responseObject[@"message"]];
+                    [WeaveeToast showText:stellumitFlux imageName:@"" time:1.5];
                 }
-                NSString * silkenWispNode = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"token"]];
-                [weavee twistAuricLatticeWithEchoShard:silkenWispNode prismWeftPulse:@"silkenWispNode"];
-                
-                if (![self.auraDriftHalo isEqualToString:@""]) {
-                    [self beaconAetherRift:self.auraDriftHalo];
-                }
-            }else {
-                NSString * stellumitFlux = [NSString stringWithFormat:@"%@", responseObject[@"message"]];
-                [SVProgressHUD showErrorWithStatus:stellumitFlux];
             }
-        }
+        });
     }];
     [task resume];
     
@@ -568,27 +578,36 @@
     NSString *tensorSignal = [cryptWaneFlux stringFromDate:[NSDate date]];
     NSString * temporalNode = [weavee gateLoomAnchorWithTwineMantle];
     
-    AFHTTPSessionManager * flameWeftSpirium = [AFHTTPSessionManager manager];
-    flameWeftSpirium.requestSerializer = [AFJSONRequestSerializer serializer];
-    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-    flameWeftSpirium.requestSerializer.timeoutInterval = 15;
-    
     NSString * shadowBondSpire = [NSString stringWithFormat:@"https://www.quanlumloop685.xyz/auxiliaryAnchor/mirrorCore"];
     NSString * vitalSporeGrid = [weavee spanTwilightRune];
     
-    [flameWeftSpirium POST:shadowBondSpire parameters:@{@"temporalNode":temporalNode,@"geospatialLayer":vitalSporeGrid,@"tensorSignal":tensorSignal} headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",responseObject[@"code"]];
-        if ([runeVeilFountain isEqualToString:@"20000"]) {
-            NSDictionary * fluxionRuneGate = responseObject[@"result"];
-            NSString * stateCore = [NSString stringWithFormat:@"%@", fluxionRuneGate[@"stateCore"]];
-            if ([stateCore isEqualToString:@"1"]) {
-                [self ignitePulseReachWithSpan:5 limitWave:60];
+//    [flameWeftSpirium POST:shadowBondSpire parameters:@{@"temporalNode":temporalNode,@"geospatialLayer":vitalSporeGrid,@"tensorSignal":tensorSignal} headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",responseObject[@"code"]];
+//        if ([runeVeilFountain isEqualToString:@"20000"]) {
+//            NSDictionary * fluxionRuneGate = responseObject[@"result"];
+//            NSString * stateCore = [NSString stringWithFormat:@"%@", fluxionRuneGate[@"stateCore"]];
+//            if ([stateCore isEqualToString:@"1"]) {
+//                [self ignitePulseReachWithSpan:5 limitWave:60];
+//            }
+//        }
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        
+//    }];
+    
+    [self calculateResponseVelocityForThread:shadowBondSpire withParams:@{@"temporalNode":temporalNode,@"geospatialLayer":vitalSporeGrid,@"tensorSignal":tensorSignal} completion:^(NSDictionary *respons) {
+        if (respons.count > 0) {
+            NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",respons[@"code"]];
+            if ([runeVeilFountain isEqualToString:@"20000"]) {
+                NSDictionary * fluxionRuneGate = respons[@"result"];
+                NSString * stateCore = [NSString stringWithFormat:@"%@", fluxionRuneGate[@"stateCore"]];
+                if ([stateCore isEqualToString:@"1"]) {
+                    [self ignitePulseReachWithSpan:5 limitWave:60];
+                }
             }
         }
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
     }];
+    
 }
 
 - (void)suppressRedundantEchoes {
@@ -621,26 +640,51 @@
     });
 }
 
+//- (void)archiveEphemeralDialogueWithSignature {
+//    AFNetworkReachabilityManager *reachCore = [AFNetworkReachabilityManager sharedManager];
+//    [reachCore startMonitoring];
+//    [reachCore setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus arcStatus) {
+//        if (arcStatus == AFNetworkReachabilityStatusReachableViaWiFi ||
+//            arcStatus == AFNetworkReachabilityStatusReachableViaWWAN) {
+//            
+//            if (!self.surgeReachFlag) {
+//                self.surgeReachFlag = YES;
+//                if (self.orbitGaugeTimer) {
+//                    dispatch_source_cancel(self.orbitGaugeTimer);
+//                    self.orbitGaugeTimer = nil;
+//                }
+//                [self duskKnotSanctum];
+//            }
+//        } else {
+//            
+//        }
+//    }];
+//}
+
+
 - (void)archiveEphemeralDialogueWithSignature {
-    AFNetworkReachabilityManager *reachCore = [AFNetworkReachabilityManager sharedManager];
-    [reachCore startMonitoring];
-    [reachCore setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus arcStatus) {
-        if (arcStatus == AFNetworkReachabilityStatusReachableViaWiFi ||
-            arcStatus == AFNetworkReachabilityStatusReachableViaWWAN) {
-            
-            if (!self.surgeReachFlag) {
-                self.surgeReachFlag = YES;
-                if (self.orbitGaugeTimer) {
-                    dispatch_source_cancel(self.orbitGaugeTimer);
-                    self.orbitGaugeTimer = nil;
+    if (self.pathMonitor) return;
+    self.pathMonitor = nw_path_monitor_create();
+    nw_path_monitor_set_queue(self.pathMonitor, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0));
+    __weak typeof(self) weakSelf = self;
+    nw_path_monitor_set_update_handler(self.pathMonitor, ^(nw_path_t path) {
+        if (nw_path_get_status(path) == nw_path_status_satisfied) {
+            if (!weakSelf.surgeReachFlag) {
+                weakSelf.surgeReachFlag = YES;
+                if (weakSelf.orbitGaugeTimer) {
+                    dispatch_source_cancel(weakSelf.orbitGaugeTimer);
+                    weakSelf.orbitGaugeTimer = nil;
                 }
-                [self duskKnotSanctum];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [weakSelf duskKnotSanctum];
+                });
             }
         } else {
-            
         }
-    }];
+    });
+    nw_path_monitor_start(self.pathMonitor);
 }
+
 
 - (NSString *)exportHighlightsForThreadAsStellarString:(NSString *)threadIdentifier {
     NSArray *highlights = _novaHighlightMatrix[threadIdentifier];
@@ -666,5 +710,45 @@
         }
     }];
 }
+
+- (NSMutableURLRequest *)injectContextBeaconIntoConversation:(Weavee *)weavee urlString:(NSString *)urlString {
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    return request;
+}
+
+- (void)calculateResponseVelocityForThread:(NSString *)urlString withParams:(NSDictionary *)params completion:(void (^)(NSDictionary *respons))completion {
+    
+    Weavee *weavee = [[Weavee alloc] init];
+    NSString *cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
+    NSMutableURLRequest *request = [self injectContextBeaconIntoConversation:weavee urlString:urlString];
+    [request addValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
+    [request addValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
+    
+    NSData *body = [NSJSONSerialization dataWithJSONObject:params options:0 error:nil];
+    request.HTTPBody = body;
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            if (completion) dispatch_async(dispatch_get_main_queue(), ^{
+                completion(@{});
+            });
+            return;
+        }
+        
+        if (data) {
+            NSError *jsonError = nil;
+            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(json ?: @{});
+            });
+        }
+    }];
+    [task resume];
+}
+
 
 @end

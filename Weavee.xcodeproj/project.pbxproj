@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17F0A60B26B8B1B2EE1F440A /* Pods_Weavee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA44D20E9DB95797AB8476C /* Pods_Weavee.framework */; };
 		333BEABE2E7A47A2001B0C50 /* FibreCrestBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */; };
+		339A911E2EA7306C00DEFD15 /* WeaveeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 339A911D2EA7306C00DEFD15 /* WeaveeToast.m */; };
 		33DDD49A2E7810B700EC690B /* SwayKnotFountainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */; };
 		33DDD49D2E78165500EC690B /* WeftDreamBeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD49C2E78165500EC690B /* WeftDreamBeaconController.m */; };
 		33FCB6B52E7009A3004211B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6AB2E7009A3004211B7 /* Assets.xcassets */; };
@@ -57,6 +58,8 @@
 		333BEABC2E7A47A2001B0C50 /* FibreCrestBeacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeacon.h; sourceTree = "<group>"; };
 		333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeacon.m; sourceTree = "<group>"; };
 		3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weavee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		339A911C2EA7306C00DEFD15 /* WeaveeToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeaveeToast.h; sourceTree = "<group>"; };
+		339A911D2EA7306C00DEFD15 /* WeaveeToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeaveeToast.m; sourceTree = "<group>"; };
 		33DDD4982E7810B700EC690B /* SwayKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwayKnotFountainController.h; sourceTree = "<group>"; };
 		33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwayKnotFountainController.m; sourceTree = "<group>"; };
 		33DDD49B2E78165500EC690B /* WeftDreamBeaconController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeftDreamBeaconController.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				33FCB6802E7009A3004211B7 /* Weavee.m */,
 				333BEABC2E7A47A2001B0C50 /* FibreCrestBeacon.h */,
 				333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */,
+				339A911C2EA7306C00DEFD15 /* WeaveeToast.h */,
+				339A911D2EA7306C00DEFD15 /* WeaveeToast.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -413,13 +418,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -445,6 +446,7 @@
 				33FCB6CC2E7009A3004211B7 /* AuraChordCourtController.m in Sources */,
 				33FCB6CD2E7009A3004211B7 /* VibeSpiralCaskTableCell.m in Sources */,
 				33FCB6CE2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m in Sources */,
+				339A911E2EA7306C00DEFD15 /* WeaveeToast.m in Sources */,
 				33FCB6CF2E7009A3004211B7 /* KnotSageBastionTableCell.m in Sources */,
 				33FCB6D02E7009A3004211B7 /* WeaveeSpecialFlowLayout.m in Sources */,
 				33FCB6D12E7009A3004211B7 /* main.m in Sources */,

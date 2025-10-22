@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <Security/Security.h>
 #import <CommonCrypto/CommonCryptor.h>
+#import <UIKit/UIKit.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Weavee : NSObject
@@ -37,10 +39,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)gateLoomAnchorWithTwineMantle;
 - (NSString *)traceShadowSpireWithLatticeVault;
--(NSString *)spanTwilightRune;
--(NSString *)wingSpectrumChime;
--(NSString *)lockCinderMorph;
+- (NSString *)spanTwilightRune;
+- (NSString *)wingSpectrumChime;
+- (NSString *)lockCinderMorph;
 
++ (void)loadImageFromURL:(NSString *)urlString completion:(void (^)(UIImage *image))completion;
 
 @end
 

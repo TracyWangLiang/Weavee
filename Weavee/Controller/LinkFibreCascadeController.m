@@ -8,9 +8,8 @@
 #import "LinkFibreCascadeController.h"
 #import "FlareWispHollowController.h"
 #import "Weavee.h"
-#import "AFNetworking.h"
-#import "SVProgressHUD.h"
 #import "PulseSketchMessenger.h"
+#import "WeaveeToast.h"
 
 @interface LinkFibreCascadeController ()<UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *auricSpireFlux;
@@ -162,34 +161,66 @@
 }
 
 -(void)veilFibreVaultWithBondCitadel:(NSDictionary *)courtBlob  {
-    [SVProgressHUD showWithStatus:nil];
+    [WeaveeToast showloading];
     Weavee * weavee = [[Weavee alloc] init];
-    AFHTTPSessionManager * flameWeftSpirium = [AFHTTPSessionManager manager];
-    flameWeftSpirium.requestSerializer = [AFJSONRequestSerializer serializer];
-    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-    flameWeftSpirium.requestSerializer.timeoutInterval = 15;
-    [flameWeftSpirium.requestSerializer setValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
     NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/qmugsynpefqoqz/xgpuis", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
-    [flameWeftSpirium POST:shadowBondSpire parameters:courtBlob headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",responseObject[@"code"]];
-        if ([runeVeilFountain isEqualToString:@"200000"]) {
-            [SVProgressHUD dismiss];
-            NSDictionary * vortexialLoomCast = responseObject[@"data"];
-            NSString * cruxianPulseArc = [NSString stringWithFormat:@"%@", [vortexialLoomCast objectForKey:@"seasonalOutfits"]];
-            [weavee twistAuricLatticeWithEchoShard:cruxianPulseArc prismWeftPulse:@"cruxianPulseArc"];
-            [weavee syncFlareMantleWithKnotBeacon:vortexialLoomCast shimmerWeftHall:@"vortexialLoomCast"];
-            [self.navigationController popToRootViewControllerAnimated:YES];
-        }else {
-            [SVProgressHUD showErrorWithStatus:@"Error"];
-            [SVProgressHUD dismissWithDelay:1.5];
+    [self calculateResponseVelocityForThread:shadowBondSpire withParams:courtBlob completion:^(NSDictionary *respons) {
+        if (respons.count > 0) {
+            [WeaveeToast hidden];
+            NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",respons[@"code"]];
+            if ([runeVeilFountain isEqualToString:@"200000"]) {
+                NSDictionary * vortexialLoomCast = respons[@"data"];
+                NSString * cruxianPulseArc = [NSString stringWithFormat:@"%@", [vortexialLoomCast objectForKey:@"seasonalOutfits"]];
+                [weavee twistAuricLatticeWithEchoShard:cruxianPulseArc prismWeftPulse:@"cruxianPulseArc"];
+                [weavee syncFlareMantleWithKnotBeacon:vortexialLoomCast shimmerWeftHall:@"vortexialLoomCast"];
+                [self.navigationController popToRootViewControllerAnimated:YES];
+            }else {
+                [WeaveeToast showText:@"Error" imageName:@"xmark.circle.fill" time:1.5];
+            }
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [SVProgressHUD showErrorWithStatus:@"Error"];
-        [SVProgressHUD dismissWithDelay:1.5];
     }];
+    
     
 }
 
 
+- (NSMutableURLRequest *)injectContextBeaconIntoConversation:(Weavee *)weavee urlString:(NSString *)urlString {
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    return request;
+}
+
+- (void)calculateResponseVelocityForThread:(NSString *)urlString withParams:(NSDictionary *)params completion:(void (^)(NSDictionary *respons))completion {
+    
+    Weavee *weavee = [[Weavee alloc] init];
+    NSString *cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
+    NSMutableURLRequest *request = [self injectContextBeaconIntoConversation:weavee urlString:urlString];
+    [request addValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
+    [request addValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
+    
+    NSData *body = [NSJSONSerialization dataWithJSONObject:params options:0 error:nil];
+    request.HTTPBody = body;
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            if (completion) dispatch_async(dispatch_get_main_queue(), ^{
+                completion(@{});
+            });
+            return;
+        }
+        
+        if (data) {
+            NSError *jsonError = nil;
+            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(json ?: @{});
+            });
+        }
+    }];
+    [task resume];
+}
 
 @end

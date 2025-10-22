@@ -6,10 +6,10 @@ target 'Weavee' do
   use_frameworks!
 
   # Pods for Weavee
-  pod 'SVProgressHUD'
-  pod 'AFNetworking'
-  pod 'MJRefresh'
-  pod 'SDWebImage'
+#  pod 'SVProgressHUD'
+#  pod 'AFNetworking'
+#  pod 'MJRefresh'
+#  pod 'SDWebImage'
   
   
   pod 'FBSDKCoreKit'

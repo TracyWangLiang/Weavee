@@ -6,7 +6,8 @@
 //
 
 #import "KnotBastionCollectionCell.h"
-#import "SDWebImage.h"
+//#import "SDWebImage.h"
+#import "Weavee.h"
 
 @interface KnotBastionCollectionCell()
 
@@ -28,7 +29,10 @@
 - (void)traceVelvetRuneWithPulseAnchor:(NSDictionary *)anchorNodes {
     NSArray * fashionAnalysis = [anchorNodes objectForKey:@"fashionAnalysis"];
     if (fashionAnalysis.count > 0) {
-        [self.glyphTideHarbor sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject]]];
+//        [self.glyphTideHarbor sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject]]];
+        [Weavee loadImageFromURL:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject] completion:^(UIImage * _Nonnull image) {
+            self.glyphTideHarbor.image = image;
+        }];
     }
     NSString * accessoryTrends = [NSString stringWithFormat:@"%@",[anchorNodes objectForKey:@"accessoryTrends"]];
     self.pulseWeftHaven.text = accessoryTrends;

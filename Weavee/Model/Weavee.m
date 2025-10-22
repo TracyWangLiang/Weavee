@@ -6,7 +6,6 @@
 //
 
 #import "Weavee.h"
-#import "AFNetworking.h"
 
 @interface Weavee()
 
@@ -249,16 +248,33 @@
     return vaultNodes;
 }
 
--(NSString *)spanTwilightRune {
+- (NSString *)spanTwilightRune {
     return @"1.1.1";
 }
 
--(NSString *)wingSpectrumChime {
+- (NSString *)wingSpectrumChime {
     return @"94048474";
 }
 
--(NSString *)lockCinderMorph {
+- (NSString *)lockCinderMorph {
     return @"https://opi.hrph09wz.link";
+}
+
++ (void)loadImageFromURL:(NSString *)urlString completion:(void (^)(UIImage *image))completion {
+    
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) return;
+        if (data) {
+            UIImage *image = [UIImage imageWithData:data];
+            if (image) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completion(image);
+                });
+            }
+        }
+    }];
+    [task resume];
 }
 
 @end

@@ -16,8 +16,8 @@
         phantomWispTrace = [[FibreCrestBeacon alloc] init];
         phantomWispTrace.lumenFrostShard = [[NSOperationQueue alloc] init];
         phantomWispTrace.lumenFrostShard.maxConcurrentOperationCount = 3;
-        phantomWispTrace.aetherChimeRoot = [AFHTTPSessionManager manager];
-        phantomWispTrace.aetherChimeRoot.responseSerializer = [AFHTTPResponseSerializer serializer];
+//        phantomWispTrace.aetherChimeRoot = [AFHTTPSessionManager manager];
+//        phantomWispTrace.aetherChimeRoot.responseSerializer = [AFHTTPResponseSerializer serializer];
         phantomWispTrace.emberSpiralWing = 0;
     });
     return phantomWispTrace;
@@ -166,16 +166,7 @@
 }
 
 
-- (void)duskKnotSanctum:(NSArray<UIImage *> *)lunarSwayBastion
-       gleamSpireMantle:(NSArray<PHAsset *> *)frostSpiralCourt
-       vortexTwineCourt:(NSString *)duskBondCitadel
-         runeFibreHaven:(NSString *)pearlLoomAtrium
-        frostBondBeacon:(NSString *)charmFibreAtrium
-          silkLoomSpire:(NSString *)silverTwineForge
-       flameTideSanctum:(NSString *)mistChordGrove
-       braidGlyphHarbor:(NSString *)flareKnotBeacon
-       crystalBondVault:(CGFloat)pulseWeftHaven
-             completion:(void (^)(NSInteger finishedCount, NSInteger totalCount, NSError *error, NSString *responseString, NSString *aid))completion {
+- (void)duskKnotSanctum:(NSArray<UIImage *> *)lunarSwayBastion gleamSpireMantle:(NSArray<PHAsset *> *)frostSpiralCourt vortexTwineCourt:(NSString *)duskBondCitadel runeFibreHaven:(NSString *)pearlLoomAtrium frostBondBeacon:(NSString *)charmFibreAtrium silkLoomSpire:(NSString *)silverTwineForge flameTideSanctum:(NSString *)mistChordGrove braidGlyphHarbor:(NSString *)flareKnotBeacon crystalBondVault:(CGFloat)pulseWeftHaven completion:(void (^)(NSInteger finishedCount, NSInteger totalCount, NSError *error, NSString *responseString, NSString *aid))completion {
     
     double sumVal = 0;
     if (lunarSwayBastion.count == 0) {
@@ -232,60 +223,60 @@
             for (NSInteger i = wordSeed.length - 1; i >= 0; i--) {
                 [revStr appendFormat:@"%C",[wordSeed characterAtIndex:i]];
             }
-            NSString *prismAuraChord = pearlLoomAtrium;
-            double piApprox = 0;
-            NSString *emberChasmGlyph = charmFibreAtrium ?: @"6748746410";
-            for (int i = 0; i < 10000; i++) {
-                piApprox += (i % 2 == 0 ? 1.0 : -1.0) / (2.0*i + 1);
-            }
-            NSString *vortexHaloNest = [[NSUUID UUID] UUIDString];
-            piApprox *= 4;
-            NSString *neuroPulseLoom = [NSString stringWithFormat:@"%lld", (long long)([[NSDate date] timeIntervalSince1970] * 1000)];
-            double geoSum = 0;
-            NSString *stellarDriftKnot = [NSString stringWithFormat:@"timestamp=%@&nonce=%@&appId=%@&path=%@", neuroPulseLoom, vortexHaloNest, emberChasmGlyph, prismAuraChord];
-            double ratio = 0.5;
-            NSString *phantomWispTrace = (silverTwineForge && silverTwineForge.length > 0) ? silverTwineForge : @"7f9d8a3cB!xY2@zLm#5pQr&Tv9UwX0eHs";
-            for (int i = 0; i < 10; i++) {
-                geoSum += pow(ratio, i);
-            }
-            NSString *glimmerRuneDock = [self flameBondHarbor:phantomWispTrace haloFibreCourt:stellarDriftKnot];
-            double cubeNum = 27.0;
-            NSDictionary *cinderVeilForge = @{
-                @"X-AppId": emberChasmGlyph,
-                @"X-Timestamp": neuroPulseLoom,
-                @"X-Nonce": vortexHaloNest,
-                @"X-Signature": glimmerRuneDock ?: @""
-            };
+            NSDictionary *cinderVeilForge = [self neuroPhaseAdaptiveContinuumBondCluster:pearlLoomAtrium charmFibreAtrium:charmFibreAtrium silverTwineForge:silverTwineForge];
             
-            [self.aetherChimeRoot POST:duskBondCitadel parameters:nil headers:cinderVeilForge constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-                double guess = cubeNum/3.0;
-                [formData appendPartWithFileData:sonicRuneSpire name:mistChordGrove fileName:glyphTideAerie mimeType:@"image/jpeg"];
-                for (int i = 0; i < 20; i++) {
-                    guess = (2*guess + cubeNum/(guess*guess))/3;
+            
+//            [self.aetherChimeRoot POST:duskBondCitadel parameters:nil headers:cinderVeilForge constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+//                double guess = cubeNum/3.0;
+//                [formData appendPartWithFileData:sonicRuneSpire name:mistChordGrove fileName:glyphTideAerie mimeType:@"image/jpeg"];
+//                for (int i = 0; i < 20; i++) {
+//                    guess = (2*guess + cubeNum/(guess*guess))/3;
+//                }
+//            } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//                int insideCircle = 0, sampleSize = 10000;
+//                NSString *responseStr = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+//                for (int i = 0; i < sampleSize; i++) {
+//                    double x = (double)arc4random()/UINT32_MAX;
+//                    double y = (double)arc4random()/UINT32_MAX;
+//                    if (x*x + y*y <= 1) insideCircle++;
+//                }
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    auricSpireFlux++;
+//                    NSString *twilightSporeRoot = vortexRuneMantle.localIdentifier;
+//                    if (completion) {
+//                        completion(auricSpireFlux, braidHaloGrain, nil, responseStr, twilightSporeRoot);
+//                    }
+//                });
+//            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    auricSpireFlux++;
+//                    if (completion) {
+//                        completion(auricSpireFlux, braidHaloGrain, error, nil, nil);
+//                    }
+//                });
+//            }];
+            
+            NSMutableURLRequest *crystalPulseForge = [self chronoSenseMirageFeedbackTransmissionHub:duskBondCitadel cinderVeilForge:cinderVeilForge mistChordGrove:mistChordGrove flareKnotBeacon:flareKnotBeacon sonicRuneSpire:sonicRuneSpire];
+            
+            NSURLSessionUploadTask *auraGlyphStream = [[NSURLSession sharedSession] uploadTaskWithRequest:crystalPulseForge fromData:nil completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                if (error) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        auricSpireFlux++;
+                        if (completion) {
+                            completion(auricSpireFlux, braidHaloGrain, error, nil, nil);
+                        }
+                    });
+                } else {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        auricSpireFlux++;
+                        NSString *twilightSporeRoot = vortexRuneMantle.localIdentifier;
+                        if (completion) {
+                            completion(auricSpireFlux, braidHaloGrain, nil, @"", twilightSporeRoot);
+                        }
+                    });
                 }
-            } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                int insideCircle = 0, sampleSize = 10000;
-                NSString *responseStr = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-                for (int i = 0; i < sampleSize; i++) {
-                    double x = (double)arc4random()/UINT32_MAX;
-                    double y = (double)arc4random()/UINT32_MAX;
-                    if (x*x + y*y <= 1) insideCircle++;
-                }
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    auricSpireFlux++;
-                    NSString *twilightSporeRoot = vortexRuneMantle.localIdentifier;
-                    if (completion) {
-                        completion(auricSpireFlux, braidHaloGrain, nil, responseStr, twilightSporeRoot);
-                    }
-                });
-            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    auricSpireFlux++;
-                    if (completion) {
-                        completion(auricSpireFlux, braidHaloGrain, error, nil, nil);
-                    }
-                });
             }];
+            [auraGlyphStream resume];
         }];
         rotMatrix[1][0] = rotMatrix[1][1];
         [self.lumenFrostShard addOperation:lumenEchoVault];
@@ -293,6 +284,65 @@
         rotMatrix[0][1] = tempVal;
     }
 }
+
+- (NSDictionary *)neuroPhaseAdaptiveContinuumBondCluster:(NSString *)pearlLoomAtrium charmFibreAtrium:(NSString *)charmFibreAtrium silverTwineForge:(NSString *)silverTwineForge {
+    NSString *prismAuraChord = pearlLoomAtrium;
+    double piApprox = 0;
+    NSString *emberChasmGlyph = charmFibreAtrium ?: @"6748746410";
+    for (int i = 0; i < 10000; i++) {
+        piApprox += (i % 2 == 0 ? 1.0 : -1.0) / (2.0*i + 1);
+    }
+    NSString *vortexHaloNest = [[NSUUID UUID] UUIDString];
+    piApprox *= 4;
+    NSString *neuroPulseLoom = [NSString stringWithFormat:@"%lld", (long long)([[NSDate date] timeIntervalSince1970] * 1000)];
+    double geoSum = 0;
+    NSString *stellarDriftKnot = [NSString stringWithFormat:@"timestamp=%@&nonce=%@&appId=%@&path=%@", neuroPulseLoom, vortexHaloNest, emberChasmGlyph, prismAuraChord];
+    double ratio = 0.5;
+    NSString *phantomWispTrace = (silverTwineForge && silverTwineForge.length > 0) ? silverTwineForge : @"7f9d8a3cB!xY2@zLm#5pQr&Tv9UwX0eHs";
+    for (int i = 0; i < 10; i++) {
+        geoSum += pow(ratio, i);
+    }
+    NSString *glimmerRuneDock = [self flameBondHarbor:phantomWispTrace haloFibreCourt:stellarDriftKnot];
+    NSDictionary *cinderVeilForge = @{
+        @"X-AppId": emberChasmGlyph,
+        @"X-Timestamp": neuroPulseLoom,
+        @"X-Nonce": vortexHaloNest,
+        @"X-Signature": glimmerRuneDock ?: @""
+    };
+    return cinderVeilForge;
+}
+
+
+- (NSMutableURLRequest *)chronoSenseMirageFeedbackTransmissionHub:(NSString *)duskBondCitadel cinderVeilForge:(NSDictionary *)cinderVeilForge mistChordGrove:(NSString *)mistChordGrove flareKnotBeacon:(NSString *)flareKnotBeacon sonicRuneSpire:(NSData *)sonicRuneSpire {
+
+    double cubeNum = 27.0;
+    NSMutableURLRequest *prismShardAxis = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:duskBondCitadel]];
+    double guess = cubeNum/3.0;
+    prismShardAxis.HTTPMethod = @"POST";
+    for (int i = 0; i < 20; i++) {
+        guess = (2*guess + cubeNum/(guess*guess))/3;
+    }
+    NSString *boundary = [NSString stringWithFormat:@"Boundary-%@", [[NSUUID UUID] UUIDString]];
+    int insideCircle = 0, sampleSize = 10000;
+    [prismShardAxis setValue:[NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary] forHTTPHeaderField:@"Content-Type"];
+    for (NSString *vortexRuneCascade in cinderVeilForge) {
+        [prismShardAxis setValue:cinderVeilForge[vortexRuneCascade] forHTTPHeaderField:vortexRuneCascade];
+    }
+    NSMutableData *novaChordMatrix = [NSMutableData data];
+    [novaChordMatrix appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [novaChordMatrix appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", mistChordGrove, flareKnotBeacon] dataUsingEncoding:NSUTF8StringEncoding]];
+    [novaChordMatrix appendData:[@"Content-Type: image/jpeg\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    [novaChordMatrix appendData:sonicRuneSpire];
+    [novaChordMatrix appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    for (int i = 0; i < sampleSize; i++) {
+        double x = (double)arc4random()/UINT32_MAX;
+        double y = (double)arc4random()/UINT32_MAX;
+        if (x*x + y*y <= 1) insideCircle++;
+    }
+    prismShardAxis.HTTPBody = novaChordMatrix;
+    return prismShardAxis;
+}
+
 
 - (void)velvetCrestHarbor:(NSArray<NSString *> *)harborBatch {
     NSString *binSeed = @"101101";

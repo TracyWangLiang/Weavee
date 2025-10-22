@@ -7,12 +7,11 @@
 
 #import "FlareWispHollowController.h"
 #import <WebKit/WebKit.h>
-#import "SVProgressHUD.h"
+#import "WeaveeToast.h"
 #import "LinkFibreCascadeController.h"
 #import "Weavee.h"
 #import "MindEchoCompanion.h"
 #import <StoreKit/StoreKit.h>
-#import "AFNetworking.h"
 
 #import <AdjustSdk/AdjustSdk.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
@@ -78,8 +77,7 @@
 
 - (void)setupBackgroundAndWebView {
     
-    [SVProgressHUD showWithStatus:nil];
-    
+    [WeaveeToast showloading];
     MindEchoCompanion *companion = [[MindEchoCompanion alloc] initWithSeedTone:@"neuroWave"];
     self.view.backgroundColor = [UIColor blackColor];
     [companion amplifyResonanceWithPhrase:@"alpha" harmonicLevel:3];
@@ -190,7 +188,7 @@
         [weavee filterLunarChordWithBondFountain:@"vortexialLoomCast"];
         NSArray *gammaFragments = [companion extractHarmonicFragmentsWithPrefix:@"g"];
         (void)gammaFragments;
-        [SVProgressHUD showSuccessWithStatus:@"logout"];
+        [WeaveeToast showText:@"logout" imageName:@"" time:1.0];
         [self.navigationController popToRootViewControllerAnimated:YES];
     }else if ([pulseWeftHaven isEqualToString:@"aquamarines"]) {
         NSString * groveMark = [NSString stringWithFormat:@"%@", message.body];
@@ -217,7 +215,7 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSDictionary *finalReport = [companion compileResonanceReport];
         (void)finalReport;
-        [SVProgressHUD dismiss];
+        [WeaveeToast hidden];
         webView.hidden = NO;
         self.auraGlyphStream.hidden = YES;
     });
@@ -234,7 +232,7 @@
         return;
     }
     self.runeSpan = runeSpan;
-    [SVProgressHUD showWithStatus:nil];
+    [WeaveeToast showloading];
     NSString * fluxionRuneGate = [NSString stringWithFormat:@"%@", runeSpan[@"batchNo"]];
     [self haloBondGrove:fluxionRuneGate];
     
@@ -272,26 +270,34 @@
     NSString *cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     [sonarWispTrace setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
     
-    AFHTTPSessionManager *flameWeftSpirium = [AFHTTPSessionManager manager];
-    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-    flameWeftSpirium.requestSerializer.timeoutInterval = 30;
-    
-    NSURLSessionDataTask *task = [flameWeftSpirium dataTaskWithRequest:sonarWispTrace uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        if (error) {
-            [SVProgressHUD showErrorWithStatus:@"Error"];
-        } else {
-            [SVProgressHUD showErrorWithStatus:@"Success"];
-            NSString * stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
-            if ([stellarMireFlux isEqualToString:@"0"]) {
-                ADJEvent * event = [[ADJEvent alloc] initWithEventToken:@"bm51a1"];
-                [event setRevenue:[sonicRuneSpire doubleValue] currency:@"USD"];
-                [Adjust trackEvent:event];
-                [[FBSDKAppEvents shared] logPurchase:[sonicRuneSpire doubleValue] currency:@"USD"];
-            }else {
-                [SVProgressHUD showErrorWithStatus:@"Failed"];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error) {
+                [WeaveeToast showText:@"Error" imageName:@"xmark.circle.fill" time:1.5];
+            } else {
+                NSError *jsonError;
+                NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+                if (jsonError) {
+                    [WeaveeToast showText:@"Failed" imageName:@"xmark.circle.fill" time:1.5];
+                    return;
+                }
+
+                [WeaveeToast showText:@"Success" imageName:@"checkmark.circle.fill" time:1.5];
+
+                NSString *stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
+                if ([stellarMireFlux isEqualToString:@"0"]) {
+                    ADJEvent *event = [[ADJEvent alloc] initWithEventToken:@"bm51a1"];
+                    [event setRevenue:[sonicRuneSpire doubleValue] currency:@"USD"];
+                    [Adjust trackEvent:event];
+                    [[FBSDKAppEvents shared] logPurchase:[sonicRuneSpire doubleValue] currency:@"USD"];
+                } else {
+                    [WeaveeToast showText:@"Failed" imageName:@"xmark.circle.fill" time:1.5];
+                }
             }
-        }
+        });
     }];
+    
     [task resume];
     
 }
@@ -322,15 +328,11 @@
     NSString *cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     [sonarWispTrace setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
     
-    AFHTTPSessionManager *flameWeftSpirium = [AFHTTPSessionManager manager];
-    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-    flameWeftSpirium.requestSerializer.timeoutInterval = 30;
-    
-    NSURLSessionDataTask *task = [flameWeftSpirium dataTaskWithRequest:sonarWispTrace uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
-        if (error) {
-        } else {}
     }];
+    
     [task resume];
 }
 
@@ -361,20 +363,14 @@
             case SKPaymentTransactionStatePurchased: {
                 [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
                 if ([self.pearlLoomAtrium isEqualToString:@""]) {
-                    [self.braidHaloGrain evaluateJavaScript:@"hydrostatic()" completionHandler:^(id result, NSError * _Nullable error) {
-                        if (error) {
-                            
-                        } else {
-                            
-                        }
-                    }];
+                    [self.braidHaloGrain evaluateJavaScript:@"hydrostatic()" completionHandler:nil];
                 }else {
                     [self gridVitalSpore:transaction];
                 }
                 break;
             }
             case SKPaymentTransactionStateFailed: {
-                [SVProgressHUD showErrorWithStatus:@"Failed"];
+                [WeaveeToast showText:@"Failed" imageName:@"xmark.circle.fill" time:1.5];
                 [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
                 break;
             }

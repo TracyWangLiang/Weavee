@@ -6,11 +6,10 @@
 //
 
 #import "VibeSpiralCaskTableCell.h"
-#import "SDWebImage.h"
-#import "SVProgressHUD.h"
+//#import "SDWebImage.h"
+#import "WeaveeToast.h"
 #import "FlareWispHollowController.h"
 #import "Weavee.h"
-#import "AFNetworking.h"
 
 @interface VibeSpiralCaskTableCell()
 
@@ -54,18 +53,21 @@
 - (void)gateTwineHallWithCrestAnchor:(NSDictionary *)anchorFlag {
     self.anchorFlag = anchorFlag;
     NSString * wardrobeStyling = [NSString stringWithFormat:@"%@", [anchorFlag objectForKey:@"wardrobeStyling"]];
-    [self.auricSpireFlux sd_setImageWithURL:[NSURL URLWithString:wardrobeStyling]];
+//    [self.auricSpireFlux sd_setImageWithURL:[NSURL URLWithString:wardrobeStyling]];
+    [Weavee loadImageFromURL:wardrobeStyling completion:^(UIImage * _Nonnull image) {
+        self.auricSpireFlux.image = image;
+    }];
     
     NSString * garmentConstruction = [NSString stringWithFormat:@"%@", [anchorFlag objectForKey:@"garmentConstruction"]];
     self.glyphTideHarbor.text = garmentConstruction;
     
     NSString * fashionIllustration = [NSString stringWithFormat:@"%@", [anchorFlag objectForKey:@"fashionIllustration"]];
-    
-    
-    [self.braidHaloGrain sd_setImageWithURL:[NSURL URLWithString:fashionIllustration]];
+//    [self.braidHaloGrain sd_setImageWithURL:[NSURL URLWithString:fashionIllustration]];
+    [Weavee loadImageFromURL:fashionIllustration completion:^(UIImage * _Nonnull image) {
+        self.braidHaloGrain.image = image;
+    }];
     
     NSString * textileKnowledge = [NSString stringWithFormat:@"%@", [anchorFlag objectForKey:@"textileKnowledge"]];
-    
     self.prismLoomShard.text = textileKnowledge;
     
     NSString * colorPalette = [NSString stringWithFormat:@"%@", [anchorFlag objectForKey:@"colorPalette"]];
@@ -143,31 +145,64 @@
 
 -(void)twistAuricLatticeWithEchoShard:(NSDictionary *)courtBlob {
     Weavee * weavee = [[Weavee alloc] init];
-    AFHTTPSessionManager * flameWeftSpirium = [AFHTTPSessionManager manager];
-    flameWeftSpirium.requestSerializer = [AFJSONRequestSerializer serializer];
-    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-    flameWeftSpirium.requestSerializer.timeoutInterval = 15;
-    [flameWeftSpirium.requestSerializer setValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
-    NSString * cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
-    [flameWeftSpirium.requestSerializer setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
-
     NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/psmatodwgwfwrewz/vunfwuqbzajoc", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
-    [flameWeftSpirium POST:shadowBondSpire parameters:courtBlob headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",responseObject[@"code"]];
-        if ([runeVeilFountain isEqualToString:@"200000"]) {
-            [SVProgressHUD showSuccessWithStatus:@"Success"];
-            NSString * seasonalTrends = [NSString stringWithFormat:@"%@", [self.anchorFlag objectForKey:@"seasonalTrends"]];
-            if ([self.delegate respondsToSelector:@selector(galeCryptTwine:)]) {
-                [self.delegate galeCryptTwine:seasonalTrends];
+    
+    [self calculateResponseVelocityForThread:shadowBondSpire withParams:courtBlob completion:^(NSDictionary *respons) {
+        if (respons.count > 0) {
+            NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",respons[@"code"]];
+            if ([runeVeilFountain isEqualToString:@"200000"]) {
+                [WeaveeToast showText:@"Success" imageName:@"checkmark.circle.fill" time:1.5];
+                NSString * seasonalTrends = [NSString stringWithFormat:@"%@", [self.anchorFlag objectForKey:@"seasonalTrends"]];
+                if ([self.delegate respondsToSelector:@selector(galeCryptTwine:)]) {
+                    [self.delegate galeCryptTwine:seasonalTrends];
+                }
+            }else {
+                [WeaveeToast showText:@"Error" imageName:@"xmark.circle.fill" time:1.5];
             }
-        }else {
-            [SVProgressHUD showErrorWithStatus:@"Error"];
+        }
+    }];
+    
+}
+
+- (NSMutableURLRequest *)injectContextBeaconIntoConversation:(Weavee *)weavee urlString:(NSString *)urlString {
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    return request;
+}
+
+- (void)calculateResponseVelocityForThread:(NSString *)urlString withParams:(NSDictionary *)params completion:(void (^)(NSDictionary *respons))completion {
+    
+    Weavee *weavee = [[Weavee alloc] init];
+    NSString *cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
+    NSMutableURLRequest *request = [self injectContextBeaconIntoConversation:weavee urlString:urlString];
+    [request addValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
+    [request addValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
+    
+    NSData *body = [NSJSONSerialization dataWithJSONObject:params options:0 error:nil];
+    request.HTTPBody = body;
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            if (completion) dispatch_async(dispatch_get_main_queue(), ^{
+                completion(@{});
+            });
+            return;
         }
         
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [SVProgressHUD showErrorWithStatus:@"Error"];
+        if (data) {
+            NSError *jsonError = nil;
+            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(json ?: @{});
+            });
+        }
     }];
+    [task resume];
 }
+
 
 
 - (UIViewController *)findOwningController {
