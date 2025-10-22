@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17F0A60B26B8B1B2EE1F440A /* Pods_Weavee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA44D20E9DB95797AB8476C /* Pods_Weavee.framework */; };
 		333BEABE2E7A47A2001B0C50 /* FibreCrestBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */; };
+		3373FA912EA8CAE1000D98A0 /* AdjustSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA902EA8CAE1000D98A0 /* AdjustSdk.xcframework */; };
+		3373FA932EA8CAF9000D98A0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA922EA8CAF9000D98A0 /* AdSupport.framework */; };
+		3373FA952EA8CB09000D98A0 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA942EA8CB09000D98A0 /* AdServices.framework */; };
+		3373FA972EA8CB11000D98A0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA962EA8CB11000D98A0 /* StoreKit.framework */; };
+		3373FA992EA8CB1B000D98A0 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA982EA8CB1B000D98A0 /* AppTrackingTransparency.framework */; };
+		3373FA9B2EA8CB22000D98A0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA9A2EA8CB22000D98A0 /* WebKit.framework */; };
+		3373FAA22EA8CB3E000D98A0 /* FBSDKGamingServicesKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA9F2EA8CB3E000D98A0 /* FBSDKGamingServicesKit.xcframework */; };
+		3373FAA32EA8CB3E000D98A0 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA9E2EA8CB3E000D98A0 /* FBSDKCoreKit_Basics.xcframework */; };
+		3373FAA42EA8CB3E000D98A0 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA9C2EA8CB3E000D98A0 /* FBAEMKit.xcframework */; };
+		3373FAA52EA8CB3E000D98A0 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FAA12EA8CB3E000D98A0 /* FBSDKShareKit.xcframework */; };
+		3373FAA62EA8CB3E000D98A0 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FA9D2EA8CB3E000D98A0 /* FBSDKCoreKit.xcframework */; };
+		3373FAA72EA8CB3E000D98A0 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373FAA02EA8CB3E000D98A0 /* FBSDKLoginKit.xcframework */; };
 		339A911E2EA7306C00DEFD15 /* WeaveeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 339A911D2EA7306C00DEFD15 /* WeaveeToast.m */; };
 		33DDD49A2E7810B700EC690B /* SwayKnotFountainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */; };
 		33DDD49D2E78165500EC690B /* WeftDreamBeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD49C2E78165500EC690B /* WeftDreamBeaconController.m */; };
@@ -57,6 +68,18 @@
 		330C96332E790D21007B85E4 /* Weavee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Weavee.entitlements; sourceTree = "<group>"; };
 		333BEABC2E7A47A2001B0C50 /* FibreCrestBeacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeacon.h; sourceTree = "<group>"; };
 		333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeacon.m; sourceTree = "<group>"; };
+		3373FA902EA8CAE1000D98A0 /* AdjustSdk.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:QGUGW9AUMK:adeven GmbH"; lastKnownFileType = wrapper.xcframework; path = AdjustSdk.xcframework; sourceTree = "<group>"; };
+		3373FA922EA8CAF9000D98A0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3373FA942EA8CB09000D98A0 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		3373FA962EA8CB11000D98A0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3373FA982EA8CB1B000D98A0 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		3373FA9A2EA8CB22000D98A0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3373FA9C2EA8CB3E000D98A0 /* FBAEMKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; path = FBAEMKit.xcframework; sourceTree = "<group>"; };
+		3373FA9D2EA8CB3E000D98A0 /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
+		3373FA9E2EA8CB3E000D98A0 /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
+		3373FA9F2EA8CB3E000D98A0 /* FBSDKGamingServicesKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; path = FBSDKGamingServicesKit.xcframework; sourceTree = "<group>"; };
+		3373FAA02EA8CB3E000D98A0 /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; path = FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
+		3373FAA12EA8CB3E000D98A0 /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
 		3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weavee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		339A911C2EA7306C00DEFD15 /* WeaveeToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeaveeToast.h; sourceTree = "<group>"; };
 		339A911D2EA7306C00DEFD15 /* WeaveeToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeaveeToast.m; sourceTree = "<group>"; };
@@ -128,9 +151,6 @@
 		33FCB6B02E7009A3004211B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33FCB6B22E7009A3004211B7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		33FCB6B32E7009A3004211B7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		36F74B92174671099CD5F405 /* Pods-Weavee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weavee.debug.xcconfig"; path = "Target Support Files/Pods-Weavee/Pods-Weavee.debug.xcconfig"; sourceTree = "<group>"; };
-		89E0146DB62421C856511960 /* Pods-Weavee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weavee.release.xcconfig"; path = "Target Support Files/Pods-Weavee/Pods-Weavee.release.xcconfig"; sourceTree = "<group>"; };
-		EAA44D20E9DB95797AB8476C /* Pods_Weavee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weavee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,19 +158,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F0A60B26B8B1B2EE1F440A /* Pods_Weavee.framework in Frameworks */,
+				3373FA9B2EA8CB22000D98A0 /* WebKit.framework in Frameworks */,
+				3373FA952EA8CB09000D98A0 /* AdServices.framework in Frameworks */,
+				3373FA972EA8CB11000D98A0 /* StoreKit.framework in Frameworks */,
+				3373FA992EA8CB1B000D98A0 /* AppTrackingTransparency.framework in Frameworks */,
+				3373FA912EA8CAE1000D98A0 /* AdjustSdk.xcframework in Frameworks */,
+				3373FA932EA8CAF9000D98A0 /* AdSupport.framework in Frameworks */,
+				3373FAA22EA8CB3E000D98A0 /* FBSDKGamingServicesKit.xcframework in Frameworks */,
+				3373FAA32EA8CB3E000D98A0 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
+				3373FAA42EA8CB3E000D98A0 /* FBAEMKit.xcframework in Frameworks */,
+				3373FAA52EA8CB3E000D98A0 /* FBSDKShareKit.xcframework in Frameworks */,
+				3373FAA62EA8CB3E000D98A0 /* FBSDKCoreKit.xcframework in Frameworks */,
+				3373FAA72EA8CB3E000D98A0 /* FBSDKLoginKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3373FA8E2EA8CA8A000D98A0 /* Adjust */ = {
+			isa = PBXGroup;
+			children = (
+				3373FA902EA8CAE1000D98A0 /* AdjustSdk.xcframework */,
+			);
+			path = Adjust;
+			sourceTree = "<group>";
+		};
+		3373FA8F2EA8CA95000D98A0 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				3373FA9C2EA8CB3E000D98A0 /* FBAEMKit.xcframework */,
+				3373FA9D2EA8CB3E000D98A0 /* FBSDKCoreKit.xcframework */,
+				3373FA9E2EA8CB3E000D98A0 /* FBSDKCoreKit_Basics.xcframework */,
+				3373FA9F2EA8CB3E000D98A0 /* FBSDKGamingServicesKit.xcframework */,
+				3373FAA02EA8CB3E000D98A0 /* FBSDKLoginKit.xcframework */,
+				3373FAA12EA8CB3E000D98A0 /* FBSDKShareKit.xcframework */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
 		3388A69E2E4F0EEA00DA5FE9 = {
 			isa = PBXGroup;
 			children = (
 				33FCB6B42E7009A3004211B7 /* Weavee */,
 				3388A6A82E4F0EEA00DA5FE9 /* Products */,
-				F0D3A22BC339B044E1A60B3D /* Pods */,
 				8113D48A8479CD0698AD32B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -274,6 +325,8 @@
 		33FCB6B42E7009A3004211B7 /* Weavee */ = {
 			isa = PBXGroup;
 			children = (
+				3373FA8F2EA8CA95000D98A0 /* Facebook */,
+				3373FA8E2EA8CA8A000D98A0 /* Adjust */,
 				330C96332E790D21007B85E4 /* Weavee.entitlements */,
 				33FCB67A2E7009A3004211B7 /* Controller */,
 				33FCB6812E7009A3004211B7 /* Model */,
@@ -294,18 +347,13 @@
 		8113D48A8479CD0698AD32B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EAA44D20E9DB95797AB8476C /* Pods_Weavee.framework */,
+				3373FA9A2EA8CB22000D98A0 /* WebKit.framework */,
+				3373FA982EA8CB1B000D98A0 /* AppTrackingTransparency.framework */,
+				3373FA962EA8CB11000D98A0 /* StoreKit.framework */,
+				3373FA942EA8CB09000D98A0 /* AdServices.framework */,
+				3373FA922EA8CAF9000D98A0 /* AdSupport.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F0D3A22BC339B044E1A60B3D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				36F74B92174671099CD5F405 /* Pods-Weavee.debug.xcconfig */,
-				89E0146DB62421C856511960 /* Pods-Weavee.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,11 +363,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3388A6BF2E4F0EEB00DA5FE9 /* Build configuration list for PBXNativeTarget "Weavee" */;
 			buildPhases = (
-				4D38CB0191173DDEA95F4670 /* [CP] Check Pods Manifest.lock */,
 				3388A6A32E4F0EEA00DA5FE9 /* Sources */,
 				3388A6A42E4F0EEA00DA5FE9 /* Frameworks */,
 				3388A6A52E4F0EEA00DA5FE9 /* Resources */,
-				A24B956A49BF83A6BE886B0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -387,48 +433,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4D38CB0191173DDEA95F4670 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Weavee-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A24B956A49BF83A6BE886B0B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		3388A6A32E4F0EEA00DA5FE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -490,7 +494,6 @@
 /* Begin XCBuildConfiguration section */
 		3388A6C02E4F0EEB00DA5FE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36F74B92174671099CD5F405 /* Pods-Weavee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,7 +534,6 @@
 		};
 		3388A6C12E4F0EEB00DA5FE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89E0146DB62421C856511960 /* Pods-Weavee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
