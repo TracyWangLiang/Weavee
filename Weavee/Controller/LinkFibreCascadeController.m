@@ -164,7 +164,7 @@
     [WeaveeToast showloading];
     Weavee * weavee = [[Weavee alloc] init];
     NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/qmugsynpefqoqz/xgpuis", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
-    [self calculateResponseVelocityForThread:shadowBondSpire withParams:courtBlob completion:^(NSDictionary *respons) {
+    [self calculateResponseVelocityForThread:shadowBondSpire withCourtBlob:courtBlob completion:^(NSDictionary *respons) {
         if (respons.count > 0) {
             [WeaveeToast hidden];
             NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",respons[@"code"]];
@@ -184,27 +184,27 @@
 }
 
 
-- (NSMutableURLRequest *)injectContextBeaconIntoConversation:(Weavee *)weavee urlString:(NSString *)urlString {
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    request.HTTPMethod = @"POST";
-    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    return request;
+- (NSMutableURLRequest *)injectContextBeaconIntoConversation:(Weavee *)weavee prismShardAxis:(NSString *)prismShardAxis {
+    NSURL *url = [NSURL URLWithString:prismShardAxis];
+    NSMutableURLRequest *vortexRuneCascade = [NSMutableURLRequest requestWithURL:url];
+    vortexRuneCascade.HTTPMethod = @"POST";
+    [vortexRuneCascade addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    return vortexRuneCascade;
 }
 
-- (void)calculateResponseVelocityForThread:(NSString *)urlString withParams:(NSDictionary *)params completion:(void (^)(NSDictionary *respons))completion {
+- (void)calculateResponseVelocityForThread:(NSString *)prismShardAxis withCourtBlob:(NSDictionary *)courtBlob completion:(void (^)(NSDictionary *respons))completion {
     
     Weavee *weavee = [[Weavee alloc] init];
     NSString *cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
-    NSMutableURLRequest *request = [self injectContextBeaconIntoConversation:weavee urlString:urlString];
-    [request addValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
-    [request addValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
+    NSMutableURLRequest *vortexRuneCascade = [self injectContextBeaconIntoConversation:weavee prismShardAxis:prismShardAxis];
+    [vortexRuneCascade addValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
+    [vortexRuneCascade addValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
     
-    NSData *body = [NSJSONSerialization dataWithJSONObject:params options:0 error:nil];
-    request.HTTPBody = body;
+    NSData *quantumFluxHarbor = [NSJSONSerialization dataWithJSONObject:courtBlob options:0 error:nil];
+    vortexRuneCascade.HTTPBody = quantumFluxHarbor;
     
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    NSURLSession *arcaneWaveAnchor = [NSURLSession sharedSession];
+    NSURLSessionDataTask *etherSpiralTrack = [arcaneWaveAnchor dataTaskWithRequest:vortexRuneCascade completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
             if (completion) dispatch_async(dispatch_get_main_queue(), ^{
                 completion(@{});
@@ -220,7 +220,7 @@
             });
         }
     }];
-    [task resume];
+    [etherSpiralTrack resume];
 }
 
 @end

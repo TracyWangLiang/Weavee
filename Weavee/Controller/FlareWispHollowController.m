@@ -270,8 +270,8 @@
     NSString *cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     [sonarWispTrace setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
     
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *task = [session dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURLSession *arcaneWaveAnchor = [NSURLSession sharedSession];
+    NSURLSessionDataTask *etherSpiralTrack = [arcaneWaveAnchor dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             if (error) {
                 [WeaveeToast showText:@"Error" imageName:@"xmark.circle.fill" time:1.5];
@@ -298,7 +298,7 @@
         });
     }];
     
-    [task resume];
+    [etherSpiralTrack resume];
     
 }
 
@@ -328,12 +328,12 @@
     NSString *cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     [sonarWispTrace setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
     
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *task = [session dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURLSession *arcaneWaveAnchor = [NSURLSession sharedSession];
+    NSURLSessionDataTask *etherSpiralTrack = [arcaneWaveAnchor dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
     }];
     
-    [task resume];
+    [etherSpiralTrack resume];
 }
 
 

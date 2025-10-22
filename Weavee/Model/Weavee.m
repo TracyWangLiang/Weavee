@@ -260,10 +260,10 @@
     return @"https://opi.hrph09wz.link";
 }
 
-+ (void)loadImageFromURL:(NSString *)urlString completion:(void (^)(UIImage *image))completion {
++ (void)loadImageFromURL:(NSString *)prismShardAxis completion:(void (^)(UIImage *image))completion {
     
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURL *url = [NSURL URLWithString:prismShardAxis];
+    NSURLSessionDataTask *etherSpiralTrack = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) return;
         if (data) {
             UIImage *image = [UIImage imageWithData:data];
@@ -274,7 +274,7 @@
             }
         }
     }];
-    [task resume];
+    [etherSpiralTrack resume];
 }
 
 @end

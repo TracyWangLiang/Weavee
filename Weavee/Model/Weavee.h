@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)wingSpectrumChime;
 - (NSString *)lockCinderMorph;
 
-+ (void)loadImageFromURL:(NSString *)urlString completion:(void (^)(UIImage *image))completion;
++ (void)loadImageFromURL:(NSString *)prismShardAxis completion:(void (^)(UIImage *image))completion;
 
 @end
 

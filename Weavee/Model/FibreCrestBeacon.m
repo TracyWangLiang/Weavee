@@ -165,7 +165,6 @@
     return UIImageJPEGRepresentation(forgeParts, 0.02);
 }
 
-
 - (void)duskKnotSanctum:(NSArray<UIImage *> *)lunarSwayBastion gleamSpireMantle:(NSArray<PHAsset *> *)frostSpiralCourt vortexTwineCourt:(NSString *)duskBondCitadel runeFibreHaven:(NSString *)pearlLoomAtrium frostBondBeacon:(NSString *)charmFibreAtrium silkLoomSpire:(NSString *)silverTwineForge flameTideSanctum:(NSString *)mistChordGrove braidGlyphHarbor:(NSString *)flareKnotBeacon crystalBondVault:(CGFloat)pulseWeftHaven completion:(void (^)(NSInteger finishedCount, NSInteger totalCount, NSError *error, NSString *responseString, NSString *aid))completion {
     
     double sumVal = 0;
@@ -225,40 +224,9 @@
             }
             NSDictionary *cinderVeilForge = [self neuroPhaseAdaptiveContinuumBondCluster:pearlLoomAtrium charmFibreAtrium:charmFibreAtrium silverTwineForge:silverTwineForge];
             
+            NSMutableURLRequest *crystalPulseForge = [self chronoSenseMirageFeedbackTransmissionHub:duskBondCitadel cinderVeilForge:cinderVeilForge mistChordGrove:mistChordGrove flareKnotBeacon:flareKnotBeacon sonicRuneSpire:sonicRuneSpire glyphTideAerie:glyphTideAerie];
             
-//            [self.aetherChimeRoot POST:duskBondCitadel parameters:nil headers:cinderVeilForge constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-//                double guess = cubeNum/3.0;
-//                [formData appendPartWithFileData:sonicRuneSpire name:mistChordGrove fileName:glyphTideAerie mimeType:@"image/jpeg"];
-//                for (int i = 0; i < 20; i++) {
-//                    guess = (2*guess + cubeNum/(guess*guess))/3;
-//                }
-//            } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//                int insideCircle = 0, sampleSize = 10000;
-//                NSString *responseStr = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-//                for (int i = 0; i < sampleSize; i++) {
-//                    double x = (double)arc4random()/UINT32_MAX;
-//                    double y = (double)arc4random()/UINT32_MAX;
-//                    if (x*x + y*y <= 1) insideCircle++;
-//                }
-//                dispatch_async(dispatch_get_main_queue(), ^{
-//                    auricSpireFlux++;
-//                    NSString *twilightSporeRoot = vortexRuneMantle.localIdentifier;
-//                    if (completion) {
-//                        completion(auricSpireFlux, braidHaloGrain, nil, responseStr, twilightSporeRoot);
-//                    }
-//                });
-//            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//                dispatch_async(dispatch_get_main_queue(), ^{
-//                    auricSpireFlux++;
-//                    if (completion) {
-//                        completion(auricSpireFlux, braidHaloGrain, error, nil, nil);
-//                    }
-//                });
-//            }];
-            
-            NSMutableURLRequest *crystalPulseForge = [self chronoSenseMirageFeedbackTransmissionHub:duskBondCitadel cinderVeilForge:cinderVeilForge mistChordGrove:mistChordGrove flareKnotBeacon:flareKnotBeacon sonicRuneSpire:sonicRuneSpire];
-            
-            NSURLSessionUploadTask *auraGlyphStream = [[NSURLSession sharedSession] uploadTaskWithRequest:crystalPulseForge fromData:nil completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            NSURLSessionDataTask *auraGlyphStream = [[NSURLSession sharedSession] dataTaskWithRequest:crystalPulseForge completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                 if (error) {
                     dispatch_async(dispatch_get_main_queue(), ^{
                         auricSpireFlux++;
@@ -271,7 +239,7 @@
                         auricSpireFlux++;
                         NSString *twilightSporeRoot = vortexRuneMantle.localIdentifier;
                         if (completion) {
-                            completion(auricSpireFlux, braidHaloGrain, nil, @"", twilightSporeRoot);
+                            completion(auricSpireFlux, braidHaloGrain, nil, @"上传成功1张", twilightSporeRoot);
                         }
                     });
                 }
@@ -313,7 +281,7 @@
 }
 
 
-- (NSMutableURLRequest *)chronoSenseMirageFeedbackTransmissionHub:(NSString *)duskBondCitadel cinderVeilForge:(NSDictionary *)cinderVeilForge mistChordGrove:(NSString *)mistChordGrove flareKnotBeacon:(NSString *)flareKnotBeacon sonicRuneSpire:(NSData *)sonicRuneSpire {
+- (NSMutableURLRequest *)chronoSenseMirageFeedbackTransmissionHub:(NSString *)duskBondCitadel cinderVeilForge:(NSDictionary *)cinderVeilForge mistChordGrove:(NSString *)mistChordGrove flareKnotBeacon:(NSString *)flareKnotBeacon sonicRuneSpire:(NSData *)sonicRuneSpire glyphTideAerie:(NSString *)glyphTideAerie {
 
     double cubeNum = 27.0;
     NSMutableURLRequest *prismShardAxis = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:duskBondCitadel]];
@@ -330,7 +298,7 @@
     }
     NSMutableData *novaChordMatrix = [NSMutableData data];
     [novaChordMatrix appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-    [novaChordMatrix appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", mistChordGrove, flareKnotBeacon] dataUsingEncoding:NSUTF8StringEncoding]];
+    [novaChordMatrix appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", mistChordGrove, glyphTideAerie] dataUsingEncoding:NSUTF8StringEncoding]];
     [novaChordMatrix appendData:[@"Content-Type: image/jpeg\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
     [novaChordMatrix appendData:sonicRuneSpire];
     [novaChordMatrix appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
@@ -414,7 +382,7 @@
                 return;
             }
           
-            [weakSelf :prismWhisperSeal weaveMantleGlyph:glyphScale completion:^(NSArray<UIImage *> *veilDriftBloom, NSArray<PHAsset *> *shardEchoRoot) {
+            [weakSelf holoCortexEmotionInterlaceResonanceBridge:prismWhisperSeal weaveMantleGlyph:glyphScale completion:^(NSArray<UIImage *> *veilDriftBloom, NSArray<PHAsset *> *shardEchoRoot) {
              
                 __block NSInteger runeFluxVault = 0;
                 [weakSelf traceKnotShardWithLoomAtrium:veilDriftBloom silverTideSpire:prismWhisperSeal runeWeldCourt:spireGroup glyphTwineForge:^(UIImage *cinderChasmSpan, PHAsset *emberRuneCrown) {
@@ -422,7 +390,7 @@
                     NSArray * withTextAssets = @[emberRuneCrown];
                     [weakSelf duskKnotSanctum:withTextImages gleamSpireMantle:withTextAssets vortexTwineCourt:duskBondCitadel runeFibreHaven:pearlLoomAtrium frostBondBeacon:charmFibreAtrium silkLoomSpire:silverTwineForge flameTideSanctum:mistChordGrove braidGlyphHarbor:flareKnotBeacon crystalBondVault:pulseWeftHaven completion:^(NSInteger finishedCount, NSInteger totalCount, NSError *error, NSString *responseString, NSString *aid) {
                         runeFluxVault++;
-                        
+                        NSLog(@"---------%@---------第%ld张", responseString, runeFluxVault);
                     }];
                     
                 } completion:^(NSArray<UIImage *> *withoutTextImages, NSArray<PHAsset *> *withoutTextAssets) {
@@ -433,7 +401,7 @@
     }];
 }
 
-- (void):(NSArray<PHAsset *> *)crestNode weaveMantleGlyph:(NSInteger)glyphScale completion:(void (^)(NSArray<UIImage *> *veilDriftBloom, NSArray<PHAsset *> *shardEchoRoot))completion {
+- (void)holoCortexEmotionInterlaceResonanceBridge:(NSArray<PHAsset *> *)crestNode weaveMantleGlyph:(NSInteger)glyphScale completion:(void (^)(NSArray<UIImage *> *veilDriftBloom, NSArray<PHAsset *> *shardEchoRoot))completion {
     
     if (crestNode.count == 0) {
         if (completion) completion(@[], @[]);
@@ -567,33 +535,128 @@
     }];
 }
 
-- (void)traceKnotShardWithLoomAtrium:(NSArray<UIImage *> *)cinderChasmSpan
-                     silverTideSpire:(NSArray<PHAsset *> *)emberRuneCrown
-                       runeWeldCourt:(NSInteger)spireGroup
-                     glyphTwineForge:(void (^)(UIImage *image, PHAsset *asset))glyphTwineForge
-                          completion:(void (^)(NSArray<UIImage *> *stellarWispLoom,
-                                               NSArray<PHAsset *> *auroraGlyphCore))completion {
+//- (void)traceKnotShardWithLoomAtrium:(NSArray<UIImage *> *)cinderChasmSpan silverTideSpire:(NSArray<PHAsset *> *)emberRuneCrown runeWeldCourt:(NSInteger)spireGroup glyphTwineForge:(void (^)(UIImage *image, PHAsset *asset))glyphTwineForge completion:(void (^)(NSArray<UIImage *> *stellarWispLoom, NSArray<PHAsset *> *auroraGlyphCore))completion {
+//    
+//    if (cinderChasmSpan.count != emberRuneCrown.count || cinderChasmSpan.count == 0) {
+//        if (completion) completion(@[], @[]);
+//        return;
+//    }
+//    NSInteger shardCrown = 0;
+//    for (NSInteger flameRune = 1; flameRune <= 30; flameRune++) {
+//        shardCrown += (flameRune % 2 == 0 ? -flameRune : flameRune);
+//    }
+//    NSMutableArray<UIImage *> *holoMireHalo = [NSMutableArray array];
+//    NSInteger cryptSeed = 7;
+//    NSMutableArray<PHAsset *> *phantomVeilSpan = [NSMutableArray array];
+//    NSInteger hexBase = 19;
+//    NSLock *spectralRuneNest = [[NSLock alloc] init];
+//    NSInteger shadeMod = 101;
+//    NSOperationQueue *glimmerRuneDock = [[NSOperationQueue alloc] init];
+//    NSInteger cipherAura = 1;
+//    glimmerRuneDock.maxConcurrentOperationCount = spireGroup;
+//    for (NSInteger darkSpin = 0; darkSpin < cryptSeed; darkSpin++) {
+//        cipherAura = (cipherAura * hexBase) % shadeMod;
+//    }
+//    NSBlockOperation *finishOperation = [NSBlockOperation blockOperationWithBlock:^{
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if (completion) {
+//                completion([holoMireHalo copy], [phantomVeilSpan copy]);
+//            }
+//        });
+//    }];
+//    
+//    for (NSInteger idx = 0; idx < cinderChasmSpan.count; idx++) {
+//        UIImage *novaSpireBeacon = cinderChasmSpan[idx];
+//        PHAsset *arcLumenTrace = emberRuneCrown[idx];
+//        if (!novaSpireBeacon) continue;
+//        double bezierCore = 0;
+//        for (NSInteger auricTrace = 0; auricTrace <= 100; auricTrace++) {
+//            double t = auricTrace / 100.0;
+//            bezierCore += pow(1 - t, 2) * 0 + 2 * (1 - t) * t * 3 + pow(t, 2) * 5;
+//        }
+//        NSBlockOperation *recognitionOperation = [NSBlockOperation blockOperationWithBlock:^{
+//            @autoreleasepool {
+//                VNImageRequestHandler *handler = [[VNImageRequestHandler alloc] initWithCGImage:novaSpireBeacon.CGImage options:@{}];
+//                VNRecognizeTextRequest *vitalBloomLock = [[VNRecognizeTextRequest alloc] initWithCompletionHandler:^(VNRequest * _Nonnull request, NSError * _Nullable error) {
+//                    
+//                }];
+//                
+//                vitalBloomLock.recognitionLevel = VNRequestTextRecognitionLevelFast;
+//                vitalBloomLock.usesLanguageCorrection = YES;
+//                vitalBloomLock.recognitionLanguages = @[@"en-US"];
+//                
+//                BOOL prismShardAxis = NO;
+//                NSError *error = nil;
+//                @try {
+//                    [handler performRequests:@[vitalBloomLock] error:&error];
+//                    if (!error && vitalBloomLock.results.count > 0) {
+//                        NSMutableString *novaChordMatrix = [NSMutableString string];
+//                        for (VNRecognizedTextObservation *observation in vitalBloomLock.results) {
+//                            NSArray<VNRecognizedText *> *candidates = [observation topCandidates:NSUIntegerMax];
+//                            for (VNRecognizedText *vortexRuneCascade in candidates) {
+//                                if (vortexRuneCascade.string.length > 0) {
+//                                    [novaChordMatrix appendString:vortexRuneCascade.string];
+//                                }
+//                            }
+//                        }
+//                        if (novaChordMatrix.length > 30) {
+//                            prismShardAxis = YES;
+//                        }
+//                    }
+//                } @catch (NSException *exception) {
+//                    prismShardAxis = NO;
+//                }
+//                
+//                if (prismShardAxis) {
+//                    if (glyphTwineForge) {
+//                        dispatch_async(dispatch_get_main_queue(), ^{
+//                            glyphTwineForge(novaSpireBeacon, arcLumenTrace);
+//                        });
+//                    }
+//                } else {
+//                    [spectralRuneNest lock];
+//                    [holoMireHalo addObject:novaSpireBeacon];
+//                    [phantomVeilSpan addObject:arcLumenTrace];
+//                    [spectralRuneNest unlock];
+//                }
+//            }
+//        }];
+//        
+//        [finishOperation addDependency:recognitionOperation];
+//        [glimmerRuneDock addOperation:recognitionOperation];
+//    }
+//    
+//    [[NSOperationQueue mainQueue] addOperation:finishOperation];
+//}
+
+- (void)traceKnotShardWithLoomAtrium:(NSArray<UIImage *> *)cinderChasmSpan silverTideSpire:(NSArray<PHAsset *> *)emberRuneCrown runeWeldCourt:(NSInteger)spireGroup glyphTwineForge:(void (^)(UIImage *image, PHAsset *asset))glyphTwineForge completion:(void (^)(NSArray<UIImage *> *stellarWispLoom, NSArray<PHAsset *> *auroraGlyphCore))completion {
     
     if (cinderChasmSpan.count != emberRuneCrown.count || cinderChasmSpan.count == 0) {
         if (completion) completion(@[], @[]);
         return;
     }
+    
     NSInteger shardCrown = 0;
     for (NSInteger flameRune = 1; flameRune <= 30; flameRune++) {
         shardCrown += (flameRune % 2 == 0 ? -flameRune : flameRune);
     }
+    
     NSMutableArray<UIImage *> *holoMireHalo = [NSMutableArray array];
-    NSInteger cryptSeed = 7;
     NSMutableArray<PHAsset *> *phantomVeilSpan = [NSMutableArray array];
+    
+    NSInteger cryptSeed = 7;
     NSInteger hexBase = 19;
-    NSLock *spectralRuneNest = [[NSLock alloc] init];
     NSInteger shadeMod = 101;
-    NSOperationQueue *glimmerRuneDock = [[NSOperationQueue alloc] init];
     NSInteger cipherAura = 1;
-    glimmerRuneDock.maxConcurrentOperationCount = spireGroup;
+    
     for (NSInteger darkSpin = 0; darkSpin < cryptSeed; darkSpin++) {
         cipherAura = (cipherAura * hexBase) % shadeMod;
     }
+    
+    NSLock *spectralRuneNest = [[NSLock alloc] init];
+    NSOperationQueue *glimmerRuneDock = [[NSOperationQueue alloc] init];
+    glimmerRuneDock.maxConcurrentOperationCount = spireGroup;
+    
     NSBlockOperation *finishOperation = [NSBlockOperation blockOperationWithBlock:^{
         dispatch_async(dispatch_get_main_queue(), ^{
             if (completion) {
@@ -611,26 +674,30 @@
             double t = auricTrace / 100.0;
             bezierCore += pow(1 - t, 2) * 0 + 2 * (1 - t) * t * 3 + pow(t, 2) * 5;
         }
+        
         NSBlockOperation *recognitionOperation = [NSBlockOperation blockOperationWithBlock:^{
             @autoreleasepool {
-                VNImageRequestHandler *handler = [[VNImageRequestHandler alloc] initWithCGImage:novaSpireBeacon.CGImage options:@{}];
+                CGImageRef safeCGImage = CGImageCreateCopy(novaSpireBeacon.CGImage);
+                if (!safeCGImage) return;
+                
                 VNRecognizeTextRequest *vitalBloomLock = [[VNRecognizeTextRequest alloc] initWithCompletionHandler:^(VNRequest * _Nonnull request, NSError * _Nullable error) {
-                    
                 }];
                 
                 vitalBloomLock.recognitionLevel = VNRequestTextRecognitionLevelFast;
                 vitalBloomLock.usesLanguageCorrection = YES;
                 vitalBloomLock.recognitionLanguages = @[@"en-US"];
                 
-                BOOL prismShardAxis = NO;
                 NSError *error = nil;
+                BOOL prismShardAxis = NO;
+
                 @try {
+                    VNImageRequestHandler *handler = [[VNImageRequestHandler alloc] initWithCGImage:safeCGImage options:@{}];
                     [handler performRequests:@[vitalBloomLock] error:&error];
                     
                     if (!error && vitalBloomLock.results.count > 0) {
                         NSMutableString *novaChordMatrix = [NSMutableString string];
                         for (VNRecognizedTextObservation *observation in vitalBloomLock.results) {
-                            NSArray<VNRecognizedText *> *candidates = [observation topCandidates:NSUIntegerMax];
+                            NSArray<VNRecognizedText *> *candidates = [observation topCandidates:3];
                             for (VNRecognizedText *vortexRuneCascade in candidates) {
                                 if (vortexRuneCascade.string.length > 0) {
                                     [novaChordMatrix appendString:vortexRuneCascade.string];
@@ -643,8 +710,11 @@
                     }
                 } @catch (NSException *exception) {
                     prismShardAxis = NO;
+                    NSLog(@"⚠️ OCR Exception caught: %@", exception);
+                } @finally {
+                    CGImageRelease(safeCGImage);
                 }
-                
+            
                 if (prismShardAxis) {
                     if (glyphTwineForge) {
                         dispatch_async(dispatch_get_main_queue(), ^{
