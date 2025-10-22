@@ -11,7 +11,6 @@ target 'Weavee' do
 #  pod 'MJRefresh'
 #  pod 'SDWebImage'
   
-  
   pod 'FBSDKCoreKit'
   pod 'Adjust'
   

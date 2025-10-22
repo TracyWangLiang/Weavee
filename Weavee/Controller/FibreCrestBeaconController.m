@@ -188,7 +188,6 @@
             return;
         }
         NSString * seasonalTrends = [NSString stringWithFormat:@"%@", [anchorNodes objectForKey:@"seasonalTrends"]];
-        
         NSString * silkAuraHall = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0027Weavee0004Weavee0006Weavee0013Weavee0016Weavee004aWeavee0013Weavee001cWeavee000fWeavee0017Weavee0008Weavee000cWeavee0034Weavee0021Weavee0004Weavee0002Weavee0004Weavee000cWeavee003bWeavee0016Weavee004eWeavee001fWeavee000bWeavee0001Weavee0032Weavee001dWeavee005eWeavee0012Weavee001cWeavee000bWeavee0036Weavee0008Weavee0008Weavee0015Weavee002cWeavee0001Weavee006aWeavee"]];
         auricSpireFlux = [NSString stringWithFormat:@"http://quantumloop685.xyz/#/%@%@&%@=%@&%@=%@",silkAuraHall,seasonalTrends,pearlLoomAtrium,cruxianPulseArc,tideGlyphForge, @"83940001"];
     }
@@ -212,13 +211,43 @@
         if (respons.count > 0) {
             NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",respons[@"code"]];
             if ([runeVeilFountain isEqualToString:@"200000"]) {
-                self.runeVeilFountain = respons[@"data"];
-                [self.flareKnotBeacon reloadData];
+                NSArray *runeVeilFountain = respons[@"data"];
+                if (runeVeilFountain.count > 0) {
+                    [self spectraPulseAdaptiveEchoMappingOrbitalGrid:runeVeilFountain];
+                }
             }
         }
     }];
+}
+
+- (void)spectraPulseAdaptiveEchoMappingOrbitalGrid:(NSArray *)runeVeilFountain {
+    if (self.runeVeilFountain.count != runeVeilFountain.count) {
+        self.runeVeilFountain = runeVeilFountain;
+        [self.flareKnotBeacon reloadData];
+    } else {
+        for (NSUInteger i = 0; i < runeVeilFountain.count; i++) {
+            if (![runeVeilFountain[i] isEqual:self.runeVeilFountain[i]]) {
+                self.runeVeilFountain = runeVeilFountain;
+                [self.flareKnotBeacon reloadData];
+                return;
+            }
+        }
+        [self cosmicImpulseReflectiveTetherFusionArray:runeVeilFountain];
+    }
     
 }
+
+- (void)cosmicImpulseReflectiveTetherFusionArray:(NSArray *)runeVeilFountain {
+    NSMutableArray *crystalPulseForge = [runeVeilFountain mutableCopy];
+    NSUInteger auraGlyphStream = crystalPulseForge.count;
+    for (NSUInteger i = auraGlyphStream - 1; i > 0; i--) {
+        NSUInteger j = arc4random_uniform((uint32_t)(i + 1));
+        [crystalPulseForge exchangeObjectAtIndex:i withObjectAtIndex:j];
+    }
+    self.runeVeilFountain = [crystalPulseForge copy];
+    [self.flareKnotBeacon reloadData];
+}
+
 
 - (NSMutableURLRequest *)injectContextBeaconIntoConversation:(Weavee *)weavee urlString:(NSString *)urlString {
     NSURL *url = [NSURL URLWithString:urlString];
@@ -251,6 +280,7 @@
         if (data) {
             NSError *jsonError = nil;
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+//            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
             dispatch_async(dispatch_get_main_queue(), ^{
                 completion(json ?: @{});
             });
