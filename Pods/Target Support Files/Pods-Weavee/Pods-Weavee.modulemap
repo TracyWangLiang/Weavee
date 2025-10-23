@@ -1,0 +1,6 @@
+framework module Pods_Weavee {
+  umbrella header "Pods-Weavee-umbrella.h"
+
+  export *
+  module * { export * }
+}

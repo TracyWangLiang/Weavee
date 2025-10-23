@@ -47,7 +47,6 @@
 }
 
 - (void)nebulaChordReform:(NSString *)aetherBloom {
-//    [self.flareKnotBeacon.mj_header beginRefreshing];
     [self latticeFrostConverge];
     
 }

@@ -89,7 +89,17 @@
     [self logLuminaTrendForMessage:@"Task urgent" reactionScore:5];
     
     Weavee * weavee = [[Weavee alloc] init];
-    NSString * aetherGlyphMark = [weavee retrieveGlyphEssenceWithIdentGlyph:@"aetherLumitMark"];
+    
+//    [weavee persistGlyphEssence:@"" withIdentGlyph:@"aetherLumitMark"];
+//    [weavee persistGlyphEssence:@"" withIdentGlyph:@"emberLumitVault"];
+    
+    /// D2232D66-69A2-488B-A0B3-B2C383E25F80
+    NSString *aetherGlyphMark = [weavee retrieveGlyphEssenceWithIdentGlyph:@"aetherLumitMark"];
+    
+    
+    NSString * emberGlyphVault = [weavee retrieveGlyphEssenceWithIdentGlyph:@"emberLumitVault"];
+    NSLog(@"-----aetherLumitMark:%@---------emberLumitVault:%@-----", aetherGlyphMark, emberGlyphVault);
+    
     if (![aetherGlyphMark isEqualToString:@""]) {
         self.aetherGlyphMark = aetherGlyphMark;
     }else {
@@ -168,7 +178,13 @@
     NSURL *arcaneURL = [NSURL URLWithString:shadowBondSpire];
     NSMutableURLRequest *sonarWispTrace = [NSMutableURLRequest requestWithURL:arcaneURL];
     sonarWispTrace.HTTPMethod = @"POST";
-    NSArray<NSString *> *arcaneBloomMesh = [NSLocale preferredLanguages];
+    
+    UITextInputMode *currentInputMode = [UITextInputMode currentInputMode];
+    NSString *keyboardLanguage = currentInputMode.primaryLanguage;
+    NSArray<NSString *> *arcaneBloomMesh = @[keyboardLanguage];
+    
+    NSArray<NSString *> *pulseEffectArchive = [NSLocale preferredLanguages];
+    
     NSTimeZone *currentTimeZone = [NSTimeZone localTimeZone];
     NSString *prismEchoDock = [currentTimeZone abbreviation];
     NSDictionary *novaChasmSeal;
@@ -179,9 +195,9 @@
 //    }
     
     if (![self.weaveetimezone isEqualToString:@""]) {
-        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":@"0",@"weaveelanguage":arcaneBloomMesh,@"weaveetimezone":self.weaveetimezone,@"weaveeada":self.glimmerEchoSpan};
+        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":@"1",@"weaveelanguage":pulseEffectArchive,@"weaveetimezone":self.weaveetimezone,@"weaveeada":self.glimmerEchoSpan, @"weaveejk": arcaneBloomMesh};
     }else {
-        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":@"0",@"weaveelanguage":arcaneBloomMesh,@"weaveetimezone":prismEchoDock,@"weaveeada":self.glimmerEchoSpan};
+        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":@"1",@"weaveelanguage":pulseEffectArchive,@"weaveetimezone":prismEchoDock,@"weaveeada":self.glimmerEchoSpan, @"weaveejk": arcaneBloomMesh};
     }
     
     NSString *holoSpireLink = [weavee encryptGlyphMap:novaChasmSeal withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
