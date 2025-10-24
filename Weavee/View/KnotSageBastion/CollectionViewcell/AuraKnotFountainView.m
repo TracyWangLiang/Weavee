@@ -169,7 +169,7 @@
     }
     
     NSString * colorMatching = [NSString stringWithFormat:@"%@", [vortexialLoomCast objectForKey:@"colorMatching"]];
-    [Weavee loadImageFromURL:colorMatching completion:^(UIImage * _Nonnull image) {
+    [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:colorMatching completion:^(UIImage * _Nonnull image) {
         self.lunarSwayBastion.image = image;
     }];
 //    [self.lunarSwayBastion sd_setImageWithURL:[NSURL URLWithString:colorMatching] placeholderImage:[UIImage imageNamed:@"gleamBondSpire"]];
@@ -207,7 +207,7 @@
     
     NSString * fashionCommunityBuilding = [NSString stringWithFormat:@"%@", [courtBlob objectForKey:@"fashionCommunityBuilding"]];
 //    [self.lunarSwayBastion sd_setImageWithURL:[NSURL URLWithString:fashionCommunityBuilding] placeholderImage:[UIImage imageNamed:@"gleamBondSpire"]];
-    [Weavee loadImageFromURL:fashionCommunityBuilding completion:^(UIImage * _Nonnull image) {
+    [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:fashionCommunityBuilding completion:^(UIImage * _Nonnull image) {
         self.lunarSwayBastion.image = image;
     }];
     

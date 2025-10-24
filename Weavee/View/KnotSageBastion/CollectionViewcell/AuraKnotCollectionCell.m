@@ -46,7 +46,7 @@
     self.beaconSource = beaconSource;
     NSArray * fashionAnalysis = [beaconSource objectForKey:@"fashionAnalysis"];
     if (fashionAnalysis.count > 0) {
-        [Weavee loadImageFromURL:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject] completion:^(UIImage * _Nonnull image) {
+        [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject] completion:^(UIImage * _Nonnull image) {
             self.pearlLoomAtrium.image = image;
         }];
     }
@@ -61,7 +61,7 @@
     
 //    [self.silkAuraHall sd_setImageWithURL:[NSURL URLWithString:fashionIllustration]];
     
-    [Weavee loadImageFromURL:fashionIllustration completion:^(UIImage * _Nonnull image) {
+    [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:fashionIllustration completion:^(UIImage * _Nonnull image) {
         self.silkAuraHall.image = image;
     }];
     

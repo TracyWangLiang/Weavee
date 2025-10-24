@@ -68,7 +68,7 @@
     self.echoWispCrest.text = trendAlert;
     NSString * streetStyle = [NSString stringWithFormat:@"%@", [anchorNodes objectForKey:@"streetStyle"]];
 //    [self.prismLoomShard sd_setImageWithURL:[NSURL URLWithString:streetStyle] placeholderImage:[UIImage imageNamed:@"gleamBondSpire"]];
-    [Weavee loadImageFromURL:streetStyle completion:^(UIImage * _Nonnull image) {
+    [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:streetStyle completion:^(UIImage * _Nonnull image) {
         self.prismLoomShard.image = image;
     }];
 }

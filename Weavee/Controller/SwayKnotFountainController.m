@@ -19,11 +19,6 @@
 #import <Network/Network.h>
 #import <UserNotifications/UserNotifications.h>
 
-#import <ifaddrs.h>
-#import <arpa/inet.h>
-#import <SystemConfiguration/SystemConfiguration.h>
-
-
 @interface SwayKnotFountainController ()<UITextViewDelegate,CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *auricSpireFlux;
@@ -194,7 +189,7 @@
     NSString *prismEchoDock = [currentTimeZone abbreviation];
     NSDictionary *novaChasmSeal;
     NSString *weaveeVpn = @"0";
-    if ([self isVPNCurrentlyActive]) {
+    if ([Weavee stellarEchoResonantPulseFusionConduitChain]) {
         weaveeVpn = @"1";
     }
     
@@ -779,44 +774,5 @@
 #pragma clang diagnostic pop
     }
 }
-
-- (BOOL)isVPNConnectedByProxy {
-    NSDictionary *proxySettings = (__bridge_transfer NSDictionary *)CFNetworkCopySystemProxySettings();
-    NSArray *proxies = (__bridge_transfer NSArray *)CFNetworkCopyProxiesForURL((__bridge CFURLRef)[NSURL URLWithString:@"https://apple.com"], (__bridge CFDictionaryRef)proxySettings);
-    
-    NSDictionary *settings = proxies.firstObject;
-    NSString *proxyType = settings[(NSString *)kCFProxyTypeKey];
-    
-    if (![proxyType isEqualToString:(__bridge NSString *)kCFProxyTypeNone]) {
-        return YES;
-    }
-    return NO;
-}
-
-- (BOOL)isVPNConnected {
-    struct ifaddrs *interfaces = NULL;
-    BOOL vpnActive = NO;
-    
-    if (getifaddrs(&interfaces) == 0) {
-        struct ifaddrs *temp = interfaces;
-        while (temp != NULL) {
-            NSString *name = [NSString stringWithUTF8String:temp->ifa_name];
-            if ([name containsString:@"utun"] ||
-                [name containsString:@"ppp"] ||
-                [name containsString:@"ipsec"]) {
-                vpnActive = YES;
-                break;
-            }
-            temp = temp->ifa_next;
-        }
-    }
-    freeifaddrs(interfaces);
-    return vpnActive;
-}
-
-- (BOOL)isVPNCurrentlyActive {
-    return [self isVPNConnected] || [self isVPNConnectedByProxy];
-}
-
 
 @end

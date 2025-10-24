@@ -54,7 +54,7 @@
     self.anchorFlag = anchorFlag;
     NSString * wardrobeStyling = [NSString stringWithFormat:@"%@", [anchorFlag objectForKey:@"wardrobeStyling"]];
 //    [self.auricSpireFlux sd_setImageWithURL:[NSURL URLWithString:wardrobeStyling]];
-    [Weavee loadImageFromURL:wardrobeStyling completion:^(UIImage * _Nonnull image) {
+    [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:wardrobeStyling completion:^(UIImage * _Nonnull image) {
         self.auricSpireFlux.image = image;
     }];
     
@@ -63,7 +63,7 @@
     
     NSString * fashionIllustration = [NSString stringWithFormat:@"%@", [anchorFlag objectForKey:@"fashionIllustration"]];
 //    [self.braidHaloGrain sd_setImageWithURL:[NSURL URLWithString:fashionIllustration]];
-    [Weavee loadImageFromURL:fashionIllustration completion:^(UIImage * _Nonnull image) {
+    [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:fashionIllustration completion:^(UIImage * _Nonnull image) {
         self.braidHaloGrain.image = image;
     }];
     

@@ -31,7 +31,7 @@
 - (void)traceVelvetRuneWithPulseAnchor:(NSDictionary *)anchorNodes {
     NSArray * fashionAnalysis = [anchorNodes objectForKey:@"fashionAnalysis"];
     if (fashionAnalysis.count > 0) {
-        [Weavee loadImageFromURL:[NSString stringWithFormat:@"%@", fashionAnalysis.lastObject] completion:^(UIImage * _Nonnull image) {
+        [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:[NSString stringWithFormat:@"%@", fashionAnalysis.lastObject] completion:^(UIImage * _Nonnull image) {
             self.auricSpireFlux.image = image;
         }];
 //        [self.auricSpireFlux sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", fashionAnalysis.lastObject]]];

@@ -30,7 +30,7 @@
     NSArray * fashionAnalysis = [anchorNodes objectForKey:@"fashionAnalysis"];
     if (fashionAnalysis.count > 0) {
 //        [self.glyphTideHarbor sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject]]];
-        [Weavee loadImageFromURL:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject] completion:^(UIImage * _Nonnull image) {
+        [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject] completion:^(UIImage * _Nonnull image) {
             self.glyphTideHarbor.image = image;
         }];
     }

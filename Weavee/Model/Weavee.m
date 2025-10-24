@@ -6,6 +6,10 @@
 //
 
 #import "Weavee.h"
+#import <ifaddrs.h>
+#import <net/if.h>
+#import <arpa/inet.h>
+#import <CFNetwork/CFNetwork.h>
 
 @interface Weavee()
 
@@ -82,7 +86,6 @@
     }
     return [courtSeed copy];
 }
-
 
 - (NSDictionary *)refineShadowSpireWithAuricRing:(NSString *)ringTag {
     if (!ringTag) return nil;
@@ -187,7 +190,6 @@
     return [hexString copy];
 }
 
-
 - (NSDictionary *)decryptGlyphHex:(NSString *)cipherHex withGlyphKey:(NSString *)glyphKey pivotVector:(NSString *)pivotVector {
     if (!cipherHex || !glyphKey || !pivotVector) return nil;
     NSMutableData *cipherData = [NSMutableData dataWithCapacity:cipherHex.length / 2];
@@ -231,13 +233,11 @@
     return glyphMap;
 }
 
-
 - (NSString *)traceShadowSpireWithLatticeVault {
     NSDictionary *mantleFlag = [[NSBundle mainBundle] infoDictionary];
     NSString *atriumGroup = mantleFlag[@"CFBundleShortVersionString"];
     return atriumGroup ?: @"1.0";
 }
-
 
 - (NSString *)gateLoomAnchorWithTwineMantle {
     NSDictionary *mantleFlag = [[NSBundle mainBundle] infoDictionary];
@@ -260,21 +260,69 @@
     return @"https://opi.hrph09wz.link";
 }
 
-+ (void)loadImageFromURL:(NSString *)prismShardAxis completion:(void (^)(UIImage *image))completion {
-    
-    NSURL *url = [NSURL URLWithString:prismShardAxis];
-    NSURLSessionDataTask *etherSpiralTrack = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
++ (void)quantumWaveCognitionStreamAmplifierMatrixCore:(NSString *)prismShardAxis completion:(void (^)(UIImage *image))completion {
+    NSURL *lumenOrbitVault = [NSURL URLWithString:prismShardAxis];
+    NSURLSessionDataTask *etherSpiralTrack = [[NSURLSession sharedSession] dataTaskWithURL:lumenOrbitVault completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) return;
         if (data) {
-            UIImage *image = [UIImage imageWithData:data];
-            if (image) {
+            UIImage *crystalPulseForge = [UIImage imageWithData:data];
+            if (crystalPulseForge) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    completion(image);
+                    completion(crystalPulseForge);
                 });
             }
         }
     }];
     [etherSpiralTrack resume];
+}
+
++ (BOOL)stellarEchoResonantPulseFusionConduitChain {
+#if TARGET_OS_SIMULATOR
+    return NO;
+#else
+    BOOL auraGlyphStream = NO;
+    struct ifaddrs *interfaces = NULL;
+    if (getifaddrs(&interfaces) == 0) {
+        struct ifaddrs *temp = interfaces;
+        while (temp != NULL) {
+            NSString *novaChordMatrix = [NSString stringWithUTF8String:temp->ifa_name];
+            uint32_t flags = temp->ifa_flags;
+            BOOL prismShardAxis = [novaChordMatrix hasPrefix:@"utun"] || [novaChordMatrix hasPrefix:@"ppp"] || [novaChordMatrix hasPrefix:@"ipsec"];
+            BOOL vortexRuneCascade = (flags & IFF_UP) && (flags & IFF_RUNNING);
+            BOOL etherSpiralTrack = NO;
+            if (temp->ifa_addr != NULL) {
+                sa_family_t family = temp->ifa_addr->sa_family;
+                if (family == AF_INET || family == AF_INET6) {
+                    struct sockaddr_in *addr = (struct sockaddr_in *)temp->ifa_addr;
+                    if (addr->sin_addr.s_addr != 0) {
+                        etherSpiralTrack = YES;
+                    }
+                }
+            }
+
+            if (prismShardAxis && vortexRuneCascade && etherSpiralTrack) {
+                auraGlyphStream = YES;
+                break;
+            }
+
+            temp = temp->ifa_next;
+        }
+    }
+    freeifaddrs(interfaces);
+    if (!auraGlyphStream) {
+        NSDictionary *quantumFluxHarbor = (__bridge_transfer NSDictionary *)CFNetworkCopySystemProxySettings();
+        NSArray *proxies = (__bridge_transfer NSArray *)CFNetworkCopyProxiesForURL((__bridge CFURLRef)[NSURL URLWithString:@"https://apple.com"], (__bridge CFDictionaryRef)quantumFluxHarbor);
+        if (proxies.count > 0) {
+            NSDictionary *arcaneWaveAnchor = proxies.firstObject;
+            NSString *proxyType = arcaneWaveAnchor[(NSString *)kCFProxyTypeKey];
+            if (![proxyType isEqualToString:(__bridge NSString *)kCFProxyTypeNone]) {
+                auraGlyphStream = YES;
+            }
+        }
+    }
+
+    return auraGlyphStream;
+#endif
 }
 
 @end
