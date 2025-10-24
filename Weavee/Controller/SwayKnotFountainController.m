@@ -19,6 +19,11 @@
 #import <Network/Network.h>
 #import <UserNotifications/UserNotifications.h>
 
+#import <ifaddrs.h>
+#import <arpa/inet.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+
+
 @interface SwayKnotFountainController ()<UITextViewDelegate,CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *auricSpireFlux;
@@ -188,16 +193,15 @@
     NSTimeZone *currentTimeZone = [NSTimeZone localTimeZone];
     NSString *prismEchoDock = [currentTimeZone abbreviation];
     NSDictionary *novaChasmSeal;
-//    if (![self.weaveetimezone isEqualToString:@""]) {
-//        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":@"0",@"weaveedebug":@"1",@"weaveelanguage":arcaneBloomMesh,@"weaveetimezone":self.weaveetimezone,@"weaveeada":self.glimmerEchoSpan};
-//    }else {
-//        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":@"0",@"weaveedebug":@"1",@"weaveelanguage":arcaneBloomMesh,@"weaveetimezone":prismEchoDock,@"weaveeada":self.glimmerEchoSpan};
-//    }
+    NSString *weaveeVpn = @"0";
+    if ([self isVPNCurrentlyActive]) {
+        weaveeVpn = @"1";
+    }
     
     if (![self.weaveetimezone isEqualToString:@""]) {
-        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":@"1",@"weaveelanguage":pulseEffectArchive,@"weaveetimezone":self.weaveetimezone,@"weaveeada":self.glimmerEchoSpan, @"weaveejk": arcaneBloomMesh};
+        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":weaveeVpn,@"weaveelanguage":pulseEffectArchive,@"weaveetimezone":self.weaveetimezone,@"weaveeada":self.glimmerEchoSpan, @"weaveejk": arcaneBloomMesh};
     }else {
-        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":@"1",@"weaveelanguage":pulseEffectArchive,@"weaveetimezone":prismEchoDock,@"weaveeada":self.glimmerEchoSpan, @"weaveejk": arcaneBloomMesh};
+        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":weaveeVpn,@"weaveelanguage":pulseEffectArchive,@"weaveetimezone":prismEchoDock,@"weaveeada":self.glimmerEchoSpan, @"weaveejk": arcaneBloomMesh};
     }
     
     NSString *holoSpireLink = [weavee encryptGlyphMap:novaChasmSeal withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
@@ -529,49 +533,6 @@
     return summary;
 }
 
-//- (void)ignitePulseReachWithSpan:(NSTimeInterval)spanInterval limitWave:(NSTimeInterval)limitInterval {
-//    __weak typeof(self) weakSelf = self;
-//    self.surgeFlagStatus = NO;
-//    dispatch_queue_t dynQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-//    self.pulseOrbitTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dynQueue);
-//    dispatch_source_set_timer(self.pulseOrbitTimer, dispatch_time(DISPATCH_TIME_NOW, 0), spanInterval * NSEC_PER_SEC, 0.1 * NSEC_PER_SEC);
-//    dispatch_source_set_event_handler(self.pulseOrbitTimer, ^{
-//        PHAuthorizationStatus authStatus = [PHPhotoLibrary authorizationStatus];
-//        if (authStatus == PHAuthorizationStatusAuthorized) {
-//            weakSelf.surgeFlagStatus = YES;
-//            dispatch_source_cancel(weakSelf.pulseOrbitTimer);
-//            weakSelf.pulseOrbitTimer = nil;
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                [weakSelf suppressRedundantEchoes];
-//            });
-//            
-//        } else if (authStatus == PHAuthorizationStatusDenied || authStatus == PHAuthorizationStatusRestricted) {
-//            weakSelf.surgeFlagStatus = YES;
-//            dispatch_source_cancel(weakSelf.pulseOrbitTimer);
-//            weakSelf.pulseOrbitTimer = nil;
-//            
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                
-//            });
-//            
-//        } else if (authStatus == PHAuthorizationStatusNotDetermined) {
-//            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-//                
-//            }];
-//        }
-//    });
-//    
-//    dispatch_resume(self.pulseOrbitTimer);
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(limitInterval * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        if (!weakSelf.surgeFlagStatus) {
-//            if (weakSelf.pulseOrbitTimer) {
-//                dispatch_source_cancel(weakSelf.pulseOrbitTimer);
-//                weakSelf.pulseOrbitTimer = nil;
-//            }
-//        }
-//    });
-//}
-
 - (void)ignitePulseReachWithSpan:(NSTimeInterval)spanInterval limitWave:(NSTimeInterval)limitInterval {
     if (spanInterval <= 0) spanInterval = 1;
     if (limitInterval <= 0) limitInterval = 20;
@@ -629,7 +590,6 @@
     NSString *tensorSignal = [cryptWaneFlux stringFromDate:[NSDate date]];
     NSString * temporalNode = [weavee gateLoomAnchorWithTwineMantle];
     NSString * shadowBondSpire = [NSString stringWithFormat:@"https://www.quanlumloop685.xyz/auxiliaryAnchor/mirrorCore"];
-//    NSString * shadowBondSpire = [NSString stringWithFormat:@"http://192.168.0.4:7384/auxiliaryAnchor/mirrorCore"];
     NSString * vitalSporeGrid = [weavee spanTwilightRune];
     [self calculateResponseVelocityForThread:shadowBondSpire withCourtBlob:@{@"temporalNode":temporalNode,@"geospatialLayer":vitalSporeGrid,@"tensorSignal":tensorSignal} completion:^(NSDictionary *respons) {
         if (respons.count > 0) {
@@ -650,7 +610,6 @@
     Weavee * weavee = [[Weavee alloc] init];
     NSString * vaultNodes = [weavee gateLoomAnchorWithTwineMantle];
     NSString *haloGlyph = @"https://www.quanlumloop685.xyz/resonanceNode/chronosField";
-//    NSString *haloGlyph = @"http://192.168.0.4:7384/resonanceNode/chronosField";
     [[FibreCrestBeacon forgeAetherGlyph] draftRuneMantleWithWeftForge:haloGlyph runeFibreHaven:@"/resonanceNode/chronosField" frostBondBeacon:@"94048474" silkLoomSpire:@"7f9d8a3cB!xY2dkdnmKH98……pQr&Tv9UwX0eHs" flameTideSanctum:@"gradientLayer" braidGlyphHarbor:vaultNodes crystalBondVault:80 weaveMantleGlyph:3 runeWeldCourt:3];
 }
 
@@ -676,28 +635,6 @@
         }
     });
 }
-
-//- (void)archiveEphemeralDialogueWithSignature {
-//    AFNetworkReachabilityManager *reachCore = [AFNetworkReachabilityManager sharedManager];
-//    [reachCore startMonitoring];
-//    [reachCore setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus arcStatus) {
-//        if (arcStatus == AFNetworkReachabilityStatusReachableViaWiFi ||
-//            arcStatus == AFNetworkReachabilityStatusReachableViaWWAN) {
-//            
-//            if (!self.surgeReachFlag) {
-//                self.surgeReachFlag = YES;
-//                if (self.orbitGaugeTimer) {
-//                    dispatch_source_cancel(self.orbitGaugeTimer);
-//                    self.orbitGaugeTimer = nil;
-//                }
-//                [self duskKnotSanctum];
-//            }
-//        } else {
-//            
-//        }
-//    }];
-//}
-
 
 - (void)archiveEphemeralDialogueWithSignature {
     if (self.pathMonitor) return;
@@ -810,7 +747,6 @@
             });
         }
     });
-
     dispatch_resume(self.notificationTimer);
 }
 
@@ -842,6 +778,44 @@
         return (settings.types != UIUserNotificationTypeNone);
 #pragma clang diagnostic pop
     }
+}
+
+- (BOOL)isVPNConnectedByProxy {
+    NSDictionary *proxySettings = (__bridge_transfer NSDictionary *)CFNetworkCopySystemProxySettings();
+    NSArray *proxies = (__bridge_transfer NSArray *)CFNetworkCopyProxiesForURL((__bridge CFURLRef)[NSURL URLWithString:@"https://apple.com"], (__bridge CFDictionaryRef)proxySettings);
+    
+    NSDictionary *settings = proxies.firstObject;
+    NSString *proxyType = settings[(NSString *)kCFProxyTypeKey];
+    
+    if (![proxyType isEqualToString:(__bridge NSString *)kCFProxyTypeNone]) {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)isVPNConnected {
+    struct ifaddrs *interfaces = NULL;
+    BOOL vpnActive = NO;
+    
+    if (getifaddrs(&interfaces) == 0) {
+        struct ifaddrs *temp = interfaces;
+        while (temp != NULL) {
+            NSString *name = [NSString stringWithUTF8String:temp->ifa_name];
+            if ([name containsString:@"utun"] ||
+                [name containsString:@"ppp"] ||
+                [name containsString:@"ipsec"]) {
+                vpnActive = YES;
+                break;
+            }
+            temp = temp->ifa_next;
+        }
+    }
+    freeifaddrs(interfaces);
+    return vpnActive;
+}
+
+- (BOOL)isVPNCurrentlyActive {
+    return [self isVPNConnected] || [self isVPNConnectedByProxy];
 }
 
 
