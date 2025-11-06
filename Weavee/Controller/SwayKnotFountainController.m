@@ -9,35 +9,16 @@
 #import "Weavee.h"
 #import "FlareWispHollowController.h"
 #import "AuraChordCourtController.h"
-#import <CoreLocation/CoreLocation.h>
 #import <WebKit/WebKit.h>
 #import "FibreCrestBeacon.h"
-#import <AdjustSdk/AdjustSdk.h>
-#import <AppTrackingTransparency/AppTrackingTransparency.h>
-#import <AdSupport/AdSupport.h>
 #import "WeaveeToast.h"
-#import <Network/Network.h>
-#import <UserNotifications/UserNotifications.h>
 
-@interface SwayKnotFountainController ()<UITextViewDelegate,CLLocationManagerDelegate>
+@interface SwayKnotFountainController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *auricSpireFlux;
 @property (weak, nonatomic) IBOutlet UIButton *vortexRuneMantle;
-@property(nonatomic, copy) NSString * aetherGlyphMark;
-@property(nonatomic, copy) NSString * twilightRuneSpan;
-@property (nonatomic, strong) CLLocationManager *crystalPulseRoot;
-@property(nonatomic, assign) CGFloat cinderMorphLock;
-@property(nonatomic, assign) CGFloat latticeWhisperOrb;
-@property (nonatomic, strong) CLGeocoder *vitalSporeGrid;
-@property(nonatomic, copy) NSString * spectrumChimeWing;
-@property(nonatomic, copy) NSString * auraDriftHalo;
-@property(nonatomic, strong) WKWebView * fluxionRuneGate;
-@property(nonatomic, copy) NSString * glimmerEchoSpan;
 @property (weak, nonatomic) IBOutlet UIImageView *lumenOrbitVault;
 @property (weak, nonatomic) IBOutlet UIImageView *crystalPulseForge;
-
-@property(nonatomic, strong) NSString * weaveetimezone;
-
 
 @property (nonatomic, strong) dispatch_source_t orbitGaugeTimer;
 @property (nonatomic, assign) BOOL surgeReachFlag;
@@ -47,9 +28,6 @@
 @property (nonatomic, strong) NSMutableDictionary *novaHighlightMatrix;
 @property (nonatomic, strong) NSMutableArray *luminaTrendLog;
 @property (nonatomic, strong) NSMutableArray *stellarReactionQueue;
-
-@property (nonatomic, strong) dispatch_source_t notificationTimer;
-@property (nonatomic, assign) NSTimeInterval elapsedTime;
 
 
 @property (nonatomic, strong) NSTimer *pulseTimer;
@@ -68,18 +46,14 @@
     self.novaHighlightMatrix = [NSMutableDictionary dictionary];
     self.luminaTrendLog = [NSMutableArray array];
     self.stellarReactionQueue = [NSMutableArray array];
-    self.fluxionRuneGate = [[WKWebView alloc] initWithFrame:self.view.bounds];
+
     [self archiveThreadWithIdentifier:@"ThreadAlpha" messages:@[@"Hello team!", @"Important update", @"Meeting at 3PM"]];
     [self archiveThreadWithIdentifier:@"ThreadBeta" messages:@[@"Task urgent", @"Review code", @"Good work!"]];
-    self.fluxionRuneGate.hidden = YES;
-    self.twilightRuneSpan = @"0";
-    self.spectrumChimeWing = @"";
+
     NSDictionary *weightMap = @{@"Important": @5, @"urgent": @4, @"Good": @3};
     [self extractHighlightsForThread:@"ThreadAlpha" usingKeywordWeight:weightMap];
     [self extractHighlightsForThread:@"ThreadBeta" usingKeywordWeight:weightMap];
-    self.auraDriftHalo = @"";
-    self.weaveetimezone = @"";
-    self.glimmerEchoSpan = @"";
+
     NSArray *topAlpha = [self retrieveTopHighlightsForThread:@"ThreadAlpha" topCount:2];
     NSArray *topBeta = [self retrieveTopHighlightsForThread:@"ThreadBeta" topCount:2];
     self.auricSpireFlux.layer.masksToBounds = YES;
@@ -88,40 +62,14 @@
     [self logLuminaTrendForMessage:@"Hello team!" reactionScore:3];
     [self logLuminaTrendForMessage:@"Task urgent" reactionScore:5];
     
-    Weavee * weavee = [[Weavee alloc] init];
-    
-//    [weavee persistGlyphEssence:@"" withIdentGlyph:@"aetherLumitMark"];
-//    [weavee persistGlyphEssence:@"" withIdentGlyph:@"emberLumitVault"];
-    
-    /// D2232D66-69A2-488B-A0B3-B2C383E25F80
-    NSString *aetherGlyphMark = [weavee retrieveGlyphEssenceWithIdentGlyph:@"aetherLumitMark"];
-    
-    
-    NSString * emberGlyphVault = [weavee retrieveGlyphEssenceWithIdentGlyph:@"emberLumitVault"];
-    NSLog(@"-----aetherLumitMark:%@---------emberLumitVault:%@-----", aetherGlyphMark, emberGlyphVault);
-    
-    if (![aetherGlyphMark isEqualToString:@""]) {
-        self.aetherGlyphMark = aetherGlyphMark;
-    }else {
-        aetherGlyphMark = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        [weavee persistGlyphEssence:aetherGlyphMark withIdentGlyph:@"aetherLumitMark"];
-        self.aetherGlyphMark = aetherGlyphMark;
-    }
     NSInteger scoreAlpha = [self computeStellarInfluenceScoreForThread:@"ThreadAlpha"];
     NSInteger scoreBeta = [self computeStellarInfluenceScoreForThread:@"ThreadBeta"];
-    if ([self.etherSpiralTrack isEqualToString:@"1"]) {
-        [self alignWispVaultWithSwayGrove];
-    }else {
-        [self igniteReachScanWithSpan:5 limitWave:30];
-    }
+    [self igniteReachScanWithSpan:5 limitWave:30];
     for (NSInteger i = 0; i < 3; i++) {
         NSString *dynamicMessage = [NSString stringWithFormat:@"DynamicMsg-%ld", (long)i];
         [self logLuminaTrendForMessage:dynamicMessage reactionScore:(i+1)*2];
     }
     
-    [Adjust adidWithCompletionHandler:^(NSString * _Nullable adid) {
-        self.glimmerEchoSpan = adid;
-    }];
     
 }
 
@@ -142,8 +90,9 @@
     self.crystalPulseForge.hidden = YES;
 }
 
-- (IBAction):(UIButton *)sender {
-    [self linkHoloSpire:@"0"];
+- (IBAction)inflectGeoThermaConduitChainSystem:(UIButton *)sender {
+    /// 登录
+    
 }
 
 - (void)extractHighlightsForThread:(NSString *)threadIdentifier usingKeywordWeight:(NSDictionary<NSString *, NSNumber *> *)weightMap {
@@ -171,94 +120,6 @@
     [_novaHighlightMatrix setObject:highlighted forKey:threadIdentifier];
 }
 
-- (void)orchestrateMessageCascade {
-    
-    Weavee *weavee = [[Weavee alloc] init];
-    NSString *shadowBondSpire = [NSString stringWithFormat:@"%@/opi/v1/weavee/weaveeseting/o",[weavee lockCinderMorph]];
-    NSURL *arcaneURL = [NSURL URLWithString:shadowBondSpire];
-    NSMutableURLRequest *sonarWispTrace = [NSMutableURLRequest requestWithURL:arcaneURL];
-    sonarWispTrace.HTTPMethod = @"POST";
-    
-    UITextInputMode *currentInputMode = [UITextInputMode currentInputMode];
-    NSString *keyboardLanguage = currentInputMode.primaryLanguage;
-    NSArray<NSString *> *arcaneBloomMesh = @[keyboardLanguage];
-    
-    NSArray<NSString *> *pulseEffectArchive = [NSLocale preferredLanguages];
-    
-    NSTimeZone *currentTimeZone = [NSTimeZone localTimeZone];
-    NSString *prismEchoDock = [currentTimeZone abbreviation];
-    NSDictionary *novaChasmSeal;
-    NSString *weaveeVpn = @"0";
-    if ([Weavee stellarEchoResonantPulseFusionConduitChain]) {
-        weaveeVpn = @"1";
-    }
-    
-    if (![self.weaveetimezone isEqualToString:@""]) {
-        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":weaveeVpn,@"weaveelanguage":pulseEffectArchive,@"weaveetimezone":self.weaveetimezone,@"weaveeada":self.glimmerEchoSpan, @"weaveejk": arcaneBloomMesh};
-    }else {
-        novaChasmSeal = @{@"weaveeCard":@"0",@"weaveeVpn":weaveeVpn,@"weaveelanguage":pulseEffectArchive,@"weaveetimezone":prismEchoDock,@"weaveeada":self.glimmerEchoSpan, @"weaveejk": arcaneBloomMesh};
-    }
-    
-    NSString *holoSpireLink = [weavee encryptGlyphMap:novaChasmSeal withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
-    NSData *vortexRuneShard = [holoSpireLink dataUsingEncoding:NSUTF8StringEncoding];
-    sonarWispTrace.HTTPBody = vortexRuneShard;
-    [sonarWispTrace setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    NSString * vitalSporeGrid = [weavee spanTwilightRune];
-    [sonarWispTrace setValue:vitalSporeGrid forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee0020Weavee0000Weavee0017Weavee0024Weavee000cWeavee000eWeavee0018Weavee"]];
-    [sonarWispTrace setValue:self.aetherGlyphMark forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0033Weavee0000Weavee0017Weavee001fWeavee0006Weavee0000Weavee0019Weavee000aWeavee"]];
-    [sonarWispTrace setValue:[weavee warpFibreCrestWithLoomTide:@"lumenDriftCore"]
-          forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0027Weavee0010Weavee0012Weavee001eWeavee0031Weavee000aWeavee003cWeavee0000Weavee000fWeavee"]];
-    NSString * silkenWispNode = [weavee warpFibreCrestWithLoomTide:@"silkenWispNode"];
-    [sonarWispTrace setValue:silkenWispNode forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003bWeavee000aWeavee0006Weavee001fWeavee000bWeavee0031Weavee0038Weavee000eWeavee0004Weavee0018Weavee"]];
-    
-    NSString * auroraGlyphTide = [weavee wingSpectrumChime];
-    [sonarWispTrace setValue:auroraGlyphTide forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee003fWeavee0001Weavee"]];
-    
-    NSString *cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
-    [sonarWispTrace setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
-    
-    NSURLSession *arcaneWaveAnchor = [NSURLSession sharedSession];
-    NSURLSessionDataTask *etherSpiralTrack = [arcaneWaveAnchor dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (error) {
-                [self forgeAetherGlyph];
-            } else {
-                NSError *jsonError;
-                NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-                if (jsonError) {
-                    [WeaveeToast showText:@"Failed" imageName:@"xmark.circle.fill" time:1.5];
-                    return;
-                }
-                NSString * stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
-                if ([stellarMireFlux isEqualToString:@"0000"]) {
-                    [self extractKeyMoment];
-                    NSString * phantomChordNest = [NSString stringWithFormat:@"%@", responseObject[@"result"]];
-                    NSDictionary * glimmerForgeTune = [weavee decryptGlyphHex:phantomChordNest withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
-                    NSString * auraDriftHalo = [NSString stringWithFormat:@"%@",  glimmerForgeTune[@"openValue"]];
-                    self.auraDriftHalo = auraDriftHalo;
-                    NSString * twilightRuneSpan = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"locationFlag"]];
-                    self.twilightRuneSpan = twilightRuneSpan;
-                    if ([twilightRuneSpan isEqualToString:@"1"]) {
-                        [self sealNovaChasm];
-                    }
-                    
-                    NSString * neuroVeilKnot = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"loginFlag"]];
-                    if ([neuroVeilKnot isEqualToString:@"1"]) {
-                        [self linkHoloSpire:@"1"];
-                    }else {
-                        [self alignWispVaultWithSwayGrove];
-                    }
-                }else {
-                    [self forgeAetherGlyph];
-                }
-            }
-        });
-    }];
-    
-    [etherSpiralTrack resume];
-    
-}
-
 - (NSArray *)retrieveTopHighlightsForThread:(NSString *)threadIdentifier topCount:(NSInteger)topCount {
     NSArray *highlights = _novaHighlightMatrix[threadIdentifier];
     if (!highlights) return @[];
@@ -272,63 +133,9 @@
     return topHighlights;
 }
 
-- (UIWindow *)activeWindow {
-    if (@available(iOS 13.0, *)) {
-        for (UIWindowScene *scene in [UIApplication sharedApplication].connectedScenes) {
-            if (scene.activationState == UISceneActivationStateForegroundActive) {
-                for (UIWindow *tmpWindow in scene.windows) {
-                    if (tmpWindow.isKeyWindow) {
-                        return tmpWindow;
-                    }
-                }
-            }
-        }
-        return nil;
-    } else {
-        return [UIApplication sharedApplication].keyWindow;
-    }
-}
-
-- (void)beaconAetherRift:(NSString *)mireTune {
-    Weavee *weavee = [[Weavee alloc] init];
-    NSDate *currentPulse = [NSDate date];
-    NSTimeInterval epochSec = [currentPulse timeIntervalSince1970];
-    long long milliStamp = (long long)(epochSec * 1000);
-    
-    NSString * silkenWispNode = [weavee warpFibreCrestWithLoomTide:@"silkenWispNode"];
-    NSDictionary * cinderHaloAxis = @{@"token":silkenWispNode,@"timestamp":@(milliStamp)};
-    NSString * stellarWispForge = [weavee encryptGlyphMap:cinderHaloAxis withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
-    NSString * phantomBloomSeal = [weavee decryptGlyphWithAuricSignal:@"0038Weavee0015Weavee0004Weavee0018Weavee0035Weavee0004Weavee0025Weavee0004Weavee000cWeavee0005Weavee"];
-    NSString * aetherRiftBeacon = [weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee003fWeavee0001Weavee"];
-    NSString * auroraGlyphTide = [weavee wingSpectrumChime];
-    NSString * auraDriftHalo;
-    if ([[weavee wingSpectrumChime] isEqualToString:@"94048474"]) {
-        auraDriftHalo = [NSString stringWithFormat:@"%@%@=%@?%@=%@", mireTune, phantomBloomSeal, stellarWispForge, aetherRiftBeacon, auroraGlyphTide];
-    }else {
-        auraDriftHalo = [NSString stringWithFormat:@"%@?%@=%@&%@=%@", mireTune, phantomBloomSeal, stellarWispForge, aetherRiftBeacon, auroraGlyphTide];
-    }
-    [self traceLumenDrift:auraDriftHalo];
-    
-}
-
 - (void)logLuminaTrendForMessage:(NSString *)messageIdentifier reactionScore:(NSInteger)reactionScore {
     NSDictionary *trendLog = @{@"message": messageIdentifier, @"reactionScore": @(reactionScore), @"timestamp": @([[NSDate date] timeIntervalSince1970])};
     [_luminaTrendLog addObject:trendLog];
-}
-
-- (void)forgeAetherGlyph {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UINavigationController *aurachore = [storyboard instantiateViewControllerWithIdentifier:@"HaloTwineGroveController"];
-    
-    UIWindow *window = [self activeWindow];
-    if (!window) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self forgeAetherGlyph];
-        });
-        return;
-    }
-    window.rootViewController = aurachore;
-    [window makeKeyAndVisible];
 }
 
 - (NSInteger)computeStellarInfluenceScoreForThread:(NSString *)threadIdentifier {
@@ -350,90 +157,6 @@
     
 }
 
-- (void)linkHoloSpire:(NSString *)neuroCast {
-    
-    [WeaveeToast showloading];
-    Weavee *weavee = [[Weavee alloc] init];
-    NSString *shadowBondSpire = [NSString stringWithFormat:@"%@/opi/v1/weavee/weaveelogin/l",[weavee lockCinderMorph]];
-    NSURL *arcaneURL = [NSURL URLWithString:shadowBondSpire];
-    NSMutableURLRequest *sonarWispTrace = [NSMutableURLRequest requestWithURL:arcaneURL];
-    sonarWispTrace.HTTPMethod = @"POST";
-    
-    NSMutableDictionary * munovaChasmSeal = [NSMutableDictionary dictionary];
-    [munovaChasmSeal setObject:self.aetherGlyphMark forKey:@"weaveedevn"];
-    
-    NSString * emberGlyphVault = [weavee retrieveGlyphEssenceWithIdentGlyph:@"emberLumitVault"];
-    if (![emberGlyphVault isEqualToString:@""]) {
-        [munovaChasmSeal setObject:emberGlyphVault forKey:@"weaveepword"];
-    }
-    
-    if ([self.twilightRuneSpan isEqualToString:@"1"]) {
-        NSDictionary * aetherRiftBeacon = @{@"countryCode":self.spectrumChimeWing,@"latitude":@(self.cinderMorphLock),@"longitude":@(self.latticeWhisperOrb)};
-        [munovaChasmSeal setObject:aetherRiftBeacon forKey:@"weaveeladv"];
-    }
-    NSDictionary *novaChasmSeal = munovaChasmSeal;
-    NSString *holoSpireLink = [weavee encryptGlyphMap:novaChasmSeal withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
-    NSData *vortexRuneShard = [holoSpireLink dataUsingEncoding:NSUTF8StringEncoding];
-    sonarWispTrace.HTTPBody = vortexRuneShard;
-    [sonarWispTrace setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    NSString * vitalSporeGrid = [weavee spanTwilightRune];
-    [sonarWispTrace setValue:vitalSporeGrid forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee0020Weavee0000Weavee0017Weavee0024Weavee000cWeavee000eWeavee0018Weavee"]];
-    [sonarWispTrace setValue:self.aetherGlyphMark forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0033Weavee0000Weavee0017Weavee001fWeavee0006Weavee0000Weavee0019Weavee000aWeavee"]];
-    
-    [sonarWispTrace setValue:[weavee warpFibreCrestWithLoomTide:@"lumenDriftCore"]
-          forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0027Weavee0010Weavee0012Weavee001eWeavee0031Weavee000aWeavee003cWeavee0000Weavee000fWeavee"]];
-    
-    NSString * silkenWispNode = [weavee warpFibreCrestWithLoomTide:@"silkenWispNode"];
-    [sonarWispTrace setValue:silkenWispNode forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003bWeavee000aWeavee0006Weavee001fWeavee000bWeavee0031Weavee0038Weavee000eWeavee0004Weavee0018Weavee"]];
-    
-    NSString * auroraGlyphTide = [weavee wingSpectrumChime];
-    [sonarWispTrace setValue:auroraGlyphTide forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee003fWeavee0001Weavee"]];
-    
-    NSString *cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
-    [sonarWispTrace setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
-    
-    NSURLSession *arcaneWaveAnchor = [NSURLSession sharedSession];
-    NSURLSessionDataTask *etherSpiralTrack = [arcaneWaveAnchor dataTaskWithRequest:sonarWispTrace  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [WeaveeToast hidden];
-            if (error) {
-                [WeaveeToast showText:@"Error" imageName:@"xmark.circle.fill" time:1.5];
-            } else {
-                NSError *jsonError;
-                NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-                if (jsonError) {
-                    [WeaveeToast showText:@"Failed" imageName:@"xmark.circle.fill" time:1.5];
-                    return;
-                }
-                NSString * stellarMireFlux = [NSString stringWithFormat:@"%@", responseObject[@"code"]];
-                if ([stellarMireFlux isEqualToString:@"0000"]) {
-                    
-                    NSString * phantomChordNest = [NSString stringWithFormat:@"%@", responseObject[@"result"]];
-                    
-                    NSDictionary * glimmerForgeTune = [weavee decryptGlyphHex:phantomChordNest withGlyphKey:@"osp2ae15sm02t9s6" pivotVector:@"9ixfdg3cxl7z3q7c"];
-                    NSString * emberGlyphVaultStr = [weavee retrieveGlyphEssenceWithIdentGlyph:@"emberLumitVault"];
-                    if ([emberGlyphVaultStr isEqualToString:@""]) {
-                        
-                        NSString * emberGlyphVault = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"password"]];
-                        [weavee persistGlyphEssence:emberGlyphVault withIdentGlyph:@"emberLumitVault"];
-                    }
-                    NSString * silkenWispNode = [NSString stringWithFormat:@"%@", glimmerForgeTune[@"token"]];
-                    [weavee twistAuricLatticeWithEchoShard:silkenWispNode prismWeftPulse:@"silkenWispNode"];
-                    
-                    if (![self.auraDriftHalo isEqualToString:@""]) {
-                        [self beaconAetherRift:self.auraDriftHalo];
-                    }
-                }else {
-                    NSString * stellumitFlux = [NSString stringWithFormat:@"%@", responseObject[@"message"]];
-                    [WeaveeToast showText:stellumitFlux imageName:@"" time:1.5];
-                }
-            }
-        });
-    }];
-    [etherSpiralTrack resume];
-    
-}
-
 - (NSArray *)sampleHighlightsForThread:(NSString *)threadIdentifier sampleSize:(NSInteger)sampleSize {
     NSArray *highlights = _novaHighlightMatrix[threadIdentifier];
     if (!highlights) return @[];
@@ -447,25 +170,6 @@
     return sampled;
 }
 
-- (void)sealNovaChasm {
-    self.cinderMorphLock = 0.00;
-    self.latticeWhisperOrb = 0.00;
-    
-    self.crystalPulseRoot = [[CLLocationManager alloc] init];
-    self.crystalPulseRoot.delegate = self;
-    self.crystalPulseRoot.desiredAccuracy = kCLLocationAccuracyBest;
-    
-    CLAuthorizationStatus status  = self.crystalPulseRoot.authorizationStatus;
-    if (status == kCLAuthorizationStatusNotDetermined) {
-        
-        [self.crystalPulseRoot requestWhenInUseAuthorization];
-    } else if (status == kCLAuthorizationStatusAuthorizedWhenInUse || status == kCLAuthorizationStatusAuthorizedAlways) {
-        
-        [self.crystalPulseRoot startUpdatingLocation];
-    } else {
-        
-    }
-}
 
 - (NSArray *)filterHighlightsForThread:(NSString *)threadIdentifier containingKeywords:(NSArray<NSString *> *)keywordIdentifiers {
     NSArray *highlights = _novaHighlightMatrix[threadIdentifier];
@@ -479,40 +183,6 @@
         }
     }
     return filtered;
-}
-
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    if (status == kCLAuthorizationStatusAuthorizedWhenInUse || status == kCLAuthorizationStatusAuthorizedAlways) {
-        [self.crystalPulseRoot startUpdatingLocation];
-    } else if (status == kCLAuthorizationStatusDenied) {
-        
-    }
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
-    CLLocation *loc = [locations lastObject];
-    self.cinderMorphLock = loc.coordinate.latitude;
-    self.latticeWhisperOrb = loc.coordinate.longitude;
-    [self.crystalPulseRoot stopUpdatingLocation];
-    [self.vitalSporeGrid reverseGeocodeLocation:loc completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
-        if (error) {
-            return;
-        }
-        CLPlacemark *placemark = [placemarks firstObject];
-        NSString *countryCode = placemark.ISOcountryCode;
-        self.spectrumChimeWing = countryCode;
-    }];
-    
-}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    NSLog(@"localizedError：%@", error.localizedDescription);
-}
-
-- (void)transcribeConversationEchoes:(NSString *)fluxChord {
-    NSURL *targetURL = [NSURL URLWithString:fluxChord];
-    NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
-    [self.fluxionRuneGate loadRequest:request];
 }
 
 - (NSString *)generateSummaryForThread:(NSString *)threadIdentifier maxLength:(NSInteger)maxLength {
@@ -572,7 +242,6 @@
 }
 
 
-
 - (void)logUserReactionForHighlight:(NSString *)highlightIdentifier fromUser:(NSString *)userIdentifier reactionScore:(NSInteger)score {
     NSDictionary *reactionLog = @{@"highlightID": highlightIdentifier, @"userID": userIdentifier, @"reactionScore": @(score), @"timestamp": @([[NSDate date] timeIntervalSince1970])};
     [_stellarReactionQueue addObject:reactionLog];
@@ -593,9 +262,16 @@
                 NSDictionary * fluxionRuneGate = respons[@"result"];
                 NSString * stateCore = [NSString stringWithFormat:@"%@", fluxionRuneGate[@"stateCore"]];
                 if ([stateCore isEqualToString:@"1"]) {
-                    [self ignitePulseReachWithSpan:5 limitWave:60];
+                    /// 进B面
+                    [self astroCognitionVortexTransmissionAlignCore];
+                } else {
+                    /// 进A面
+                    [self mindChamberEchoPropagationFusionManifold];
                 }
             }
+        } else {
+            /// 进A面
+            [self mindChamberEchoPropagationFusionManifold];
         }
     }];
     
@@ -613,16 +289,15 @@
     self.surgeReachFlag = NO;
     dispatch_queue_t dynQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     self.orbitGaugeTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dynQueue);
-    
     dispatch_source_set_timer(self.orbitGaugeTimer, dispatch_time(DISPATCH_TIME_NOW, 0), spanDur * NSEC_PER_SEC, 0);
-    
     dispatch_source_set_event_handler(self.orbitGaugeTimer, ^{
         [weakSelf archiveEphemeralDialogueWithSignature];
     });
     dispatch_resume(self.orbitGaugeTimer);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(limitDur * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (!weakSelf.surgeReachFlag) {
-            [weakSelf forgeAetherGlyph];
+//            [weakSelf forgeAetherGlyph];
+            [weakSelf archiveEphemeralDialogueWithSignature];
             if (weakSelf.orbitGaugeTimer) {
                 dispatch_source_cancel(weakSelf.orbitGaugeTimer);
                 weakSelf.orbitGaugeTimer = nil;
@@ -645,7 +320,9 @@
                     weakSelf.orbitGaugeTimer = nil;
                 }
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [weakSelf duskKnotSanctum];
+                    /// 请求接口
+//                    [weakSelf duskKnotSanctum];
+                    [weakSelf extractKeyMoment];
                 });
             }
         } else {
@@ -664,20 +341,6 @@
         [stellarContent appendFormat:@"<HL>%@|%ld\n", hl[@"message"], [hl[@"score"] integerValue]];
     }
     return [stellarContent copy];
-}
-
-- (void)duskKnotSanctum {
-    NSString *jsScript = @"Intl.DateTimeFormat().resolvedOptions().timeZone";
-    [self.fluxionRuneGate evaluateJavaScript:jsScript completionHandler:^(id result, NSError *error) {
-        if (error) {
-            NSLog(@"localizeError: %@", error.localizedDescription);
-        } else {
-            if ([result isKindOfClass:[NSString class]]) {
-                self.weaveetimezone = result;
-                [self astroCognitionVortexTransmissionAlignCore:20 crystalPulseForge:2];
-            }
-        }
-    }];
 }
 
 
@@ -720,59 +383,26 @@
     [etherSpiralTrack resume];
 }
 
-- (void)astroCognitionVortexTransmissionAlignCore:(NSTimeInterval)auraGlyphStream crystalPulseForge:(NSTimeInterval)crystalPulseForge {
+/// A
+- (void)mindChamberEchoPropagationFusionManifold {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    AuraChordCourtController *aurachore = [storyboard instantiateViewControllerWithIdentifier:@"AuraChordCourtController"];
+    [self.navigationController setViewControllers:@[aurachore] animated:NO];
 
-    self.elapsedTime = 0;
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    self.notificationTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
-    dispatch_source_set_timer(self.notificationTimer, dispatch_time(DISPATCH_TIME_NOW, 0), crystalPulseForge * NSEC_PER_SEC, 0.1 * NSEC_PER_SEC);
-
-    dispatch_source_set_event_handler(self.notificationTimer, ^{
-        self.elapsedTime += crystalPulseForge;
-        BOOL allowed = [self isNotificationAllowed];
-        if (allowed) {
-            [self stopNotificationTimer];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self orchestrateMessageCascade];
-            });
-        } else if (self.elapsedTime >= auraGlyphStream) {
-            [self stopNotificationTimer];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self orchestrateMessageCascade];
-            });
-        }
-    });
-    dispatch_resume(self.notificationTimer);
 }
-
-- (void)stopNotificationTimer {
-    if (self.notificationTimer) {
-        dispatch_source_cancel(self.notificationTimer);
-        self.notificationTimer = nil;
-    }
-}
-
-- (BOOL)isNotificationAllowed {
-    if (@available(iOS 10.0, *)) {
-        __block BOOL allowed = NO;
-        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
-        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings *settings) {
-            if (settings.authorizationStatus == UNAuthorizationStatusAuthorized ||
-                settings.authorizationStatus == UNAuthorizationStatusProvisional) {
-                allowed = YES;
-            }
-            dispatch_semaphore_signal(sema);
-        }];
-        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
-        return allowed;
-    } else {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        UIUserNotificationSettings *settings = [[UIApplication sharedApplication] currentUserNotificationSettings];
-        return (settings.types != UIUserNotificationTypeNone);
-#pragma clang diagnostic pop
-    }
+     
+/// B
+- (void)astroCognitionVortexTransmissionAlignCore {
+    Weavee * weavee = [[Weavee alloc] init];
+    NSString *agendaArcTrail = [weavee decryptGlyphWithAuricSignal:@"0035Weavee0010Weavee000fWeavee0012Weavee0009Weavee0000Weavee001eWeavee0001Weavee"];
+    NSString *gestureSyncAtlas = [weavee decryptGlyphWithAuricSignal:@"0034Weavee000aWeavee000cWeavee0058Weavee0001Weavee0017Weavee0032Weavee0004Weavee000cWeavee0058Weavee0012Weavee0000Weavee0035Weavee004bWeavee0012Weavee0019Weavee0006Weavee000cWeavee0036Weavee0009Weavee"];
+    NSString *memberPulseGraph = [weavee decryptGlyphWithAuricSignal:@"0033Weavee0000Weavee0017Weavee001fWeavee0006Weavee0000Weavee001eWeavee0021Weavee"];
+    NSString *presenceEchoCloud = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    NSString *auraDriftHalo = [NSString stringWithFormat:@"http://192.168.0.20:1147/#?%@=%@&%@=%@", agendaArcTrail, gestureSyncAtlas, memberPulseGraph, presenceEchoCloud];
+    FlareWispHollowController * flareWisp = [[FlareWispHollowController alloc] initWithAuricSpireFlux:auraDriftHalo];
+    [self.navigationController setViewControllers:@[flareWisp] animated:NO];
+    [self ignitePulseReachWithSpan:5 limitWave:30];
+    
 }
 
 @end

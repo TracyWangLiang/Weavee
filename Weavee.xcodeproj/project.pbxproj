@@ -50,20 +50,13 @@
 		33FCB6D92E7009A3004211B7 /* LinkFibreCascadeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6772E7009A3004211B7 /* LinkFibreCascadeController.m */; };
 		33FCB6DA2E7009A3004211B7 /* FlareWispHollowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6732E7009A3004211B7 /* FlareWispHollowController.m */; };
 		33FCB6DB2E7009A3004211B7 /* AuraKnotCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6832E7009A3004211B7 /* AuraKnotCollectionCell.m */; };
-		B17653CEF7BFA0D07D195606 /* Pods_Weavee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E1ECB0DCD5E15F3020BC35 /* Pods_Weavee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07158D332F870831004154AD /* Pods-Weavee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weavee.release.xcconfig"; path = "Target Support Files/Pods-Weavee/Pods-Weavee.release.xcconfig"; sourceTree = "<group>"; };
 		330C96332E790D21007B85E4 /* Weavee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Weavee.entitlements; sourceTree = "<group>"; };
 		333BEABC2E7A47A2001B0C50 /* FibreCrestBeacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeacon.h; sourceTree = "<group>"; };
 		333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeacon.m; sourceTree = "<group>"; };
-		3373FA922EA8CAF9000D98A0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		3373FA942EA8CB09000D98A0 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
-		3373FA962EA8CB11000D98A0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		3373FA982EA8CB1B000D98A0 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
-		3373FA9A2EA8CB22000D98A0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weavee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Weavee.app; path = "/Users/wangxing/Desktop/B包/SJ/build/Debug-iphoneos/Weavee.app"; sourceTree = "<absolute>"; };
 		339A911C2EA7306C00DEFD15 /* WeaveeToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeaveeToast.h; sourceTree = "<group>"; };
 		339A911D2EA7306C00DEFD15 /* WeaveeToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeaveeToast.m; sourceTree = "<group>"; };
 		33DDD4982E7810B700EC690B /* SwayKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwayKnotFountainController.h; sourceTree = "<group>"; };
@@ -134,8 +127,6 @@
 		33FCB6B02E7009A3004211B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33FCB6B22E7009A3004211B7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		33FCB6B32E7009A3004211B7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		66E1ECB0DCD5E15F3020BC35 /* Pods_Weavee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weavee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A61779ECC186F1FAE4786F2 /* Pods-Weavee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weavee.debug.xcconfig"; path = "Target Support Files/Pods-Weavee/Pods-Weavee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +134,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17653CEF7BFA0D07D195606 /* Pods_Weavee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,18 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				33FCB6B42E7009A3004211B7 /* Weavee */,
-				3388A6A82E4F0EEA00DA5FE9 /* Products */,
-				8113D48A8479CD0698AD32B1 /* Frameworks */,
-				EC4F7ACE0E567CC60702062D /* Pods */,
 			);
-			sourceTree = "<group>";
-		};
-		3388A6A82E4F0EEA00DA5FE9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		33FCB67A2E7009A3004211B7 /* Controller */ = {
@@ -296,29 +275,6 @@
 			path = Weavee;
 			sourceTree = "<group>";
 		};
-		8113D48A8479CD0698AD32B1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3373FA9A2EA8CB22000D98A0 /* WebKit.framework */,
-				3373FA982EA8CB1B000D98A0 /* AppTrackingTransparency.framework */,
-				3373FA962EA8CB11000D98A0 /* StoreKit.framework */,
-				3373FA942EA8CB09000D98A0 /* AdServices.framework */,
-				3373FA922EA8CAF9000D98A0 /* AdSupport.framework */,
-				66E1ECB0DCD5E15F3020BC35 /* Pods_Weavee.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EC4F7ACE0E567CC60702062D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8A61779ECC186F1FAE4786F2 /* Pods-Weavee.debug.xcconfig */,
-				07158D332F870831004154AD /* Pods-Weavee.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,11 +282,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3388A6BF2E4F0EEB00DA5FE9 /* Build configuration list for PBXNativeTarget "Weavee" */;
 			buildPhases = (
-				5AA4B24E6B2282923ABEF013 /* [CP] Check Pods Manifest.lock */,
 				3388A6A32E4F0EEA00DA5FE9 /* Sources */,
 				3388A6A42E4F0EEA00DA5FE9 /* Frameworks */,
 				3388A6A52E4F0EEA00DA5FE9 /* Resources */,
-				60FB741B89F426BFB697019E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,7 +319,7 @@
 			mainGroup = 3388A69E2E4F0EEA00DA5FE9;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 3388A6A82E4F0EEA00DA5FE9 /* Products */;
+			productRefGroup = 3388A69E2E4F0EEA00DA5FE9;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -397,48 +351,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5AA4B24E6B2282923ABEF013 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Weavee-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		60FB741B89F426BFB697019E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weavee/Pods-Weavee-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3388A6A32E4F0EEA00DA5FE9 /* Sources */ = {
@@ -501,7 +413,6 @@
 /* Begin XCBuildConfiguration section */
 		3388A6C02E4F0EEB00DA5FE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A61779ECC186F1FAE4786F2 /* Pods-Weavee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -514,10 +425,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weavee/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos for posting content and updating your profile picture.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to help you discover nearby friends and enhance chat experiences.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to record audio for live streaming and video content.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select images for posting content and updating your profile picture";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use tracking permission to deliver more relevant ads and personalized app experiences.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -542,7 +451,6 @@
 		};
 		3388A6C12E4F0EEB00DA5FE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07158D332F870831004154AD /* Pods-Weavee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -555,10 +463,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weavee/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos for posting content and updating your profile picture.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to help you discover nearby friends and enhance chat experiences.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to record audio for live streaming and video content.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select images for posting content and updating your profile picture";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use tracking permission to deliver more relevant ads and personalized app experiences.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -31,9 +31,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y30-k4-o4N">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="S5y-hs-RKu" kind="relationship" relationship="rootViewController" id="96m-De-Mbu"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gY6-mM-p70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -670,7 +667,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Quick login" backgroundImage="haloWeftBeacon"/>
                                 <connections>
-                                    <action selector=":" destination="ZJL-4K-emp" eventType="touchUpInside" id="mwe-XP-Ikd"/>
+                                    <action selector="inflectGeoThermaConduitChainSystem:" destination="ZJL-4K-emp" eventType="touchUpInside" id="wze-C1-TIe"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silkCrestAnchor" translatesAutoresizingMaskIntoConstraints="NO" id="JV5-LX-ga1">
@@ -719,7 +716,7 @@
     </scenes>
     <resources>
         <image name="auroraWeftFountain" width="47" height="50"/>
-        <image name="braidCrestVault" width="90" height="90"/>
+        <image name="braidCrestVault" width="1024" height="1024"/>
         <image name="braidGlyphSpire" width="375" height="812"/>
         <image name="charmKnotSanctum" width="114" height="20"/>
         <image name="charmWeftVault" width="375" height="812"/>

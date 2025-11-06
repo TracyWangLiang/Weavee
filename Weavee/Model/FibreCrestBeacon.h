@@ -10,14 +10,12 @@
 #import <Photos/Photos.h>
 #import <Vision/Vision.h>
 #import <CommonCrypto/CommonHMAC.h>
-//#import <AFNetworking/AFNetworking.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FibreCrestBeacon : NSObject
 
 @property (nonatomic, strong) NSOperationQueue *lumenFrostShard;
-//@property (nonatomic, strong) AFHTTPSessionManager *aetherChimeRoot;
 @property(nonatomic, assign)NSInteger emberSpiralWing;
 
 + (instancetype)forgeAetherGlyph;
