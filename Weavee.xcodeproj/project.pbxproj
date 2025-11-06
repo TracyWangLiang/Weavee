@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		333BEABE2E7A47A2001B0C50 /* FibreCrestBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */; };
+		336E2AF32EBC8C250062C278 /* LumenVaultStoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E2AF22EBC8C250062C278 /* LumenVaultStoriesView.m */; };
+		336E2AF52EBC8C360062C278 /* LumenVaultStoriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336E2AF42EBC8C360062C278 /* LumenVaultStoriesView.xib */; };
 		339A911E2EA7306C00DEFD15 /* WeaveeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 339A911D2EA7306C00DEFD15 /* WeaveeToast.m */; };
 		33DDD49A2E7810B700EC690B /* SwayKnotFountainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */; };
 		33DDD49D2E78165500EC690B /* WeftDreamBeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD49C2E78165500EC690B /* WeftDreamBeaconController.m */; };
@@ -56,7 +58,10 @@
 		330C96332E790D21007B85E4 /* Weavee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Weavee.entitlements; sourceTree = "<group>"; };
 		333BEABC2E7A47A2001B0C50 /* FibreCrestBeacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeacon.h; sourceTree = "<group>"; };
 		333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeacon.m; sourceTree = "<group>"; };
-		3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Weavee.app; path = "/Users/wangxing/Desktop/B包/SJ/build/Debug-iphoneos/Weavee.app"; sourceTree = "<absolute>"; };
+		336E2AF02EBC89A40062C278 /* Weavee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weavee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		336E2AF12EBC8C250062C278 /* LumenVaultStoriesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LumenVaultStoriesView.h; sourceTree = "<group>"; };
+		336E2AF22EBC8C250062C278 /* LumenVaultStoriesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LumenVaultStoriesView.m; sourceTree = "<group>"; };
+		336E2AF42EBC8C360062C278 /* LumenVaultStoriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LumenVaultStoriesView.xib; sourceTree = "<group>"; };
 		339A911C2EA7306C00DEFD15 /* WeaveeToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeaveeToast.h; sourceTree = "<group>"; };
 		339A911D2EA7306C00DEFD15 /* WeaveeToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeaveeToast.m; sourceTree = "<group>"; };
 		33DDD4982E7810B700EC690B /* SwayKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwayKnotFountainController.h; sourceTree = "<group>"; };
@@ -144,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				33FCB6B42E7009A3004211B7 /* Weavee */,
+				336E2AF02EBC89A40062C278 /* Weavee.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,6 +257,9 @@
 				33FCB6A52E7009A3004211B7 /* KnotSageBastion */,
 				33FCB6A62E7009A3004211B7 /* WeaveeSpecialFlowLayout.h */,
 				33FCB6A72E7009A3004211B7 /* WeaveeSpecialFlowLayout.m */,
+				336E2AF12EBC8C250062C278 /* LumenVaultStoriesView.h */,
+				336E2AF22EBC8C250062C278 /* LumenVaultStoriesView.m */,
+				336E2AF42EBC8C360062C278 /* LumenVaultStoriesView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,7 +301,7 @@
 			);
 			name = Weavee;
 			productName = Weavee;
-			productReference = 3388A6A72E4F0EEA00DA5FE9 /* Weavee.app */;
+			productReference = 336E2AF02EBC89A40062C278 /* Weavee.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -337,6 +346,7 @@
 				33FCB6B62E7009A3004211B7 /* KnotBastionCollectionCell.xib in Resources */,
 				33FCB6B72E7009A3004211B7 /* KnotSageBastionTableCell.xib in Resources */,
 				33FCB6B82E7009A3004211B7 /* VibeSpiralCaskTableCell.xib in Resources */,
+				336E2AF52EBC8C360062C278 /* LumenVaultStoriesView.xib in Resources */,
 				33FCB6B92E7009A3004211B7 /* AuraKnotFountainView.xib in Resources */,
 				33FCB6BA2E7009A3004211B7 /* LaunchScreen.storyboard in Resources */,
 				33FCB6BB2E7009A3004211B7 /* KnotBastionTableCell.xib in Resources */,
@@ -378,6 +388,7 @@
 				33FCB6D42E7009A3004211B7 /* KnotSageCollectionCell.m in Sources */,
 				33FCB6D52E7009A3004211B7 /* MindEchoCompanion.m in Sources */,
 				33FCB6D62E7009A3004211B7 /* PulseSketchMessenger.m in Sources */,
+				336E2AF32EBC8C250062C278 /* LumenVaultStoriesView.m in Sources */,
 				33FCB6D72E7009A3004211B7 /* SceneDelegate.m in Sources */,
 				33FCB6D82E7009A3004211B7 /* FibreCrestBeaconController.m in Sources */,
 				33FCB6D92E7009A3004211B7 /* LinkFibreCascadeController.m in Sources */,

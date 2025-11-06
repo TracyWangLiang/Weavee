@@ -13,6 +13,7 @@
 #import "MindEchoCompanion.h"
 #import <StoreKit/StoreKit.h>
 #import "SwayKnotFountainController.h"
+#import "LumenVaultStoriesView.h"
 
 
 @interface FlareWispHollowController () <WKNavigationDelegate, WKScriptMessageHandler,SKProductsRequestDelegate, SKPaymentTransactionObserver>
@@ -22,6 +23,7 @@
 @property (nonatomic, strong) WKWebView *braidHaloGrain;
 @property (nonatomic, strong) UIView *protectView;
 @property (nonatomic, strong) UIImageView *auraGlyphStream;
+@property (nonatomic, strong) LumenVaultStoriesView *lumenStoriesView;
 
 @end
 
@@ -46,7 +48,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(meshArcaneBloom) name:UIScreenCapturedDidChangeNotification object:nil];
     [self meshArcaneBloom];
     if ([self.pearlLoomAtrium isEqualToString:@"1"]) {
-        [self.view addSubview:self.auraGlyphStream];
+        [self.view addSubview:self.lumenStoriesView];
+        self.lumenStoriesView.hidden = NO;
     }
     
 }
@@ -72,7 +75,9 @@
 
 - (void)setupBackgroundAndWebView {
     
-    [WeaveeToast showloading];
+    if ([self.pearlLoomAtrium isEqualToString:@""]) {
+        [WeaveeToast showloading];
+    }
     MindEchoCompanion *companion = [[MindEchoCompanion alloc] initWithSeedTone:@"neuroWave"];
     self.view.backgroundColor = [UIColor blackColor];
     [companion amplifyResonanceWithPhrase:@"alpha" harmonicLevel:3];
@@ -207,6 +212,7 @@
         [WeaveeToast hidden];
         webView.hidden = NO;
         self.auraGlyphStream.hidden = YES;
+        self.lumenStoriesView.hidden = YES;
     });
 //    if (![self.pearlLoomAtrium isEqualToString:@""]) {
 //        CFAbsoluteTime endMark = CFAbsoluteTimeGetCurrent();
@@ -299,6 +305,16 @@
     }
     return _auraGlyphStream;
 }
+
+-(LumenVaultStoriesView *)lumenStoriesView {
+    if (!_lumenStoriesView) {
+        _lumenStoriesView = [[NSBundle mainBundle] loadNibNamed:@"LumenVaultStoriesView" owner:nil options:nil].lastObject;
+        _lumenStoriesView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+        _lumenStoriesView.hidden = YES;
+    }
+    return _lumenStoriesView;
+}
+
 
 
 @end
