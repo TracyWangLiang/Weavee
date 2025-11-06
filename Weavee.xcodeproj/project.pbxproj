@@ -61,6 +61,7 @@
 		336E2AF12EBC8C250062C278 /* LumenVaultStoriesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LumenVaultStoriesView.h; sourceTree = "<group>"; };
 		336E2AF22EBC8C250062C278 /* LumenVaultStoriesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LumenVaultStoriesView.m; sourceTree = "<group>"; };
 		336E2AF42EBC8C360062C278 /* LumenVaultStoriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LumenVaultStoriesView.xib; sourceTree = "<group>"; };
+		338791852EBCA2D900F3B691 /* Weavee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Weavee.entitlements; sourceTree = "<group>"; };
 		339A911C2EA7306C00DEFD15 /* WeaveeToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeaveeToast.h; sourceTree = "<group>"; };
 		339A911D2EA7306C00DEFD15 /* WeaveeToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeaveeToast.m; sourceTree = "<group>"; };
 		33DDD4982E7810B700EC690B /* SwayKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwayKnotFountainController.h; sourceTree = "<group>"; };
@@ -266,6 +267,7 @@
 		33FCB6B42E7009A3004211B7 /* Weavee */ = {
 			isa = PBXGroup;
 			children = (
+				338791852EBCA2D900F3B691 /* Weavee.entitlements */,
 				33FCB67A2E7009A3004211B7 /* Controller */,
 				33FCB6812E7009A3004211B7 /* Model */,
 				33FCB6A82E7009A3004211B7 /* View */,
@@ -426,7 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = Weavee/Weavee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
@@ -464,7 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = Weavee/Weavee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
