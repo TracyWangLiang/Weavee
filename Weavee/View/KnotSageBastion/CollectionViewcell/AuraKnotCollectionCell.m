@@ -58,9 +58,6 @@
     [self.velvetChordMantle setTitle:garmentConstruction forState:UIControlStateNormal];
     
     NSString * fashionIllustration = [NSString stringWithFormat:@"%@", [beaconSource objectForKey:@"fashionIllustration"]];
-    
-//    [self.silkAuraHall sd_setImageWithURL:[NSURL URLWithString:fashionIllustration]];
-    
     [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:fashionIllustration completion:^(UIImage * _Nonnull image) {
         self.silkAuraHall.image = image;
     }];

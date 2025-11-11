@@ -243,26 +243,7 @@
 
 -(void)twistAuricLatticeWithEchoShard:(NSDictionary *)courtBlob {
     Weavee * weavee = [[Weavee alloc] init];
-//    AFHTTPSessionManager * flameWeftSpirium = [AFHTTPSessionManager manager];
-//    flameWeftSpirium.requestSerializer = [AFJSONRequestSerializer serializer];
-//    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-//    flameWeftSpirium.requestSerializer.timeoutInterval = 15;
-//    [flameWeftSpirium.requestSerializer setValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
-//    NSString * cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
-//    [flameWeftSpirium.requestSerializer setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
-
     NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/wgwsfnaobzz/jaxoxagzj", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
-//    [flameWeftSpirium POST:shadowBondSpire parameters:courtBlob headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",responseObject[@"code"]];
-//        if ([runeVeilFountain isEqualToString:@"200000"]) {
-//            NSDictionary * vortexialLoomCast = responseObject[@"data"];
-//            [self emberDriftCascade:vortexialLoomCast];
-//        }
-//        
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//       
-//    }];
-    
     [self calculateResponseVelocityForThread:shadowBondSpire withCourtBlob:courtBlob completion:^(NSDictionary *respons) {
         if (respons.count > 0) {
                     NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",respons[@"code"]];
@@ -277,27 +258,7 @@
 
 -(void)spiralWraithCompose:(NSDictionary *)courtBlob {
     Weavee * weavee = [[Weavee alloc] init];
-//    AFHTTPSessionManager * flameWeftSpirium = [AFHTTPSessionManager manager];
-//    flameWeftSpirium.requestSerializer = [AFJSONRequestSerializer serializer];
-//    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-//    flameWeftSpirium.requestSerializer.timeoutInterval = 15;
-//    [flameWeftSpirium.requestSerializer setValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
-//    NSString * cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
-//    [flameWeftSpirium.requestSerializer setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
-
     NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/lradjzpzbpxz/sbmfbyal", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
-//    [flameWeftSpirium POST:shadowBondSpire parameters:courtBlob headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",responseObject[@"code"]];
-//        if ([runeVeilFountain isEqualToString:@"200000"]) {
-//            NSArray * haloWeldArcanum = responseObject[@"data"];
-//            self.auricSpireFlux = haloWeldArcanum.count;
-//            self.braidHaloGrain = [self plasmaRuneFragment:haloWeldArcanum];
-//            [self gloomShardTranspose];
-//        }
-//        
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//       
-//    }];
     
     [self calculateResponseVelocityForThread:shadowBondSpire withCourtBlob:courtBlob completion:^(NSDictionary *respons) {
                 NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",respons[@"code"]];
@@ -313,27 +274,7 @@
 
 -(void)crystalVaneMigrate:(NSDictionary *)courtBlob {
     Weavee * weavee = [[Weavee alloc] init];
-//    AFHTTPSessionManager * flameWeftSpirium = [AFHTTPSessionManager manager];
-//    flameWeftSpirium.requestSerializer = [AFJSONRequestSerializer serializer];
-//    flameWeftSpirium.responseSerializer = [AFJSONResponseSerializer serializer];
-//    flameWeftSpirium.requestSerializer.timeoutInterval = 15;
-//    [flameWeftSpirium.requestSerializer setValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];
-//    NSString * cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
-//    [flameWeftSpirium.requestSerializer setValue:cruxianPulseArc forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
-
-    NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/lyajjksognkhz/whkryqmzrmwkjr", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
-//    [flameWeftSpirium POST:shadowBondSpire parameters:courtBlob headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",responseObject[@"code"]];
-//        if ([runeVeilFountain isEqualToString:@"200000"]) {
-//            NSArray * haloWeldArcanum = responseObject[@"data"];
-//            self.prismLoomShard = haloWeldArcanum.count;
-//            [self gloomShardTranspose];
-//        }
-//        
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//       
-//    }];
-    
+    NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/lyajjksognkhz/whkryqmzrmwkjr", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];    
     [self calculateResponseVelocityForThread:shadowBondSpire withCourtBlob:courtBlob completion:^(NSDictionary *respons) {
         if (respons.count > 0) {
             NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",respons[@"code"]];

@@ -34,7 +34,6 @@
         [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:[NSString stringWithFormat:@"%@", fashionAnalysis.lastObject] completion:^(UIImage * _Nonnull image) {
             self.auricSpireFlux.image = image;
         }];
-//        [self.auricSpireFlux sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", fashionAnalysis.lastObject]]];
     }
     NSString * accessoryTrends = [NSString stringWithFormat:@"%@",[anchorNodes objectForKey:@"accessoryTrends"]];
     self.braidHaloGrain.text = accessoryTrends;

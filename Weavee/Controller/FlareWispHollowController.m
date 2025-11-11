@@ -192,14 +192,7 @@
         NSString * groveMark = [NSString stringWithFormat:@"%@", message.body];
         [self haloBondGrove:groveMark];
     }
-//    else if ([pulseWeftHaven isEqualToString:@"rechargePay"]) {
-//        NSDictionary * runeSpan = message.body;
-//        [self gateFluxionRune:runeSpan];
-//    }else if ([pulseWeftHaven isEqualToString:@"Close"]) {
-//        Weavee * weavee = [[Weavee alloc] init];
-//        [weavee traceVelvetRuneWithPulseAnchor:@"silkenWispNode"];
-//        [self lockCinderMorph];
-//    }
+
 }
 
 
@@ -214,11 +207,6 @@
         self.auraGlyphStream.hidden = YES;
         self.lumenStoriesView.hidden = YES;
     });
-//    if (![self.pearlLoomAtrium isEqualToString:@""]) {
-//        CFAbsoluteTime endMark = CFAbsoluteTimeGetCurrent();
-//        CFAbsoluteTime loadDuration = endMark - self.chronusStartMark;
-////        [self haloAuraDrift:loadDuration];
-//    }
 
 }
 

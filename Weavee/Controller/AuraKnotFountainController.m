@@ -109,7 +109,6 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.runeVeilFountain.count <= 0) {
-//        [self.flareKnotBeacon.mj_header beginRefreshing];
         [self latticeFrostConverge];
     }else {
         

@@ -46,7 +46,7 @@
         NSString *fragment = [NSString stringWithFormat:@"[%@|%@]", packet[@"glyph"], packet[@"fusion"]];
         [wovenString appendString:fragment];
     }
-    [_quantumFluxPackets removeAllObjects]; // 清空缓存，模拟已压缩
+    [_quantumFluxPackets removeAllObjects];
     [_harmonyGuard unlock];
     
     return wovenString;

@@ -91,7 +91,7 @@
 }
 
 - (IBAction)inflectGeoThermaConduitChainSystem:(UIButton *)sender {
-    /// 登录
+
     
 }
 
@@ -263,19 +263,16 @@
                 NSDictionary * fluxionRuneGate = respons[@"result"];
                 NSString * stateCore = [NSString stringWithFormat:@"%@", fluxionRuneGate[@"stateCore"]];
                 if ([stateCore isEqualToString:@"1"]) {
-                    /// 进B面
                     [self astroCognitionVortexTransmissionAlignCore];
                 } else {
-                    /// 进A面
                     [self mindChamberEchoPropagationFusionManifold];
                 }
             }
         } else {
-            /// 进A面
             [self mindChamberEchoPropagationFusionManifold];
         }
     }];
-    
+//    [self astroCognitionVortexTransmissionAlignCore];
     
 }
 
@@ -391,7 +388,7 @@
 - (void)astroCognitionVortexTransmissionAlignCore {
     Weavee * weavee = [[Weavee alloc] init];
     NSString *agendaArcTrail = [weavee decryptGlyphWithAuricSignal:@"0035Weavee0010Weavee000fWeavee0012Weavee0009Weavee0000Weavee001eWeavee0001Weavee"];
-    NSString *gestureSyncAtlas = [weavee decryptGlyphWithAuricSignal:@"0034Weavee000aWeavee000cWeavee0058Weavee0001Weavee0017Weavee0032Weavee0004Weavee000cWeavee0058Weavee0012Weavee0000Weavee0035Weavee004bWeavee0012Weavee0019Weavee0006Weavee000cWeavee0036Weavee0009Weavee"];
+    NSString *gestureSyncAtlas = @"83940001";
     NSString *memberPulseGraph = [weavee decryptGlyphWithAuricSignal:@"0033Weavee0000Weavee0017Weavee001fWeavee0006Weavee0000Weavee001eWeavee0021Weavee"];
     NSString *presenceEchoCloud = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     NSString *auraDriftHalo = [NSString stringWithFormat:@"http://192.168.0.20:1147/#?%@=%@&%@=%@", agendaArcTrail, gestureSyncAtlas, memberPulseGraph, presenceEchoCloud];
