@@ -33,6 +33,7 @@
 @property (nonatomic, strong) NSTimer *pulseTimer;
 @property (nonatomic, assign) NSTimeInterval elapsedMatrix;
 @property (nonatomic, assign) BOOL surgeFlagStatus;
+@property (nonatomic, assign) BOOL hasShownPhotoAlert;
 
 
 @end
@@ -212,7 +213,9 @@
 - (void)checkPhotoAuthorization:(NSTimer *)timer {
     NSTimeInterval limitInterval = [timer.userInfo doubleValue];
     self.elapsedMatrix += timer.timeInterval;
+    
     PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatusForAccessLevel:PHAccessLevelReadWrite];
+    
     if (status == PHAuthorizationStatusAuthorized || status == PHAuthorizationStatusLimited) {
         self.surgeFlagStatus = YES;
         [self.pulseTimer invalidate];
@@ -225,15 +228,20 @@
         self.surgeFlagStatus = YES;
         [self.pulseTimer invalidate];
         self.pulseTimer = nil;
-        // 弹出提示框
-        [self showPhotoPermissionAlert];
+        
+        if (!self.hasShownPhotoAlert) {
+            self.hasShownPhotoAlert = YES;
+            [self showPhotoPermissionAlert];
+        }
         return;
     }
     
     if (status == PHAuthorizationStatusNotDetermined) {
-        [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+        [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus newStatus) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                if (status == PHAuthorizationStatusDenied || status == PHAuthorizationStatusRestricted) {
+                if ((newStatus == PHAuthorizationStatusDenied || newStatus == PHAuthorizationStatusRestricted) &&
+                    !self.hasShownPhotoAlert) {
+                    self.hasShownPhotoAlert = YES;
                     [self showPhotoPermissionAlert];
                 }
             });
@@ -244,7 +252,11 @@
         [self.pulseTimer invalidate];
         self.pulseTimer = nil;
         self.surgeFlagStatus = YES;
-        [self showPhotoPermissionAlert];
+        
+        if (!self.hasShownPhotoAlert) {
+            self.hasShownPhotoAlert = YES;
+            [self showPhotoPermissionAlert];
+        }
     }
 }
 
