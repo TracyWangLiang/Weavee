@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KnotBastionTableCell : UITableViewCell
+@interface WCAFKKnotBastionTableCell : UITableViewCell
 - (void)latticeFrostConverge;
 @end
 

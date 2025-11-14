@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FibreCrestBeacon : NSObject
+@interface WCAFKFibreCrestBeacon : NSObject
 
 @property (nonatomic, strong) NSOperationQueue *lumenFrostShard;
 @property(nonatomic, assign)NSInteger emberSpiralWing;

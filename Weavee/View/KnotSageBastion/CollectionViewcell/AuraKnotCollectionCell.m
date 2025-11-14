@@ -5,13 +5,13 @@
 //   
 //
 
-#import "AuraKnotCollectionCell.h"
+#import "WCAFKAuraKnotCollectionCell.h"
 //#import "SDWebImage.h"
-#import "WeaveeToast.h"
-#import "FlareWispHollowController.h"
-#import "Weavee.h"
+#import "WCAFKWeaveeToast.h"
+#import "WCAFKFlareWispHollowController.h"
+#import "WCAFKWeavee.h"
 
-@interface AuraKnotCollectionCell()
+@interface WCAFKAuraKnotCollectionCell()
 @property (weak, nonatomic) IBOutlet UIImageView *pearlLoomAtrium;
 
 @property (weak, nonatomic) IBOutlet UIButton *tideGlyphForge;
@@ -27,7 +27,7 @@
 
 @end
 
-@implementation AuraKnotCollectionCell
+@implementation WCAFKAuraKnotCollectionCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -46,7 +46,7 @@
     self.beaconSource = beaconSource;
     NSArray * fashionAnalysis = [beaconSource objectForKey:@"fashionAnalysis"];
     if (fashionAnalysis.count > 0) {
-        [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject] completion:^(UIImage * _Nonnull image) {
+        [WCAFKWeavee quantumWaveCognitionStreamAmplifierMatrixCore:[NSString stringWithFormat:@"%@", fashionAnalysis.firstObject] completion:^(UIImage * _Nonnull image) {
             self.pearlLoomAtrium.image = image;
         }];
     }
@@ -58,7 +58,7 @@
     [self.velvetChordMantle setTitle:garmentConstruction forState:UIControlStateNormal];
     
     NSString * fashionIllustration = [NSString stringWithFormat:@"%@", [beaconSource objectForKey:@"fashionIllustration"]];
-    [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:fashionIllustration completion:^(UIImage * _Nonnull image) {
+    [WCAFKWeavee quantumWaveCognitionStreamAmplifierMatrixCore:fashionIllustration completion:^(UIImage * _Nonnull image) {
         self.silkAuraHall.image = image;
     }];
     
@@ -92,7 +92,7 @@
 }
 
 -(void)lunarVeilRefract {
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     
     NSString * pearlLoomAtrium = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
@@ -100,7 +100,7 @@
     
     NSString * silkAuraHall = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0027Weavee0004Weavee0006Weavee0013Weavee0016Weavee004aWeavee0025Weavee0000Weavee0011Weavee0019Weavee0017Weavee0011Weavee0078Weavee000cWeavee000fWeavee0012Weavee0000Weavee001dWeavee"]];
     NSString * auricSpireFlux = [NSString stringWithFormat:@"http://quantumloop685.xyz/#/%@?%@=%@&%@=%@",silkAuraHall,pearlLoomAtrium,cruxianPulseArc,tideGlyphForge, @"83940001"];
-    FlareWispHollowController * flareWisp = [[FlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
+    WCAFKFlareWispHollowController * flareWisp = [[WCAFKFlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
     [[self findOwningController].navigationController pushViewController:flareWisp animated:YES];
 }
 
@@ -118,7 +118,7 @@
 }
 
 -(void)obsidianTraceMeld {
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     NSString * pearlLoomAtrium = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
     NSString * tideGlyphForge = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee003fWeavee0021Weavee"]];
@@ -130,7 +130,7 @@
     
     NSString * silkAuraHall = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0027Weavee0004Weavee0006Weavee0013Weavee0016Weavee004aWeavee0013Weavee001cWeavee000fWeavee0017Weavee0008Weavee000cWeavee0034Weavee0021Weavee0004Weavee0002Weavee0004Weavee000cWeavee003bWeavee0016Weavee004eWeavee001fWeavee000bWeavee0001Weavee0032Weavee001dWeavee005eWeavee0012Weavee001cWeavee000bWeavee0036Weavee0008Weavee0008Weavee0015Weavee002cWeavee0001Weavee006aWeavee"]];
     NSString * auricSpireFlux = [NSString stringWithFormat:@"http://quantumloop685.xyz/#/%@%@&%@=%@&%@=%@",silkAuraHall,seasonalTrends,pearlLoomAtrium,cruxianPulseArc,tideGlyphForge, @"83940001"];
-    FlareWispHollowController * flareWisp = [[FlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
+    WCAFKFlareWispHollowController * flareWisp = [[WCAFKFlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
     [[self findOwningController].navigationController pushViewController:flareWisp animated:YES];
 }
 
@@ -143,20 +143,20 @@
 }
 
 -(void)twistAuricLatticeWithEchoShard:(NSDictionary *)courtBlob {
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/psmatodwgwfwrewz/vunfwuqbzajoc", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
     [self calculateResponseVelocityForThread:shadowBondSpire withCourtBlob:courtBlob completion:^(NSDictionary *respons) {
         if (respons.count > 0) {
             NSString * runeVeilFountain = [NSString stringWithFormat:@"%@",respons[@"code"]];
             if ([runeVeilFountain isEqualToString:@"200000"]) {
                 
-                [WeaveeToast showText:@"Success" imageName:@"checkmark.circle.fill" time:1.5];
+                [WCAFKWeaveeToast showText:@"Success" imageName:@"checkmark.circle.fill" time:1.5];
                 NSString * seasonalTrends = [NSString stringWithFormat:@"%@", [self.beaconSource objectForKey:@"seasonalTrends"]];
                 if ([self.delegate respondsToSelector:@selector(nebulaChordReform:)]) {
                     [self.delegate nebulaChordReform:seasonalTrends];
                 }
             }else {
-                [WeaveeToast showText:@"Error" imageName:@"xmark.circle.fill" time:1.5];
+                [WCAFKWeaveeToast showText:@"Error" imageName:@"xmark.circle.fill" time:1.5];
             }
         }
     }];
@@ -164,7 +164,7 @@
     
 }
 
-- (NSMutableURLRequest *)injectContextBeaconIntoConversation:(Weavee *)weavee prismShardAxis:(NSString *)prismShardAxis {
+- (NSMutableURLRequest *)injectContextBeaconIntoConversation:(WCAFKWeavee *)weavee prismShardAxis:(NSString *)prismShardAxis {
     NSURL *url = [NSURL URLWithString:prismShardAxis];
     NSMutableURLRequest *vortexRuneCascade = [NSMutableURLRequest requestWithURL:url];
     vortexRuneCascade.HTTPMethod = @"POST";
@@ -174,7 +174,7 @@
 
 - (void)calculateResponseVelocityForThread:(NSString *)prismShardAxis withCourtBlob:(NSDictionary *)courtBlob completion:(void (^)(NSDictionary *respons))completion {
     
-    Weavee *weavee = [[Weavee alloc] init];
+    WCAFKWeavee *weavee = [[WCAFKWeavee alloc] init];
     NSString *cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
     NSMutableURLRequest *vortexRuneCascade = [self injectContextBeaconIntoConversation:weavee prismShardAxis:prismShardAxis];
     [vortexRuneCascade addValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];

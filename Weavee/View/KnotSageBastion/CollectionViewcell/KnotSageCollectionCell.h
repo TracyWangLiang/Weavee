@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KnotSageCollectionCell : UICollectionViewCell
+@interface WCAFKKnotSageCollectionCell : UICollectionViewCell
 - (void)traceVelvetRuneWithPulseAnchor:(NSDictionary *)anchorNodes;
 @end
 

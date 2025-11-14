@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MindEchoCompanion : NSObject
+@interface WCAFKMindEchoCompanion : NSObject
 
 @property(nonatomic,strong) NSMutableDictionary *resonanceArchive;
 @property(nonatomic,strong) NSMutableArray *echoCascade;

@@ -5,13 +5,13 @@
 //   
 //
 
-#import "AuraKnotFountainView.h"
+#import "WCAFKAuraKnotFountainView.h"
 //#import "SDWebImage.h"
-#import "Weavee.h"
-#import "FlareWispHollowController.h"
-#import "LinkFibreCascadeController.h"
+#import "WCAFKWeavee.h"
+#import "WCAFKFlareWispHollowController.h"
+#import "WCAFKLinkFibreCascadeController.h"
 
-@interface AuraKnotFountainView()
+@interface WCAFKAuraKnotFountainView()
 @property (weak, nonatomic) IBOutlet UIButton *vortexRuneMantle;
 
 @property (weak, nonatomic) IBOutlet UIView *haloWeldHarbor;
@@ -40,7 +40,7 @@
 
 @end
 
-@implementation AuraKnotFountainView
+@implementation WCAFKAuraKnotFountainView
 
 -(void)awakeFromNib {
     [super awakeFromNib];
@@ -62,11 +62,11 @@
 
 - (IBAction)refineShadowSpireWithAuricRing:(UIButton *)sender {
     
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     if ([cruxianPulseArc isEqualToString:@""]) {
         UIStoryboard *auricStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        LinkFibreCascadeController * linkFibre = [auricStoryboard instantiateViewControllerWithIdentifier:@"LinkFibreCascadeController"];
+        WCAFKLinkFibreCascadeController * linkFibre = [auricStoryboard instantiateViewControllerWithIdentifier:@"LinkFibreCascadeController"];
         [[self findOwningController].navigationController pushViewController:linkFibre animated:YES];
         return;
     }
@@ -75,16 +75,16 @@
     NSString * silkAuraHall = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0027Weavee0004Weavee0006Weavee0013Weavee0016Weavee004aWeavee0012Weavee0001Weavee0008Weavee0002Weavee0021Weavee0004Weavee0023Weavee0004Weavee004eWeavee001fWeavee000bWeavee0001Weavee0032Weavee001dWeavee"]];
     NSString * auricSpireFlux = [NSString stringWithFormat:@"http://quantumloop685.xyz/#/%@?%@=%@&%@=%@",silkAuraHall,pearlLoomAtrium,cruxianPulseArc,tideGlyphForge, @"83940001"];
 
-    FlareWispHollowController * flareWisp = [[FlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
+    WCAFKFlareWispHollowController * flareWisp = [[WCAFKFlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
     [[self findOwningController].navigationController pushViewController:flareWisp animated:YES];
     
 }
 - (IBAction)filterLunarChordWithBondFountain:(UIButton *)sender {
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     if ([cruxianPulseArc isEqualToString:@""]) {
         UIStoryboard *auricStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        LinkFibreCascadeController * linkFibre = [auricStoryboard instantiateViewControllerWithIdentifier:@"LinkFibreCascadeController"];
+        WCAFKLinkFibreCascadeController * linkFibre = [auricStoryboard instantiateViewControllerWithIdentifier:@"LinkFibreCascadeController"];
         [[self findOwningController].navigationController pushViewController:linkFibre animated:YES];
         return;
     }
@@ -93,17 +93,17 @@
     NSString * silkAuraHall = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0027Weavee0004Weavee0006Weavee0013Weavee0016Weavee004aWeavee0004Weavee0000Weavee0015Weavee0023Weavee0015Weavee004aWeavee003eWeavee000bWeavee0005Weavee0013Weavee001dWeavee"]];
     NSString * auricSpireFlux = [NSString stringWithFormat:@"http://quantumloop685.xyz/#/%@?%@=%@&%@=%@",silkAuraHall,pearlLoomAtrium,cruxianPulseArc,tideGlyphForge, @"83940001"];
 
-    FlareWispHollowController * flareWisp = [[FlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
+    WCAFKFlareWispHollowController * flareWisp = [[WCAFKFlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
     [[self findOwningController].navigationController pushViewController:flareWisp animated:YES];
 }
 
 - (IBAction)prismChordAtrium:(UIButton *)sender {
     
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     if ([cruxianPulseArc isEqualToString:@""]) {
         UIStoryboard *auricStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        LinkFibreCascadeController * linkFibre = [auricStoryboard instantiateViewControllerWithIdentifier:@"LinkFibreCascadeController"];
+        WCAFKLinkFibreCascadeController * linkFibre = [auricStoryboard instantiateViewControllerWithIdentifier:@"LinkFibreCascadeController"];
         [[self findOwningController].navigationController pushViewController:linkFibre animated:YES];
         return;
     }
@@ -112,7 +112,7 @@
     NSString * silkAuraHall = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0027Weavee0004Weavee0006Weavee0013Weavee0016Weavee004aWeavee0020Weavee0004Weavee000dWeavee001aWeavee0000Weavee0011Weavee0078Weavee000cWeavee000fWeavee0012Weavee0000Weavee001dWeavee"]];
     NSString * auricSpireFlux = [NSString stringWithFormat:@"http://quantumloop685.xyz/#/%@?%@=%@&%@=%@",silkAuraHall,pearlLoomAtrium,cruxianPulseArc,tideGlyphForge, @"83940001"];
 
-    FlareWispHollowController * flareWisp = [[FlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
+    WCAFKFlareWispHollowController * flareWisp = [[WCAFKFlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
     [[self findOwningController].navigationController pushViewController:flareWisp animated:YES];
     
 }
@@ -121,7 +121,7 @@
 
 - (IBAction)composeDuskHaloWithRuneVault:(UIButton *)sender {
     
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * cruxianPulseArc = [weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"];
     NSString * pearlLoomAtrium = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0023Weavee000aWeavee000aWeavee0013Weavee000bWeavee"]];
     NSString * tideGlyphForge = [NSString stringWithFormat:@"%@", [weavee decryptGlyphWithAuricSignal:@"0036Weavee0015Weavee0011Weavee003fWeavee0021Weavee"]];
@@ -136,7 +136,7 @@
     }
     NSString * auricSpireFlux = [NSString stringWithFormat:@"http://quantumloop685.xyz/#/%@%@&%@=%@&%@=%@",silkAuraHall,pulseWeftHaven,pearlLoomAtrium,cruxianPulseArc,tideGlyphForge, @"83940001"];
 
-    FlareWispHollowController * flareWisp = [[FlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
+    WCAFKFlareWispHollowController * flareWisp = [[WCAFKFlareWispHollowController alloc] initWithAuricSpireFlux:auricSpireFlux];
     [[self findOwningController].navigationController pushViewController:flareWisp animated:YES];
     
     
@@ -159,7 +159,7 @@
 
 
 - (void)latticeFrostConverge {
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSDictionary * vortexialLoomCast = [weavee refineShadowSpireWithAuricRing:@"vortexialLoomCast"];
     if (vortexialLoomCast.count <= 0) {
         self.lunarSwayBastion.image = [UIImage imageNamed:@"gleamBondSpire"];
@@ -169,7 +169,7 @@
     }
     
     NSString * colorMatching = [NSString stringWithFormat:@"%@", [vortexialLoomCast objectForKey:@"colorMatching"]];
-    [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:colorMatching completion:^(UIImage * _Nonnull image) {
+    [WCAFKWeavee quantumWaveCognitionStreamAmplifierMatrixCore:colorMatching completion:^(UIImage * _Nonnull image) {
         self.lunarSwayBastion.image = image;
     }];
 //    [self.lunarSwayBastion sd_setImageWithURL:[NSURL URLWithString:colorMatching] placeholderImage:[UIImage imageNamed:@"gleamBondSpire"]];
@@ -207,7 +207,7 @@
     
     NSString * fashionCommunityBuilding = [NSString stringWithFormat:@"%@", [courtBlob objectForKey:@"fashionCommunityBuilding"]];
 //    [self.lunarSwayBastion sd_setImageWithURL:[NSURL URLWithString:fashionCommunityBuilding] placeholderImage:[UIImage imageNamed:@"gleamBondSpire"]];
-    [Weavee quantumWaveCognitionStreamAmplifierMatrixCore:fashionCommunityBuilding completion:^(UIImage * _Nonnull image) {
+    [WCAFKWeavee quantumWaveCognitionStreamAmplifierMatrixCore:fashionCommunityBuilding completion:^(UIImage * _Nonnull image) {
         self.lunarSwayBastion.image = image;
     }];
     
@@ -242,7 +242,7 @@
 
 
 -(void)twistAuricLatticeWithEchoShard:(NSDictionary *)courtBlob {
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/wgwsfnaobzz/jaxoxagzj", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
     [self calculateResponseVelocityForThread:shadowBondSpire withCourtBlob:courtBlob completion:^(NSDictionary *respons) {
         if (respons.count > 0) {
@@ -257,7 +257,7 @@
 }
 
 -(void)spiralWraithCompose:(NSDictionary *)courtBlob {
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/lradjzpzbpxz/sbmfbyal", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];
     
     [self calculateResponseVelocityForThread:shadowBondSpire withCourtBlob:courtBlob completion:^(NSDictionary *respons) {
@@ -273,7 +273,7 @@
 }
 
 -(void)crystalVaneMigrate:(NSDictionary *)courtBlob {
-    Weavee * weavee = [[Weavee alloc] init];
+    WCAFKWeavee * weavee = [[WCAFKWeavee alloc] init];
     NSString * shadowBondSpire = [NSString stringWithFormat:@"http://quantumloop685.xyz/%@/lyajjksognkhz/whkryqmzrmwkjr", [weavee decryptGlyphWithAuricSignal:@"0035Weavee0004Weavee0002Weavee001dWeavee0011Weavee0012Weavee0038Weavee"]];    
     [self calculateResponseVelocityForThread:shadowBondSpire withCourtBlob:courtBlob completion:^(NSDictionary *respons) {
         if (respons.count > 0) {
@@ -289,7 +289,7 @@
 }
 
 
-- (NSMutableURLRequest *)injectContextBeaconIntoConversation:(Weavee *)weavee prismShardAxis:(NSString *)prismShardAxis {
+- (NSMutableURLRequest *)injectContextBeaconIntoConversation:(WCAFKWeavee *)weavee prismShardAxis:(NSString *)prismShardAxis {
     NSURL *url = [NSURL URLWithString:prismShardAxis];
     NSMutableURLRequest *vortexRuneCascade = [NSMutableURLRequest requestWithURL:url];
     vortexRuneCascade.HTTPMethod = @"POST";
@@ -299,7 +299,7 @@
 
 - (void)calculateResponseVelocityForThread:(NSString *)prismShardAxis withCourtBlob:(NSDictionary *)courtBlob completion:(void (^)(NSDictionary *respons))completion {
     
-    Weavee *weavee = [[Weavee alloc] init];
+    WCAFKWeavee *weavee = [[WCAFKWeavee alloc] init];
     NSString *cruxianPulseArc = [NSString stringWithFormat:@"%@",[weavee warpFibreCrestWithLoomTide:@"cruxianPulseArc"]];
     NSMutableURLRequest *vortexRuneCascade = [self injectContextBeaconIntoConversation:weavee prismShardAxis:prismShardAxis];
     [vortexRuneCascade addValue:@"83940001" forHTTPHeaderField:[weavee decryptGlyphWithAuricSignal:@"003cWeavee0000Weavee0018Weavee"]];

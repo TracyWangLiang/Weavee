@@ -7,122 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		333BEABE2E7A47A2001B0C50 /* FibreCrestBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */; };
-		336E2AF32EBC8C250062C278 /* LumenVaultStoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E2AF22EBC8C250062C278 /* LumenVaultStoriesView.m */; };
-		336E2AF52EBC8C360062C278 /* LumenVaultStoriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336E2AF42EBC8C360062C278 /* LumenVaultStoriesView.xib */; };
-		339A911E2EA7306C00DEFD15 /* WeaveeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 339A911D2EA7306C00DEFD15 /* WeaveeToast.m */; };
-		33DDD49A2E7810B700EC690B /* SwayKnotFountainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */; };
-		33DDD49D2E78165500EC690B /* WeftDreamBeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD49C2E78165500EC690B /* WeftDreamBeaconController.m */; };
+		3304FE7D2EC70ED30007CF7F /* NSString+WCAKFString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3304FE7C2EC70ED30007CF7F /* NSString+WCAKFString.m */; };
+		333BEABE2E7A47A2001B0C50 /* WCAFKFibreCrestBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 333BEABD2E7A47A2001B0C50 /* WCAFKFibreCrestBeacon.m */; };
+		336E2AF32EBC8C250062C278 /* WCAFKLumenVaultStoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336E2AF22EBC8C250062C278 /* WCAFKLumenVaultStoriesView.m */; };
+		336E2AF52EBC8C360062C278 /* WCAFKLumenVaultStoriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336E2AF42EBC8C360062C278 /* WCAFKLumenVaultStoriesView.xib */; };
+		339A911E2EA7306C00DEFD15 /* WCAFKWeaveeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 339A911D2EA7306C00DEFD15 /* WCAFKWeaveeToast.m */; };
+		33DDD49A2E7810B700EC690B /* WCAFKSwayKnotFountainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD4992E7810B700EC690B /* WCAFKSwayKnotFountainController.m */; };
+		33DDD49D2E78165500EC690B /* WCAFKWeftDreamBeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD49C2E78165500EC690B /* WCAFKWeftDreamBeaconController.m */; };
 		33FCB6B52E7009A3004211B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6AB2E7009A3004211B7 /* Assets.xcassets */; };
-		33FCB6B62E7009A3004211B7 /* KnotBastionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6902E7009A3004211B7 /* KnotBastionCollectionCell.xib */; };
-		33FCB6B72E7009A3004211B7 /* KnotSageBastionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB69D2E7009A3004211B7 /* KnotSageBastionTableCell.xib */; };
-		33FCB6B82E7009A3004211B7 /* VibeSpiralCaskTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6A32E7009A3004211B7 /* VibeSpiralCaskTableCell.xib */; };
-		33FCB6B92E7009A3004211B7 /* AuraKnotFountainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB68A2E7009A3004211B7 /* AuraKnotFountainView.xib */; };
+		33FCB6B62E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6902E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.xib */; };
+		33FCB6B72E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB69D2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.xib */; };
+		33FCB6B82E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6A32E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.xib */; };
+		33FCB6B92E7009A3004211B7 /* WCAFKAuraKnotFountainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB68A2E7009A3004211B7 /* WCAFKAuraKnotFountainView.xib */; };
 		33FCB6BA2E7009A3004211B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6AE2E7009A3004211B7 /* LaunchScreen.storyboard */; };
-		33FCB6BB2E7009A3004211B7 /* KnotBastionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB69A2E7009A3004211B7 /* KnotBastionTableCell.xib */; };
-		33FCB6BC2E7009A3004211B7 /* AuraKnotCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6842E7009A3004211B7 /* AuraKnotCollectionCell.xib */; };
-		33FCB6BD2E7009A3004211B7 /* AuraKnotEmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6872E7009A3004211B7 /* AuraKnotEmptyCell.xib */; };
-		33FCB6BE2E7009A3004211B7 /* KnotSageBastionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6932E7009A3004211B7 /* KnotSageBastionCollectionCell.xib */; };
-		33FCB6BF2E7009A3004211B7 /* KnotSageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6962E7009A3004211B7 /* KnotSageCollectionCell.xib */; };
+		33FCB6BB2E7009A3004211B7 /* WCAFKKnotBastionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB69A2E7009A3004211B7 /* WCAFKKnotBastionTableCell.xib */; };
+		33FCB6BC2E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6842E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.xib */; };
+		33FCB6BD2E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6872E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.xib */; };
+		33FCB6BE2E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6932E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.xib */; };
+		33FCB6BF2E7009A3004211B7 /* WCAFKKnotSageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6962E7009A3004211B7 /* WCAFKKnotSageCollectionCell.xib */; };
 		33FCB6C02E7009A3004211B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6B12E7009A3004211B7 /* Main.storyboard */; };
-		33FCB6C12E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB68D2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib */; };
-		33FCB6C22E7009A3004211B7 /* KnotSageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6A02E7009A3004211B7 /* KnotSageTableCell.xib */; };
-		33FCB6C32E7009A3004211B7 /* KnotBastionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB68F2E7009A3004211B7 /* KnotBastionCollectionCell.m */; };
-		33FCB6C42E7009A3004211B7 /* KnotSageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB69F2E7009A3004211B7 /* KnotSageTableCell.m */; };
-		33FCB6C52E7009A3004211B7 /* AuraKnotFountainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB66F2E7009A3004211B7 /* AuraKnotFountainController.m */; };
-		33FCB6C62E7009A3004211B7 /* AuraKnotFountainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6892E7009A3004211B7 /* AuraKnotFountainView.m */; };
-		33FCB6C72E7009A3004211B7 /* KnotSageBastionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6922E7009A3004211B7 /* KnotSageBastionCollectionCell.m */; };
-		33FCB6C82E7009A3004211B7 /* KnotBastionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6992E7009A3004211B7 /* KnotBastionTableCell.m */; };
-		33FCB6C92E7009A3004211B7 /* KnotSageBastionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6752E7009A3004211B7 /* KnotSageBastionController.m */; };
-		33FCB6CA2E7009A3004211B7 /* VibeSpiralCaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6792E7009A3004211B7 /* VibeSpiralCaskController.m */; };
-		33FCB6CB2E7009A3004211B7 /* AuraKnotEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6862E7009A3004211B7 /* AuraKnotEmptyCell.m */; };
-		33FCB6CC2E7009A3004211B7 /* AuraChordCourtController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB66D2E7009A3004211B7 /* AuraChordCourtController.m */; };
-		33FCB6CD2E7009A3004211B7 /* VibeSpiralCaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6A22E7009A3004211B7 /* VibeSpiralCaskTableCell.m */; };
-		33FCB6CE2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB68C2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m */; };
-		33FCB6CF2E7009A3004211B7 /* KnotSageBastionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB69C2E7009A3004211B7 /* KnotSageBastionTableCell.m */; };
-		33FCB6D02E7009A3004211B7 /* WeaveeSpecialFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6A72E7009A3004211B7 /* WeaveeSpecialFlowLayout.m */; };
+		33FCB6C12E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB68D2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.xib */; };
+		33FCB6C22E7009A3004211B7 /* WCAFKKnotSageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FCB6A02E7009A3004211B7 /* WCAFKKnotSageTableCell.xib */; };
+		33FCB6C32E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB68F2E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.m */; };
+		33FCB6C42E7009A3004211B7 /* WCAFKKnotSageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB69F2E7009A3004211B7 /* WCAFKKnotSageTableCell.m */; };
+		33FCB6C52E7009A3004211B7 /* WCAFKAuraKnotFountainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB66F2E7009A3004211B7 /* WCAFKAuraKnotFountainController.m */; };
+		33FCB6C62E7009A3004211B7 /* WCAFKAuraKnotFountainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6892E7009A3004211B7 /* WCAFKAuraKnotFountainView.m */; };
+		33FCB6C72E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6922E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.m */; };
+		33FCB6C82E7009A3004211B7 /* WCAFKKnotBastionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6992E7009A3004211B7 /* WCAFKKnotBastionTableCell.m */; };
+		33FCB6C92E7009A3004211B7 /* WCAFKKnotSageBastionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6752E7009A3004211B7 /* WCAFKKnotSageBastionController.m */; };
+		33FCB6CA2E7009A3004211B7 /* WCAFKVibeSpiralCaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6792E7009A3004211B7 /* WCAFKVibeSpiralCaskController.m */; };
+		33FCB6CB2E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6862E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.m */; };
+		33FCB6CC2E7009A3004211B7 /* WCAFKAuraChordCourtController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB66D2E7009A3004211B7 /* WCAFKAuraChordCourtController.m */; };
+		33FCB6CD2E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6A22E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.m */; };
+		33FCB6CE2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB68C2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.m */; };
+		33FCB6CF2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB69C2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.m */; };
+		33FCB6D02E7009A3004211B7 /* WCAFKWeaveeSpecialFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6A72E7009A3004211B7 /* WCAFKWeaveeSpecialFlowLayout.m */; };
 		33FCB6D12E7009A3004211B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6AF2E7009A3004211B7 /* main.m */; };
 		33FCB6D22E7009A3004211B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6AA2E7009A3004211B7 /* AppDelegate.m */; };
-		33FCB6D32E7009A3004211B7 /* Weavee.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6802E7009A3004211B7 /* Weavee.m */; };
-		33FCB6D42E7009A3004211B7 /* KnotSageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6952E7009A3004211B7 /* KnotSageCollectionCell.m */; };
-		33FCB6D52E7009A3004211B7 /* MindEchoCompanion.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB67C2E7009A3004211B7 /* MindEchoCompanion.m */; };
-		33FCB6D62E7009A3004211B7 /* PulseSketchMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB67E2E7009A3004211B7 /* PulseSketchMessenger.m */; };
+		33FCB6D32E7009A3004211B7 /* WCAFKWeavee.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6802E7009A3004211B7 /* WCAFKWeavee.m */; };
+		33FCB6D42E7009A3004211B7 /* WCAFKKnotSageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6952E7009A3004211B7 /* WCAFKKnotSageCollectionCell.m */; };
+		33FCB6D52E7009A3004211B7 /* WCAFKMindEchoCompanion.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB67C2E7009A3004211B7 /* WCAFKMindEchoCompanion.m */; };
+		33FCB6D62E7009A3004211B7 /* WCAFKPulseSketchMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB67E2E7009A3004211B7 /* WCAFKPulseSketchMessenger.m */; };
 		33FCB6D72E7009A3004211B7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6B32E7009A3004211B7 /* SceneDelegate.m */; };
-		33FCB6D82E7009A3004211B7 /* FibreCrestBeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6712E7009A3004211B7 /* FibreCrestBeaconController.m */; };
-		33FCB6D92E7009A3004211B7 /* LinkFibreCascadeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6772E7009A3004211B7 /* LinkFibreCascadeController.m */; };
-		33FCB6DA2E7009A3004211B7 /* FlareWispHollowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6732E7009A3004211B7 /* FlareWispHollowController.m */; };
-		33FCB6DB2E7009A3004211B7 /* AuraKnotCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6832E7009A3004211B7 /* AuraKnotCollectionCell.m */; };
+		33FCB6D82E7009A3004211B7 /* WCAFKFibreCrestBeaconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6712E7009A3004211B7 /* WCAFKFibreCrestBeaconController.m */; };
+		33FCB6D92E7009A3004211B7 /* WCAFKLinkFibreCascadeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6772E7009A3004211B7 /* WCAFKLinkFibreCascadeController.m */; };
+		33FCB6DA2E7009A3004211B7 /* WCAFKFlareWispHollowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6732E7009A3004211B7 /* WCAFKFlareWispHollowController.m */; };
+		33FCB6DB2E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FCB6832E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		333BEABC2E7A47A2001B0C50 /* FibreCrestBeacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeacon.h; sourceTree = "<group>"; };
-		333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeacon.m; sourceTree = "<group>"; };
+		3304FE7B2EC70ED30007CF7F /* NSString+WCAKFString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WCAKFString.h"; sourceTree = "<group>"; };
+		3304FE7C2EC70ED30007CF7F /* NSString+WCAKFString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WCAKFString.m"; sourceTree = "<group>"; };
+		333BEABC2E7A47A2001B0C50 /* WCAFKFibreCrestBeacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKFibreCrestBeacon.h; sourceTree = "<group>"; };
+		333BEABD2E7A47A2001B0C50 /* WCAFKFibreCrestBeacon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKFibreCrestBeacon.m; sourceTree = "<group>"; };
 		336E2AF02EBC89A40062C278 /* Weavee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weavee.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		336E2AF12EBC8C250062C278 /* LumenVaultStoriesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LumenVaultStoriesView.h; sourceTree = "<group>"; };
-		336E2AF22EBC8C250062C278 /* LumenVaultStoriesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LumenVaultStoriesView.m; sourceTree = "<group>"; };
-		336E2AF42EBC8C360062C278 /* LumenVaultStoriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LumenVaultStoriesView.xib; sourceTree = "<group>"; };
+		336E2AF12EBC8C250062C278 /* WCAFKLumenVaultStoriesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKLumenVaultStoriesView.h; sourceTree = "<group>"; };
+		336E2AF22EBC8C250062C278 /* WCAFKLumenVaultStoriesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKLumenVaultStoriesView.m; sourceTree = "<group>"; };
+		336E2AF42EBC8C360062C278 /* WCAFKLumenVaultStoriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKLumenVaultStoriesView.xib; sourceTree = "<group>"; };
 		338791852EBCA2D900F3B691 /* Weavee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Weavee.entitlements; sourceTree = "<group>"; };
-		339A911C2EA7306C00DEFD15 /* WeaveeToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeaveeToast.h; sourceTree = "<group>"; };
-		339A911D2EA7306C00DEFD15 /* WeaveeToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeaveeToast.m; sourceTree = "<group>"; };
-		33DDD4982E7810B700EC690B /* SwayKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwayKnotFountainController.h; sourceTree = "<group>"; };
-		33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwayKnotFountainController.m; sourceTree = "<group>"; };
-		33DDD49B2E78165500EC690B /* WeftDreamBeaconController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeftDreamBeaconController.h; sourceTree = "<group>"; };
-		33DDD49C2E78165500EC690B /* WeftDreamBeaconController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeftDreamBeaconController.m; sourceTree = "<group>"; };
-		33FCB66C2E7009A3004211B7 /* AuraChordCourtController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraChordCourtController.h; sourceTree = "<group>"; };
-		33FCB66D2E7009A3004211B7 /* AuraChordCourtController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraChordCourtController.m; sourceTree = "<group>"; };
-		33FCB66E2E7009A3004211B7 /* AuraKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraKnotFountainController.h; sourceTree = "<group>"; };
-		33FCB66F2E7009A3004211B7 /* AuraKnotFountainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraKnotFountainController.m; sourceTree = "<group>"; };
-		33FCB6702E7009A3004211B7 /* FibreCrestBeaconController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeaconController.h; sourceTree = "<group>"; };
-		33FCB6712E7009A3004211B7 /* FibreCrestBeaconController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeaconController.m; sourceTree = "<group>"; };
-		33FCB6722E7009A3004211B7 /* FlareWispHollowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlareWispHollowController.h; sourceTree = "<group>"; };
-		33FCB6732E7009A3004211B7 /* FlareWispHollowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlareWispHollowController.m; sourceTree = "<group>"; };
-		33FCB6742E7009A3004211B7 /* KnotSageBastionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageBastionController.h; sourceTree = "<group>"; };
-		33FCB6752E7009A3004211B7 /* KnotSageBastionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageBastionController.m; sourceTree = "<group>"; };
-		33FCB6762E7009A3004211B7 /* LinkFibreCascadeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkFibreCascadeController.h; sourceTree = "<group>"; };
-		33FCB6772E7009A3004211B7 /* LinkFibreCascadeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkFibreCascadeController.m; sourceTree = "<group>"; };
-		33FCB6782E7009A3004211B7 /* VibeSpiralCaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VibeSpiralCaskController.h; sourceTree = "<group>"; };
-		33FCB6792E7009A3004211B7 /* VibeSpiralCaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VibeSpiralCaskController.m; sourceTree = "<group>"; };
-		33FCB67B2E7009A3004211B7 /* MindEchoCompanion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindEchoCompanion.h; sourceTree = "<group>"; };
-		33FCB67C2E7009A3004211B7 /* MindEchoCompanion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindEchoCompanion.m; sourceTree = "<group>"; };
-		33FCB67D2E7009A3004211B7 /* PulseSketchMessenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PulseSketchMessenger.h; sourceTree = "<group>"; };
-		33FCB67E2E7009A3004211B7 /* PulseSketchMessenger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulseSketchMessenger.m; sourceTree = "<group>"; };
-		33FCB67F2E7009A3004211B7 /* Weavee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weavee.h; sourceTree = "<group>"; };
-		33FCB6802E7009A3004211B7 /* Weavee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weavee.m; sourceTree = "<group>"; };
-		33FCB6822E7009A3004211B7 /* AuraKnotCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraKnotCollectionCell.h; sourceTree = "<group>"; };
-		33FCB6832E7009A3004211B7 /* AuraKnotCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraKnotCollectionCell.m; sourceTree = "<group>"; };
-		33FCB6842E7009A3004211B7 /* AuraKnotCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuraKnotCollectionCell.xib; sourceTree = "<group>"; };
-		33FCB6852E7009A3004211B7 /* AuraKnotEmptyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraKnotEmptyCell.h; sourceTree = "<group>"; };
-		33FCB6862E7009A3004211B7 /* AuraKnotEmptyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraKnotEmptyCell.m; sourceTree = "<group>"; };
-		33FCB6872E7009A3004211B7 /* AuraKnotEmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuraKnotEmptyCell.xib; sourceTree = "<group>"; };
-		33FCB6882E7009A3004211B7 /* AuraKnotFountainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuraKnotFountainView.h; sourceTree = "<group>"; };
-		33FCB6892E7009A3004211B7 /* AuraKnotFountainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuraKnotFountainView.m; sourceTree = "<group>"; };
-		33FCB68A2E7009A3004211B7 /* AuraKnotFountainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuraKnotFountainView.xib; sourceTree = "<group>"; };
-		33FCB68B2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibreCrestBeaconCollectionCell.h; sourceTree = "<group>"; };
-		33FCB68C2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibreCrestBeaconCollectionCell.m; sourceTree = "<group>"; };
-		33FCB68D2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FibreCrestBeaconCollectionCell.xib; sourceTree = "<group>"; };
-		33FCB68E2E7009A3004211B7 /* KnotBastionCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotBastionCollectionCell.h; sourceTree = "<group>"; };
-		33FCB68F2E7009A3004211B7 /* KnotBastionCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotBastionCollectionCell.m; sourceTree = "<group>"; };
-		33FCB6902E7009A3004211B7 /* KnotBastionCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotBastionCollectionCell.xib; sourceTree = "<group>"; };
-		33FCB6912E7009A3004211B7 /* KnotSageBastionCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageBastionCollectionCell.h; sourceTree = "<group>"; };
-		33FCB6922E7009A3004211B7 /* KnotSageBastionCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageBastionCollectionCell.m; sourceTree = "<group>"; };
-		33FCB6932E7009A3004211B7 /* KnotSageBastionCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotSageBastionCollectionCell.xib; sourceTree = "<group>"; };
-		33FCB6942E7009A3004211B7 /* KnotSageCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageCollectionCell.h; sourceTree = "<group>"; };
-		33FCB6952E7009A3004211B7 /* KnotSageCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageCollectionCell.m; sourceTree = "<group>"; };
-		33FCB6962E7009A3004211B7 /* KnotSageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotSageCollectionCell.xib; sourceTree = "<group>"; };
-		33FCB6982E7009A3004211B7 /* KnotBastionTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotBastionTableCell.h; sourceTree = "<group>"; };
-		33FCB6992E7009A3004211B7 /* KnotBastionTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotBastionTableCell.m; sourceTree = "<group>"; };
-		33FCB69A2E7009A3004211B7 /* KnotBastionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotBastionTableCell.xib; sourceTree = "<group>"; };
-		33FCB69B2E7009A3004211B7 /* KnotSageBastionTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageBastionTableCell.h; sourceTree = "<group>"; };
-		33FCB69C2E7009A3004211B7 /* KnotSageBastionTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageBastionTableCell.m; sourceTree = "<group>"; };
-		33FCB69D2E7009A3004211B7 /* KnotSageBastionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotSageBastionTableCell.xib; sourceTree = "<group>"; };
-		33FCB69E2E7009A3004211B7 /* KnotSageTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnotSageTableCell.h; sourceTree = "<group>"; };
-		33FCB69F2E7009A3004211B7 /* KnotSageTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnotSageTableCell.m; sourceTree = "<group>"; };
-		33FCB6A02E7009A3004211B7 /* KnotSageTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnotSageTableCell.xib; sourceTree = "<group>"; };
-		33FCB6A12E7009A3004211B7 /* VibeSpiralCaskTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VibeSpiralCaskTableCell.h; sourceTree = "<group>"; };
-		33FCB6A22E7009A3004211B7 /* VibeSpiralCaskTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VibeSpiralCaskTableCell.m; sourceTree = "<group>"; };
-		33FCB6A32E7009A3004211B7 /* VibeSpiralCaskTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VibeSpiralCaskTableCell.xib; sourceTree = "<group>"; };
-		33FCB6A62E7009A3004211B7 /* WeaveeSpecialFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeaveeSpecialFlowLayout.h; sourceTree = "<group>"; };
-		33FCB6A72E7009A3004211B7 /* WeaveeSpecialFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeaveeSpecialFlowLayout.m; sourceTree = "<group>"; };
+		339A911C2EA7306C00DEFD15 /* WCAFKWeaveeToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKWeaveeToast.h; sourceTree = "<group>"; };
+		339A911D2EA7306C00DEFD15 /* WCAFKWeaveeToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKWeaveeToast.m; sourceTree = "<group>"; };
+		33DDD4982E7810B700EC690B /* WCAFKSwayKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKSwayKnotFountainController.h; sourceTree = "<group>"; };
+		33DDD4992E7810B700EC690B /* WCAFKSwayKnotFountainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKSwayKnotFountainController.m; sourceTree = "<group>"; };
+		33DDD49B2E78165500EC690B /* WCAFKWeftDreamBeaconController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKWeftDreamBeaconController.h; sourceTree = "<group>"; };
+		33DDD49C2E78165500EC690B /* WCAFKWeftDreamBeaconController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKWeftDreamBeaconController.m; sourceTree = "<group>"; };
+		33FCB66C2E7009A3004211B7 /* WCAFKAuraChordCourtController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKAuraChordCourtController.h; sourceTree = "<group>"; };
+		33FCB66D2E7009A3004211B7 /* WCAFKAuraChordCourtController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKAuraChordCourtController.m; sourceTree = "<group>"; };
+		33FCB66E2E7009A3004211B7 /* WCAFKAuraKnotFountainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKAuraKnotFountainController.h; sourceTree = "<group>"; };
+		33FCB66F2E7009A3004211B7 /* WCAFKAuraKnotFountainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKAuraKnotFountainController.m; sourceTree = "<group>"; };
+		33FCB6702E7009A3004211B7 /* WCAFKFibreCrestBeaconController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKFibreCrestBeaconController.h; sourceTree = "<group>"; };
+		33FCB6712E7009A3004211B7 /* WCAFKFibreCrestBeaconController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKFibreCrestBeaconController.m; sourceTree = "<group>"; };
+		33FCB6722E7009A3004211B7 /* WCAFKFlareWispHollowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKFlareWispHollowController.h; sourceTree = "<group>"; };
+		33FCB6732E7009A3004211B7 /* WCAFKFlareWispHollowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKFlareWispHollowController.m; sourceTree = "<group>"; };
+		33FCB6742E7009A3004211B7 /* WCAFKKnotSageBastionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKKnotSageBastionController.h; sourceTree = "<group>"; };
+		33FCB6752E7009A3004211B7 /* WCAFKKnotSageBastionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKKnotSageBastionController.m; sourceTree = "<group>"; };
+		33FCB6762E7009A3004211B7 /* WCAFKLinkFibreCascadeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKLinkFibreCascadeController.h; sourceTree = "<group>"; };
+		33FCB6772E7009A3004211B7 /* WCAFKLinkFibreCascadeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKLinkFibreCascadeController.m; sourceTree = "<group>"; };
+		33FCB6782E7009A3004211B7 /* WCAFKVibeSpiralCaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKVibeSpiralCaskController.h; sourceTree = "<group>"; };
+		33FCB6792E7009A3004211B7 /* WCAFKVibeSpiralCaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKVibeSpiralCaskController.m; sourceTree = "<group>"; };
+		33FCB67B2E7009A3004211B7 /* WCAFKMindEchoCompanion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKMindEchoCompanion.h; sourceTree = "<group>"; };
+		33FCB67C2E7009A3004211B7 /* WCAFKMindEchoCompanion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKMindEchoCompanion.m; sourceTree = "<group>"; };
+		33FCB67D2E7009A3004211B7 /* WCAFKPulseSketchMessenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKPulseSketchMessenger.h; sourceTree = "<group>"; };
+		33FCB67E2E7009A3004211B7 /* WCAFKPulseSketchMessenger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKPulseSketchMessenger.m; sourceTree = "<group>"; };
+		33FCB67F2E7009A3004211B7 /* WCAFKWeavee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKWeavee.h; sourceTree = "<group>"; };
+		33FCB6802E7009A3004211B7 /* WCAFKWeavee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKWeavee.m; sourceTree = "<group>"; };
+		33FCB6822E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKAuraKnotCollectionCell.h; sourceTree = "<group>"; };
+		33FCB6832E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKAuraKnotCollectionCell.m; sourceTree = "<group>"; };
+		33FCB6842E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKAuraKnotCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB6852E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKAuraKnotEmptyCell.h; sourceTree = "<group>"; };
+		33FCB6862E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKAuraKnotEmptyCell.m; sourceTree = "<group>"; };
+		33FCB6872E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKAuraKnotEmptyCell.xib; sourceTree = "<group>"; };
+		33FCB6882E7009A3004211B7 /* WCAFKAuraKnotFountainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKAuraKnotFountainView.h; sourceTree = "<group>"; };
+		33FCB6892E7009A3004211B7 /* WCAFKAuraKnotFountainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKAuraKnotFountainView.m; sourceTree = "<group>"; };
+		33FCB68A2E7009A3004211B7 /* WCAFKAuraKnotFountainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKAuraKnotFountainView.xib; sourceTree = "<group>"; };
+		33FCB68B2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKFibreCrestBeaconCollectionCell.h; sourceTree = "<group>"; };
+		33FCB68C2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKFibreCrestBeaconCollectionCell.m; sourceTree = "<group>"; };
+		33FCB68D2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKFibreCrestBeaconCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB68E2E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKKnotBastionCollectionCell.h; sourceTree = "<group>"; };
+		33FCB68F2E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKKnotBastionCollectionCell.m; sourceTree = "<group>"; };
+		33FCB6902E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKKnotBastionCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB6912E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKKnotSageBastionCollectionCell.h; sourceTree = "<group>"; };
+		33FCB6922E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKKnotSageBastionCollectionCell.m; sourceTree = "<group>"; };
+		33FCB6932E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKKnotSageBastionCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB6942E7009A3004211B7 /* WCAFKKnotSageCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKKnotSageCollectionCell.h; sourceTree = "<group>"; };
+		33FCB6952E7009A3004211B7 /* WCAFKKnotSageCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKKnotSageCollectionCell.m; sourceTree = "<group>"; };
+		33FCB6962E7009A3004211B7 /* WCAFKKnotSageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKKnotSageCollectionCell.xib; sourceTree = "<group>"; };
+		33FCB6982E7009A3004211B7 /* WCAFKKnotBastionTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKKnotBastionTableCell.h; sourceTree = "<group>"; };
+		33FCB6992E7009A3004211B7 /* WCAFKKnotBastionTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKKnotBastionTableCell.m; sourceTree = "<group>"; };
+		33FCB69A2E7009A3004211B7 /* WCAFKKnotBastionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKKnotBastionTableCell.xib; sourceTree = "<group>"; };
+		33FCB69B2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKKnotSageBastionTableCell.h; sourceTree = "<group>"; };
+		33FCB69C2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKKnotSageBastionTableCell.m; sourceTree = "<group>"; };
+		33FCB69D2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKKnotSageBastionTableCell.xib; sourceTree = "<group>"; };
+		33FCB69E2E7009A3004211B7 /* WCAFKKnotSageTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKKnotSageTableCell.h; sourceTree = "<group>"; };
+		33FCB69F2E7009A3004211B7 /* WCAFKKnotSageTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKKnotSageTableCell.m; sourceTree = "<group>"; };
+		33FCB6A02E7009A3004211B7 /* WCAFKKnotSageTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKKnotSageTableCell.xib; sourceTree = "<group>"; };
+		33FCB6A12E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKVibeSpiralCaskTableCell.h; sourceTree = "<group>"; };
+		33FCB6A22E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKVibeSpiralCaskTableCell.m; sourceTree = "<group>"; };
+		33FCB6A32E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCAFKVibeSpiralCaskTableCell.xib; sourceTree = "<group>"; };
+		33FCB6A62E7009A3004211B7 /* WCAFKWeaveeSpecialFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAFKWeaveeSpecialFlowLayout.h; sourceTree = "<group>"; };
+		33FCB6A72E7009A3004211B7 /* WCAFKWeaveeSpecialFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAFKWeaveeSpecialFlowLayout.m; sourceTree = "<group>"; };
 		33FCB6A92E7009A3004211B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33FCB6AA2E7009A3004211B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		33FCB6AB2E7009A3004211B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,24 +159,24 @@
 		33FCB67A2E7009A3004211B7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				33FCB66C2E7009A3004211B7 /* AuraChordCourtController.h */,
-				33FCB66D2E7009A3004211B7 /* AuraChordCourtController.m */,
-				33FCB66E2E7009A3004211B7 /* AuraKnotFountainController.h */,
-				33FCB66F2E7009A3004211B7 /* AuraKnotFountainController.m */,
-				33FCB6702E7009A3004211B7 /* FibreCrestBeaconController.h */,
-				33FCB6712E7009A3004211B7 /* FibreCrestBeaconController.m */,
-				33FCB6722E7009A3004211B7 /* FlareWispHollowController.h */,
-				33FCB6732E7009A3004211B7 /* FlareWispHollowController.m */,
-				33FCB6742E7009A3004211B7 /* KnotSageBastionController.h */,
-				33FCB6752E7009A3004211B7 /* KnotSageBastionController.m */,
-				33FCB6762E7009A3004211B7 /* LinkFibreCascadeController.h */,
-				33FCB6772E7009A3004211B7 /* LinkFibreCascadeController.m */,
-				33FCB6782E7009A3004211B7 /* VibeSpiralCaskController.h */,
-				33FCB6792E7009A3004211B7 /* VibeSpiralCaskController.m */,
-				33DDD4982E7810B700EC690B /* SwayKnotFountainController.h */,
-				33DDD4992E7810B700EC690B /* SwayKnotFountainController.m */,
-				33DDD49B2E78165500EC690B /* WeftDreamBeaconController.h */,
-				33DDD49C2E78165500EC690B /* WeftDreamBeaconController.m */,
+				33FCB66C2E7009A3004211B7 /* WCAFKAuraChordCourtController.h */,
+				33FCB66D2E7009A3004211B7 /* WCAFKAuraChordCourtController.m */,
+				33FCB66E2E7009A3004211B7 /* WCAFKAuraKnotFountainController.h */,
+				33FCB66F2E7009A3004211B7 /* WCAFKAuraKnotFountainController.m */,
+				33FCB6702E7009A3004211B7 /* WCAFKFibreCrestBeaconController.h */,
+				33FCB6712E7009A3004211B7 /* WCAFKFibreCrestBeaconController.m */,
+				33FCB6722E7009A3004211B7 /* WCAFKFlareWispHollowController.h */,
+				33FCB6732E7009A3004211B7 /* WCAFKFlareWispHollowController.m */,
+				33FCB6742E7009A3004211B7 /* WCAFKKnotSageBastionController.h */,
+				33FCB6752E7009A3004211B7 /* WCAFKKnotSageBastionController.m */,
+				33FCB6762E7009A3004211B7 /* WCAFKLinkFibreCascadeController.h */,
+				33FCB6772E7009A3004211B7 /* WCAFKLinkFibreCascadeController.m */,
+				33FCB6782E7009A3004211B7 /* WCAFKVibeSpiralCaskController.h */,
+				33FCB6792E7009A3004211B7 /* WCAFKVibeSpiralCaskController.m */,
+				33DDD4982E7810B700EC690B /* WCAFKSwayKnotFountainController.h */,
+				33DDD4992E7810B700EC690B /* WCAFKSwayKnotFountainController.m */,
+				33DDD49B2E78165500EC690B /* WCAFKWeftDreamBeaconController.h */,
+				33DDD49C2E78165500EC690B /* WCAFKWeftDreamBeaconController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,16 +184,18 @@
 		33FCB6812E7009A3004211B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				33FCB67B2E7009A3004211B7 /* MindEchoCompanion.h */,
-				33FCB67C2E7009A3004211B7 /* MindEchoCompanion.m */,
-				33FCB67D2E7009A3004211B7 /* PulseSketchMessenger.h */,
-				33FCB67E2E7009A3004211B7 /* PulseSketchMessenger.m */,
-				33FCB67F2E7009A3004211B7 /* Weavee.h */,
-				33FCB6802E7009A3004211B7 /* Weavee.m */,
-				333BEABC2E7A47A2001B0C50 /* FibreCrestBeacon.h */,
-				333BEABD2E7A47A2001B0C50 /* FibreCrestBeacon.m */,
-				339A911C2EA7306C00DEFD15 /* WeaveeToast.h */,
-				339A911D2EA7306C00DEFD15 /* WeaveeToast.m */,
+				33FCB67B2E7009A3004211B7 /* WCAFKMindEchoCompanion.h */,
+				33FCB67C2E7009A3004211B7 /* WCAFKMindEchoCompanion.m */,
+				33FCB67D2E7009A3004211B7 /* WCAFKPulseSketchMessenger.h */,
+				33FCB67E2E7009A3004211B7 /* WCAFKPulseSketchMessenger.m */,
+				33FCB67F2E7009A3004211B7 /* WCAFKWeavee.h */,
+				33FCB6802E7009A3004211B7 /* WCAFKWeavee.m */,
+				333BEABC2E7A47A2001B0C50 /* WCAFKFibreCrestBeacon.h */,
+				333BEABD2E7A47A2001B0C50 /* WCAFKFibreCrestBeacon.m */,
+				339A911C2EA7306C00DEFD15 /* WCAFKWeaveeToast.h */,
+				339A911D2EA7306C00DEFD15 /* WCAFKWeaveeToast.m */,
+				3304FE7B2EC70ED30007CF7F /* NSString+WCAKFString.h */,
+				3304FE7C2EC70ED30007CF7F /* NSString+WCAKFString.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,27 +203,27 @@
 		33FCB6972E7009A3004211B7 /* CollectionViewcell */ = {
 			isa = PBXGroup;
 			children = (
-				33FCB6822E7009A3004211B7 /* AuraKnotCollectionCell.h */,
-				33FCB6832E7009A3004211B7 /* AuraKnotCollectionCell.m */,
-				33FCB6842E7009A3004211B7 /* AuraKnotCollectionCell.xib */,
-				33FCB6852E7009A3004211B7 /* AuraKnotEmptyCell.h */,
-				33FCB6862E7009A3004211B7 /* AuraKnotEmptyCell.m */,
-				33FCB6872E7009A3004211B7 /* AuraKnotEmptyCell.xib */,
-				33FCB6882E7009A3004211B7 /* AuraKnotFountainView.h */,
-				33FCB6892E7009A3004211B7 /* AuraKnotFountainView.m */,
-				33FCB68A2E7009A3004211B7 /* AuraKnotFountainView.xib */,
-				33FCB68B2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.h */,
-				33FCB68C2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m */,
-				33FCB68D2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib */,
-				33FCB68E2E7009A3004211B7 /* KnotBastionCollectionCell.h */,
-				33FCB68F2E7009A3004211B7 /* KnotBastionCollectionCell.m */,
-				33FCB6902E7009A3004211B7 /* KnotBastionCollectionCell.xib */,
-				33FCB6912E7009A3004211B7 /* KnotSageBastionCollectionCell.h */,
-				33FCB6922E7009A3004211B7 /* KnotSageBastionCollectionCell.m */,
-				33FCB6932E7009A3004211B7 /* KnotSageBastionCollectionCell.xib */,
-				33FCB6942E7009A3004211B7 /* KnotSageCollectionCell.h */,
-				33FCB6952E7009A3004211B7 /* KnotSageCollectionCell.m */,
-				33FCB6962E7009A3004211B7 /* KnotSageCollectionCell.xib */,
+				33FCB6822E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.h */,
+				33FCB6832E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.m */,
+				33FCB6842E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.xib */,
+				33FCB6852E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.h */,
+				33FCB6862E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.m */,
+				33FCB6872E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.xib */,
+				33FCB6882E7009A3004211B7 /* WCAFKAuraKnotFountainView.h */,
+				33FCB6892E7009A3004211B7 /* WCAFKAuraKnotFountainView.m */,
+				33FCB68A2E7009A3004211B7 /* WCAFKAuraKnotFountainView.xib */,
+				33FCB68B2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.h */,
+				33FCB68C2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.m */,
+				33FCB68D2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.xib */,
+				33FCB68E2E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.h */,
+				33FCB68F2E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.m */,
+				33FCB6902E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.xib */,
+				33FCB6912E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.h */,
+				33FCB6922E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.m */,
+				33FCB6932E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.xib */,
+				33FCB6942E7009A3004211B7 /* WCAFKKnotSageCollectionCell.h */,
+				33FCB6952E7009A3004211B7 /* WCAFKKnotSageCollectionCell.m */,
+				33FCB6962E7009A3004211B7 /* WCAFKKnotSageCollectionCell.xib */,
 			);
 			path = CollectionViewcell;
 			sourceTree = "<group>";
@@ -226,18 +231,18 @@
 		33FCB6A42E7009A3004211B7 /* TableViewcell */ = {
 			isa = PBXGroup;
 			children = (
-				33FCB6982E7009A3004211B7 /* KnotBastionTableCell.h */,
-				33FCB6992E7009A3004211B7 /* KnotBastionTableCell.m */,
-				33FCB69A2E7009A3004211B7 /* KnotBastionTableCell.xib */,
-				33FCB69B2E7009A3004211B7 /* KnotSageBastionTableCell.h */,
-				33FCB69C2E7009A3004211B7 /* KnotSageBastionTableCell.m */,
-				33FCB69D2E7009A3004211B7 /* KnotSageBastionTableCell.xib */,
-				33FCB69E2E7009A3004211B7 /* KnotSageTableCell.h */,
-				33FCB69F2E7009A3004211B7 /* KnotSageTableCell.m */,
-				33FCB6A02E7009A3004211B7 /* KnotSageTableCell.xib */,
-				33FCB6A12E7009A3004211B7 /* VibeSpiralCaskTableCell.h */,
-				33FCB6A22E7009A3004211B7 /* VibeSpiralCaskTableCell.m */,
-				33FCB6A32E7009A3004211B7 /* VibeSpiralCaskTableCell.xib */,
+				33FCB6982E7009A3004211B7 /* WCAFKKnotBastionTableCell.h */,
+				33FCB6992E7009A3004211B7 /* WCAFKKnotBastionTableCell.m */,
+				33FCB69A2E7009A3004211B7 /* WCAFKKnotBastionTableCell.xib */,
+				33FCB69B2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.h */,
+				33FCB69C2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.m */,
+				33FCB69D2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.xib */,
+				33FCB69E2E7009A3004211B7 /* WCAFKKnotSageTableCell.h */,
+				33FCB69F2E7009A3004211B7 /* WCAFKKnotSageTableCell.m */,
+				33FCB6A02E7009A3004211B7 /* WCAFKKnotSageTableCell.xib */,
+				33FCB6A12E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.h */,
+				33FCB6A22E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.m */,
+				33FCB6A32E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.xib */,
 			);
 			path = TableViewcell;
 			sourceTree = "<group>";
@@ -255,11 +260,11 @@
 			isa = PBXGroup;
 			children = (
 				33FCB6A52E7009A3004211B7 /* KnotSageBastion */,
-				33FCB6A62E7009A3004211B7 /* WeaveeSpecialFlowLayout.h */,
-				33FCB6A72E7009A3004211B7 /* WeaveeSpecialFlowLayout.m */,
-				336E2AF12EBC8C250062C278 /* LumenVaultStoriesView.h */,
-				336E2AF22EBC8C250062C278 /* LumenVaultStoriesView.m */,
-				336E2AF42EBC8C360062C278 /* LumenVaultStoriesView.xib */,
+				33FCB6A62E7009A3004211B7 /* WCAFKWeaveeSpecialFlowLayout.h */,
+				33FCB6A72E7009A3004211B7 /* WCAFKWeaveeSpecialFlowLayout.m */,
+				336E2AF12EBC8C250062C278 /* WCAFKLumenVaultStoriesView.h */,
+				336E2AF22EBC8C250062C278 /* WCAFKLumenVaultStoriesView.m */,
+				336E2AF42EBC8C360062C278 /* WCAFKLumenVaultStoriesView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,20 +348,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				33FCB6B52E7009A3004211B7 /* Assets.xcassets in Resources */,
-				33FCB6B62E7009A3004211B7 /* KnotBastionCollectionCell.xib in Resources */,
-				33FCB6B72E7009A3004211B7 /* KnotSageBastionTableCell.xib in Resources */,
-				33FCB6B82E7009A3004211B7 /* VibeSpiralCaskTableCell.xib in Resources */,
-				336E2AF52EBC8C360062C278 /* LumenVaultStoriesView.xib in Resources */,
-				33FCB6B92E7009A3004211B7 /* AuraKnotFountainView.xib in Resources */,
+				33FCB6B62E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.xib in Resources */,
+				33FCB6B72E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.xib in Resources */,
+				33FCB6B82E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.xib in Resources */,
+				336E2AF52EBC8C360062C278 /* WCAFKLumenVaultStoriesView.xib in Resources */,
+				33FCB6B92E7009A3004211B7 /* WCAFKAuraKnotFountainView.xib in Resources */,
 				33FCB6BA2E7009A3004211B7 /* LaunchScreen.storyboard in Resources */,
-				33FCB6BB2E7009A3004211B7 /* KnotBastionTableCell.xib in Resources */,
-				33FCB6BC2E7009A3004211B7 /* AuraKnotCollectionCell.xib in Resources */,
-				33FCB6BD2E7009A3004211B7 /* AuraKnotEmptyCell.xib in Resources */,
-				33FCB6BE2E7009A3004211B7 /* KnotSageBastionCollectionCell.xib in Resources */,
-				33FCB6BF2E7009A3004211B7 /* KnotSageCollectionCell.xib in Resources */,
+				33FCB6BB2E7009A3004211B7 /* WCAFKKnotBastionTableCell.xib in Resources */,
+				33FCB6BC2E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.xib in Resources */,
+				33FCB6BD2E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.xib in Resources */,
+				33FCB6BE2E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.xib in Resources */,
+				33FCB6BF2E7009A3004211B7 /* WCAFKKnotSageCollectionCell.xib in Resources */,
 				33FCB6C02E7009A3004211B7 /* Main.storyboard in Resources */,
-				33FCB6C12E7009A3004211B7 /* FibreCrestBeaconCollectionCell.xib in Resources */,
-				33FCB6C22E7009A3004211B7 /* KnotSageTableCell.xib in Resources */,
+				33FCB6C12E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.xib in Resources */,
+				33FCB6C22E7009A3004211B7 /* WCAFKKnotSageTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,36 +372,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33FCB6C32E7009A3004211B7 /* KnotBastionCollectionCell.m in Sources */,
-				33FCB6C42E7009A3004211B7 /* KnotSageTableCell.m in Sources */,
-				33FCB6C52E7009A3004211B7 /* AuraKnotFountainController.m in Sources */,
-				33FCB6C62E7009A3004211B7 /* AuraKnotFountainView.m in Sources */,
-				33FCB6C72E7009A3004211B7 /* KnotSageBastionCollectionCell.m in Sources */,
-				33FCB6C82E7009A3004211B7 /* KnotBastionTableCell.m in Sources */,
-				33FCB6C92E7009A3004211B7 /* KnotSageBastionController.m in Sources */,
-				33FCB6CA2E7009A3004211B7 /* VibeSpiralCaskController.m in Sources */,
-				33FCB6CB2E7009A3004211B7 /* AuraKnotEmptyCell.m in Sources */,
-				33FCB6CC2E7009A3004211B7 /* AuraChordCourtController.m in Sources */,
-				33FCB6CD2E7009A3004211B7 /* VibeSpiralCaskTableCell.m in Sources */,
-				33FCB6CE2E7009A3004211B7 /* FibreCrestBeaconCollectionCell.m in Sources */,
-				339A911E2EA7306C00DEFD15 /* WeaveeToast.m in Sources */,
-				33FCB6CF2E7009A3004211B7 /* KnotSageBastionTableCell.m in Sources */,
-				33FCB6D02E7009A3004211B7 /* WeaveeSpecialFlowLayout.m in Sources */,
+				33FCB6C32E7009A3004211B7 /* WCAFKKnotBastionCollectionCell.m in Sources */,
+				33FCB6C42E7009A3004211B7 /* WCAFKKnotSageTableCell.m in Sources */,
+				33FCB6C52E7009A3004211B7 /* WCAFKAuraKnotFountainController.m in Sources */,
+				33FCB6C62E7009A3004211B7 /* WCAFKAuraKnotFountainView.m in Sources */,
+				33FCB6C72E7009A3004211B7 /* WCAFKKnotSageBastionCollectionCell.m in Sources */,
+				33FCB6C82E7009A3004211B7 /* WCAFKKnotBastionTableCell.m in Sources */,
+				33FCB6C92E7009A3004211B7 /* WCAFKKnotSageBastionController.m in Sources */,
+				33FCB6CA2E7009A3004211B7 /* WCAFKVibeSpiralCaskController.m in Sources */,
+				33FCB6CB2E7009A3004211B7 /* WCAFKAuraKnotEmptyCell.m in Sources */,
+				33FCB6CC2E7009A3004211B7 /* WCAFKAuraChordCourtController.m in Sources */,
+				33FCB6CD2E7009A3004211B7 /* WCAFKVibeSpiralCaskTableCell.m in Sources */,
+				33FCB6CE2E7009A3004211B7 /* WCAFKFibreCrestBeaconCollectionCell.m in Sources */,
+				339A911E2EA7306C00DEFD15 /* WCAFKWeaveeToast.m in Sources */,
+				33FCB6CF2E7009A3004211B7 /* WCAFKKnotSageBastionTableCell.m in Sources */,
+				33FCB6D02E7009A3004211B7 /* WCAFKWeaveeSpecialFlowLayout.m in Sources */,
 				33FCB6D12E7009A3004211B7 /* main.m in Sources */,
 				33FCB6D22E7009A3004211B7 /* AppDelegate.m in Sources */,
-				33FCB6D32E7009A3004211B7 /* Weavee.m in Sources */,
-				33FCB6D42E7009A3004211B7 /* KnotSageCollectionCell.m in Sources */,
-				33FCB6D52E7009A3004211B7 /* MindEchoCompanion.m in Sources */,
-				33FCB6D62E7009A3004211B7 /* PulseSketchMessenger.m in Sources */,
-				336E2AF32EBC8C250062C278 /* LumenVaultStoriesView.m in Sources */,
+				33FCB6D32E7009A3004211B7 /* WCAFKWeavee.m in Sources */,
+				33FCB6D42E7009A3004211B7 /* WCAFKKnotSageCollectionCell.m in Sources */,
+				33FCB6D52E7009A3004211B7 /* WCAFKMindEchoCompanion.m in Sources */,
+				33FCB6D62E7009A3004211B7 /* WCAFKPulseSketchMessenger.m in Sources */,
+				336E2AF32EBC8C250062C278 /* WCAFKLumenVaultStoriesView.m in Sources */,
 				33FCB6D72E7009A3004211B7 /* SceneDelegate.m in Sources */,
-				33FCB6D82E7009A3004211B7 /* FibreCrestBeaconController.m in Sources */,
-				33FCB6D92E7009A3004211B7 /* LinkFibreCascadeController.m in Sources */,
-				33DDD49A2E7810B700EC690B /* SwayKnotFountainController.m in Sources */,
-				33FCB6DA2E7009A3004211B7 /* FlareWispHollowController.m in Sources */,
-				33DDD49D2E78165500EC690B /* WeftDreamBeaconController.m in Sources */,
-				333BEABE2E7A47A2001B0C50 /* FibreCrestBeacon.m in Sources */,
-				33FCB6DB2E7009A3004211B7 /* AuraKnotCollectionCell.m in Sources */,
+				3304FE7D2EC70ED30007CF7F /* NSString+WCAKFString.m in Sources */,
+				33FCB6D82E7009A3004211B7 /* WCAFKFibreCrestBeaconController.m in Sources */,
+				33FCB6D92E7009A3004211B7 /* WCAFKLinkFibreCascadeController.m in Sources */,
+				33DDD49A2E7810B700EC690B /* WCAFKSwayKnotFountainController.m in Sources */,
+				33FCB6DA2E7009A3004211B7 /* WCAFKFlareWispHollowController.m in Sources */,
+				33DDD49D2E78165500EC690B /* WCAFKWeftDreamBeaconController.m in Sources */,
+				333BEABE2E7A47A2001B0C50 /* WCAFKFibreCrestBeacon.m in Sources */,
+				33FCB6DB2E7009A3004211B7 /* WCAFKAuraKnotCollectionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

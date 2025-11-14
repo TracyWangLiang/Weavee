@@ -6,9 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Weavee.h"
-#import <AppTrackingTransparency/AppTrackingTransparency.h>
-#import <AdSupport/AdSupport.h>
+#import "WCAFKWeavee.h"
 
 @interface AppDelegate ()
 
@@ -18,41 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self requestTrackingAuthorization];
+//    [self requestTrackingAuthorization];
     return YES;
-}
-
-
-- (void)requestTrackingAuthorization {
-    ATTrackingManagerAuthorizationStatus status = [ATTrackingManager trackingAuthorizationStatus];
-    switch (status) {
-        case ATTrackingManagerAuthorizationStatusNotDetermined: {
-            [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self handleTrackingStatus:status];
-                });
-            }];
-            break;
-        }
-        case ATTrackingManagerAuthorizationStatusRestricted:
-        case ATTrackingManagerAuthorizationStatusDenied:
-            break;
-        case ATTrackingManagerAuthorizationStatusAuthorized:
-            break;
-    }
-}
-
-- (void)handleTrackingStatus:(ATTrackingManagerAuthorizationStatus)status {
-    switch (status) {
-        case ATTrackingManagerAuthorizationStatusAuthorized:
-            break;
-        case ATTrackingManagerAuthorizationStatusDenied:
-            break;
-        case ATTrackingManagerAuthorizationStatusRestricted:
-            break;
-        case ATTrackingManagerAuthorizationStatusNotDetermined:
-            break;
-    }
 }
 
 

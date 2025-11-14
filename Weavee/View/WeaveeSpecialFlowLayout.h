@@ -10,13 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol WeaveeSpecialFlowLayoutDelegate <NSObject>
-- (CGFloat)collectionView:(UICollectionView *)collectionView
-                   layout:(UICollectionViewLayout *)layout
- heightForItemAtIndexPath:(NSIndexPath *)indexPath
-                itemWidth:(CGFloat)itemWidth;
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)layout heightForItemAtIndexPath:(NSIndexPath *)indexPath itemWidth:(CGFloat)itemWidth;
 @end
 
-@interface WeaveeSpecialFlowLayout : UICollectionViewFlowLayout
+@interface WCAFKWeaveeSpecialFlowLayout : UICollectionViewFlowLayout
 
 @property (nonatomic, weak) id<WeaveeSpecialFlowLayoutDelegate> delegate;
 @property (nonatomic, assign) NSInteger columnNumber;

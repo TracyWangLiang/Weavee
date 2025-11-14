@@ -12,7 +12,7 @@
         <!--Weft Dream Beacon Controller-->
         <scene sceneID="os3-M5-jga">
             <objects>
-                <navigationController navigationBarHidden="YES" id="v0k-9b-KZD" customClass="WeftDreamBeaconController" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="v0k-9b-KZD" customClass="WCAFKWeftDreamBeaconController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4sB-KF-7Ai">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -39,7 +39,7 @@
         <!--Aura Chord Court Controller-->
         <scene sceneID="6Vc-PN-sFV">
             <objects>
-                <tabBarController storyboardIdentifier="AuraChordCourtController" id="S5y-hs-RKu" customClass="AuraChordCourtController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="AuraChordCourtController" id="S5y-hs-RKu" customClass="WCAFKAuraChordCourtController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="661-eo-TQf"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dKT-NE-KRv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -60,7 +60,7 @@
         <!--Knot Sage Bastion Controller-->
         <scene sceneID="xvx-vP-Una">
             <objects>
-                <viewController id="bAd-nU-4z1" customClass="KnotSageBastionController" sceneMemberID="viewController">
+                <viewController id="bAd-nU-4z1" customClass="WCAFKKnotSageBastionController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dab-VT-996">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="crystalFibreCourt"/>
                                 <connections>
-                                    <action selector="grindLoomForgeWithWeftSpire:" destination="bAd-nU-4z1" eventType="touchUpInside" id="q6c-TP-faQ"/>
+                                    <action selector="WCAFKgrindLoomForgeWithWeftSpire:" destination="bAd-nU-4z1" eventType="touchUpInside" id="q6c-TP-faQ"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YBl-GF-YAX">
@@ -113,7 +113,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="flareBondAtrium" selectedImage="pulseHaloSanctum" id="Ou2-SU-ETg"/>
                     <connections>
-                        <outlet property="silkAuraHall" destination="YBl-GF-YAX" id="ulI-W9-tNu"/>
+                        <outlet property="WCAFK_silkAuraHall" destination="YBl-GF-YAX" id="ulI-W9-tNu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdi-Kw-oR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -123,7 +123,7 @@
         <!--Fibre Crest Beacon Controller-->
         <scene sceneID="jMS-G2-3g9">
             <objects>
-                <viewController id="MpU-NK-NHh" customClass="FibreCrestBeaconController" sceneMemberID="viewController">
+                <viewController id="MpU-NK-NHh" customClass="WCAFKFibreCrestBeaconController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZoM-Ek-Geo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,7 +159,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="glyphSageVault"/>
                                 <connections>
-                                    <action selector="scanHaloForgeWithWeftCitadel:" destination="MpU-NK-NHh" eventType="touchUpInside" id="bsb-Zv-zOd"/>
+                                    <action selector="WCAFKscanHaloForgeWithWeftCitadel:" destination="MpU-NK-NHh" eventType="touchUpInside" id="bsb-Zv-zOd"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ikp-zx-V08">
@@ -192,7 +192,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <connections>
-                                                    <action selector="filterRuneHavenWithTideForge:" destination="MpU-NK-NHh" eventType="touchUpInside" id="8Dz-Tb-7an"/>
+                                                    <action selector="WCAFKfilterRuneHavenWithTideForge:" destination="MpU-NK-NHh" eventType="touchUpInside" id="8Dz-Tb-7an"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -238,7 +238,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <connections>
-                                                    <action selector="filterRuneHavenWithTideForge:" destination="MpU-NK-NHh" eventType="touchUpInside" id="kFD-W8-SbJ"/>
+                                                    <action selector="WCAFKfilterRuneHavenWithTideForge:" destination="MpU-NK-NHh" eventType="touchUpInside" id="kFD-W8-SbJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -284,7 +284,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <connections>
-                                                    <action selector="filterRuneHavenWithTideForge:" destination="MpU-NK-NHh" eventType="touchUpInside" id="Bfl-Wx-mc5"/>
+                                                    <action selector="WCAFKfilterRuneHavenWithTideForge:" destination="MpU-NK-NHh" eventType="touchUpInside" id="Bfl-Wx-mc5"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -343,19 +343,19 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="velvetChordLoom" selectedImage="radiantCrestHaven" id="XoF-JD-mhG"/>
                     <connections>
-                        <outlet property="flareKnotBeacon" destination="yrc-nh-ftb" id="HOm-ed-uJl"/>
-                        <outletCollection property="auricSpireFlux" destination="WAe-r6-kF8" id="C9s-An-X11"/>
-                        <outletCollection property="braidHaloGrain" destination="Wt3-Tl-0qf" id="pE1-Ka-0La"/>
-                        <outletCollection property="prismLoomShard" destination="ECB-rz-JvB" id="2x3-fD-H1W"/>
-                        <outletCollection property="echoWispCrest" destination="oSm-wr-wjz" id="5nu-Kb-0uG"/>
-                        <outletCollection property="auricSpireFlux" destination="B95-Jv-4VD" id="FSM-Vs-fb9"/>
-                        <outletCollection property="auricSpireFlux" destination="v9l-5n-Rke" id="BbI-jR-ENV"/>
-                        <outletCollection property="braidHaloGrain" destination="Ee6-Oc-pgz" id="7yF-po-Y5c"/>
-                        <outletCollection property="braidHaloGrain" destination="QsI-hU-vr6" id="HnL-ZQ-00a"/>
-                        <outletCollection property="prismLoomShard" destination="ByB-9J-l8s" id="Seb-mi-pfS"/>
-                        <outletCollection property="prismLoomShard" destination="6Jy-CO-YwY" id="wSf-ef-C5U"/>
-                        <outletCollection property="echoWispCrest" destination="LgN-uo-WPH" id="YcX-Vq-Mx1"/>
-                        <outletCollection property="echoWispCrest" destination="6VB-D6-8Rz" id="yFA-4t-vPS"/>
+                        <outlet property="WCAFK_flareKnotBeacon" destination="yrc-nh-ftb" id="HOm-ed-uJl"/>
+                        <outletCollection property="WCAFK_auricSpireFlux" destination="WAe-r6-kF8" id="C9s-An-X11"/>
+                        <outletCollection property="WCAFK_braidHaloGrain" destination="Wt3-Tl-0qf" id="pE1-Ka-0La"/>
+                        <outletCollection property="WCAFK_prismLoomShard" destination="ECB-rz-JvB" id="2x3-fD-H1W"/>
+                        <outletCollection property="WCAFK_echoWispCrest" destination="oSm-wr-wjz" id="5nu-Kb-0uG"/>
+                        <outletCollection property="WCAFK_auricSpireFlux" destination="B95-Jv-4VD" id="FSM-Vs-fb9"/>
+                        <outletCollection property="WCAFK_auricSpireFlux" destination="v9l-5n-Rke" id="BbI-jR-ENV"/>
+                        <outletCollection property="WCAFK_braidHaloGrain" destination="Ee6-Oc-pgz" id="7yF-po-Y5c"/>
+                        <outletCollection property="WCAFK_braidHaloGrain" destination="QsI-hU-vr6" id="HnL-ZQ-00a"/>
+                        <outletCollection property="WCAFK_prismLoomShard" destination="ByB-9J-l8s" id="Seb-mi-pfS"/>
+                        <outletCollection property="WCAFK_prismLoomShard" destination="6Jy-CO-YwY" id="wSf-ef-C5U"/>
+                        <outletCollection property="WCAFK_echoWispCrest" destination="LgN-uo-WPH" id="YcX-Vq-Mx1"/>
+                        <outletCollection property="WCAFK_echoWispCrest" destination="6VB-D6-8Rz" id="yFA-4t-vPS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CO1-rs-DgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -365,7 +365,7 @@
         <!--Vibe Spiral Cask Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="VibeSpiralCaskController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WCAFKVibeSpiralCaskController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,7 +389,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="crystalFibreCourt"/>
                                 <connections>
-                                    <action selector="grindLoomForgeWithWeftSpire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARN-Ur-Qdg"/>
+                                    <action selector="WCAFKgrindLoomForgeWithWeftSpire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARN-Ur-Qdg"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oQe-hn-QHa">
@@ -405,7 +405,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="glyphSageVault"/>
                                 <connections>
-                                    <action selector="scanHaloForgeWithWeftCitadel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFI-tj-KJg"/>
+                                    <action selector="WCAFKscanHaloForgeWithWeftCitadel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFI-tj-KJg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -434,7 +434,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="prismTwineVault" selectedImage="sonicBondSpire" id="h9p-nx-399"/>
                     <connections>
-                        <outlet property="frostSpiralCourt" destination="oQe-hn-QHa" id="gs5-4m-z8E"/>
+                        <outlet property="WCAFK_frostSpiralCourt" destination="oQe-hn-QHa" id="gs5-4m-z8E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -444,7 +444,7 @@
         <!--Aura Knot Fountain Controller-->
         <scene sceneID="nWA-4K-3c1">
             <objects>
-                <viewController id="Frq-6I-dtO" customClass="AuraKnotFountainController" sceneMemberID="viewController">
+                <viewController id="Frq-6I-dtO" customClass="WCAFKAuraKnotFountainController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gvf-pB-yqe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,7 +479,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="echoSwayHarbor" selectedImage="auroraWeftFountain" id="4sf-cj-c2F"/>
                     <connections>
-                        <outlet property="flareKnotBeacon" destination="3KB-jx-jGz" id="8yE-Sy-etJ"/>
+                        <outlet property="WCAFK_flareKnotBeacon" destination="3KB-jx-jGz" id="8yE-Sy-etJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIM-il-2is" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -489,7 +489,7 @@
         <!--Link Fibre Cascade Controller-->
         <scene sceneID="IPZ-Vb-fUg">
             <objects>
-                <viewController storyboardIdentifier="LinkFibreCascadeController" id="BXs-3n-opL" customClass="LinkFibreCascadeController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LinkFibreCascadeController" id="BXs-3n-opL" customClass="WCAFKLinkFibreCascadeController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gHR-Gl-cOA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -507,7 +507,7 @@
                                 <state key="normal" image="weftLoomSpire"/>
                                 <state key="selected" image="flareTwineHall"/>
                                 <connections>
-                                    <action selector="spiralWraithCompose:" destination="BXs-3n-opL" eventType="touchUpInside" id="lje-gl-rIY"/>
+                                    <action selector="WCAFKspiralWraithCompose:" destination="BXs-3n-opL" eventType="touchUpInside" id="lje-gl-rIY"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cgg-1k-5TH">
@@ -588,7 +588,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="LOGIN" backgroundImage="runeChordGrove"/>
                                         <connections>
-                                            <action selector="mergeTwineVaultWithFibreBeacon:" destination="BXs-3n-opL" eventType="touchUpInside" id="FMs-Pw-Xvi"/>
+                                            <action selector="WCAFKmergeTwineVaultWithFibreBeacon:" destination="BXs-3n-opL" eventType="touchUpInside" id="FMs-Pw-Xvi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -635,12 +635,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="auricSpireFlux" destination="KcE-r1-gyp" id="ANN-no-Y5C"/>
-                        <outlet property="braidHaloGrain" destination="KWp-hv-9cr" id="D43-Ln-A5h"/>
-                        <outlet property="flareKnotBeacon" destination="cgg-1k-5TH" id="HFu-21-M5Z"/>
-                        <outlet property="prismLoomShard" destination="kay-2g-Los" id="w0Q-CJ-2am"/>
-                        <outlet property="pulseWeftHaven" destination="dOR-iy-VbT" id="gCd-Wm-ASI"/>
-                        <outlet property="vortexRuneMantle" destination="Kbj-h9-AkI" id="0XH-oz-1T7"/>
+                        <outlet property="WCAFK_auricSpireFlux" destination="KcE-r1-gyp" id="ANN-no-Y5C"/>
+                        <outlet property="WCAFK_braidHaloGrain" destination="KWp-hv-9cr" id="D43-Ln-A5h"/>
+                        <outlet property="WCAFK_flareKnotBeacon" destination="cgg-1k-5TH" id="HFu-21-M5Z"/>
+                        <outlet property="WCAFK_prismLoomShard" destination="kay-2g-Los" id="w0Q-CJ-2am"/>
+                        <outlet property="WCAFK_pulseWeftHaven" destination="dOR-iy-VbT" id="gCd-Wm-ASI"/>
+                        <outlet property="WCAFK_vortexRuneMantle" destination="Kbj-h9-AkI" id="0XH-oz-1T7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RC9-kZ-Vcb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -650,7 +650,7 @@
         <!--Sway Knot Fountain Controller-->
         <scene sceneID="79v-UB-ZRc">
             <objects>
-                <viewController storyboardIdentifier="SwayKnotFountainController" id="ZJL-4K-emp" customClass="SwayKnotFountainController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwayKnotFountainController" id="ZJL-4K-emp" customClass="WCAFKSwayKnotFountainController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d8l-Qb-qo1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -667,7 +667,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Quick login" backgroundImage="haloWeftBeacon"/>
                                 <connections>
-                                    <action selector="inflectGeoThermaConduitChainSystem:" destination="ZJL-4K-emp" eventType="touchUpInside" id="wze-C1-TIe"/>
+                                    <action selector="WCAFKinflectGeoThermaConduitChainSystem:" destination="ZJL-4K-emp" eventType="touchUpInside" id="wze-C1-TIe"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silkCrestAnchor" translatesAutoresizingMaskIntoConstraints="NO" id="JV5-LX-ga1">
@@ -703,10 +703,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="S06-T7-oBL"/>
                     <connections>
-                        <outlet property="auricSpireFlux" destination="NKn-Bm-2HM" id="A6L-0i-PMt"/>
-                        <outlet property="crystalPulseForge" destination="JV5-LX-ga1" id="2cZ-v4-TZV"/>
-                        <outlet property="lumenOrbitVault" destination="FBF-5p-67v" id="BBu-jA-7eR"/>
-                        <outlet property="vortexRuneMantle" destination="0Ji-Y2-68j" id="0CT-hE-vjP"/>
+                        <outlet property="WCAFK_auricSpireFlux" destination="NKn-Bm-2HM" id="A6L-0i-PMt"/>
+                        <outlet property="WCAFK_crystalPulseForge" destination="JV5-LX-ga1" id="2cZ-v4-TZV"/>
+                        <outlet property="WCAFK_lumenOrbitVault" destination="FBF-5p-67v" id="BBu-jA-7eR"/>
+                        <outlet property="WCAFK_vortexRuneMantle" destination="0Ji-Y2-68j" id="0CT-hE-vjP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iT8-u6-5DP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
