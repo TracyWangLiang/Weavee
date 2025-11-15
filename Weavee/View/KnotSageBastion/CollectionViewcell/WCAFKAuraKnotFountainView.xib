@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +16,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OE2-H5-hJw">
                     <rect key="frame" x="6" y="7" width="333" height="239"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadowGlyphHall" translatesAutoresizingMaskIntoConstraints="NO" id="yja-hL-S2C">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_shadowGlyphHall" translatesAutoresizingMaskIntoConstraints="NO" id="yja-hL-S2C">
                             <rect key="frame" x="0.0" y="0.0" width="333" height="239"/>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4zi-Qj-fFX">
@@ -142,7 +141,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ve-XQ-oKk">
                             <rect key="frame" x="14" y="65" width="90" height="90"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gleamBondSpire" translatesAutoresizingMaskIntoConstraints="NO" id="2K5-b4-80v">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_gleamBondSpire" translatesAutoresizingMaskIntoConstraints="NO" id="2K5-b4-80v">
                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </imageView>
@@ -153,7 +152,7 @@
                                         <constraint firstAttribute="height" constant="28" id="uK6-UN-9LW"/>
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="gleamTwineVault"/>
+                                    <state key="normal" image="WCAFK_gleamTwineVault"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCO-pU-51u">
                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
@@ -194,14 +193,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvn-uc-vE6">
                             <rect key="frame" x="116" y="122" width="137" height="38"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pearlLoomHall" translatesAutoresizingMaskIntoConstraints="NO" id="Af7-18-3zk">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_pearlLoomHall" translatesAutoresizingMaskIntoConstraints="NO" id="Af7-18-3zk">
                                     <rect key="frame" x="15" y="7" width="24" height="24"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="24" id="EdI-Db-bvx"/>
                                         <constraint firstAttribute="width" constant="24" id="mOU-dQ-upY"/>
                                     </constraints>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spiralLoomBeacon" translatesAutoresizingMaskIntoConstraints="NO" id="V0b-Uh-4lL">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_spiralLoomBeacon" translatesAutoresizingMaskIntoConstraints="NO" id="V0b-Uh-4lL">
                                     <rect key="frame" x="111" y="13.666666666666657" width="11" height="11"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="11" id="6dQ-U8-NnE"/>
@@ -247,7 +246,7 @@
                                 <constraint firstAttribute="width" constant="56" id="gm1-dZ-wvo"/>
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" image="frostTwineAnchor"/>
+                            <state key="normal" image="WCAFK_frostTwineAnchor"/>
                             <connections>
                                 <action selector="WCAFKfilterLunarChordWithBondFountain:" destination="iN0-l3-epB" eventType="touchUpInside" id="Eic-c5-FrP"/>
                             </connections>
@@ -429,11 +428,11 @@
         </view>
     </objects>
     <resources>
-        <image name="frostTwineAnchor" width="24" height="24"/>
-        <image name="gleamBondSpire" width="90" height="90"/>
-        <image name="gleamTwineVault" width="30" height="30"/>
-        <image name="pearlLoomHall" width="24" height="21.666666030883789"/>
-        <image name="shadowGlyphHall" width="363" height="241"/>
-        <image name="spiralLoomBeacon" width="11" height="11"/>
+        <image name="WCAFK_frostTwineAnchor" width="128" height="128"/>
+        <image name="WCAFK_gleamBondSpire" width="128" height="128"/>
+        <image name="WCAFK_gleamTwineVault" width="128" height="128"/>
+        <image name="WCAFK_pearlLoomHall" width="128" height="128"/>
+        <image name="WCAFK_shadowGlyphHall" width="128" height="128"/>
+        <image name="WCAFK_spiralLoomBeacon" width="128" height="128"/>
     </resources>
 </document>

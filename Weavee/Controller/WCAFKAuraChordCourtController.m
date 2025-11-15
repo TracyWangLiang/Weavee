@@ -21,13 +21,13 @@
 
 - (void)WCAFKrefineLoomMantleWithEchoGrain {
     
-    UIImage *auricSpireFlux = [[UIImage imageNamed:@"WCAKF_pulseArcane".WCAKFchangeToString] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UITabBarAppearance *braidHaloGrain = [[UITabBarAppearance alloc] init];
-    [braidHaloGrain configureWithTransparentBackground];
-    braidHaloGrain.backgroundImage = auricSpireFlux;
-    braidHaloGrain.backgroundColor = [UIColor clearColor];
-    self.tabBar.standardAppearance = braidHaloGrain;
-    self.tabBar.scrollEdgeAppearance = braidHaloGrain;
+    UIImage *WCAFK_auricSpireFlux = [[UIImage imageNamed:@"WCAKF_pulseArcane".WCAKFchangeToString] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UITabBarAppearance *WCAFK_braidHaloGrain = [[UITabBarAppearance alloc] init];
+    [WCAFK_braidHaloGrain configureWithTransparentBackground];
+    WCAFK_braidHaloGrain.backgroundImage = WCAFK_auricSpireFlux;
+    WCAFK_braidHaloGrain.backgroundColor = [UIColor clearColor];
+    self.tabBar.standardAppearance = WCAFK_braidHaloGrain;
+    self.tabBar.scrollEdgeAppearance = WCAFK_braidHaloGrain;
     
 }
 

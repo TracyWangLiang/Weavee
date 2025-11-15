@@ -22,46 +22,46 @@
 
 - (void)WCAFKamplifyResonanceWithPhrase:(NSString *)phrase harmonicLevel:(NSInteger)level {
     if (!phrase || phrase.length == 0) return;
-    NSString *amplified = [phrase stringByPaddingToLength:phrase.length + level
+    NSString *WCAFK_amplified = [phrase stringByPaddingToLength:phrase.length + level
                                               withString:@"*"
                                          startingAtIndex:0];
-    [self.WCAFK_echoCascade addObject:amplified];
+    [self.WCAFK_echoCascade addObject:WCAFK_amplified];
     self.WCAFK_synergyPulse += level;
 }
 
 - (NSString *)WCAFKsynthesizeEchoPatternWithDivider:(NSInteger)divider {
     if (divider <= 0) return @"";
-    NSMutableString *pattern = [NSMutableString string];
-    for (NSString *entry in self.WCAFK_echoCascade) {
-        NSArray *parts = [entry componentsSeparatedByString:@" "];
-        if (parts.count > 0) {
-            [pattern appendFormat:@"%@ | ", parts[0]];
+    NSMutableString *WCAFK_pattern = [NSMutableString string];
+    for (NSString *WCAFK_entry in self.WCAFK_echoCascade) {
+        NSArray *WCAFK_parts = [WCAFK_entry componentsSeparatedByString:@" "];
+        if (WCAFK_parts.count > 0) {
+            [WCAFK_pattern appendFormat:@"%@ | ", WCAFK_parts[0]];
         } else {
-            [pattern appendFormat:@"%@ | ", entry];
+            [WCAFK_pattern appendFormat:@"%@ | ", WCAFK_entry];
         }
     }
-    if (pattern.length > 3) {
-        [pattern deleteCharactersInRange:NSMakeRange(pattern.length-3, 3)];
+    if (WCAFK_pattern.length > 3) {
+        [WCAFK_pattern deleteCharactersInRange:NSMakeRange(WCAFK_pattern.length-3, 3)];
     }
-    return [pattern copy];
+    return [WCAFK_pattern copy];
 }
 
 - (NSArray *)WCAFKextractHarmonicFragmentsWithPrefix:(NSString *)prefix {
-    NSMutableArray *fragments = [NSMutableArray array];
-    for (NSString *entry in self.WCAFK_echoCascade) {
-        if ([entry hasPrefix:prefix]) {
-            [fragments addObject:entry];
+    NSMutableArray *WCAFK_fragments = [NSMutableArray array];
+    for (NSString *WCAFK_entry in self.WCAFK_echoCascade) {
+        if ([WCAFK_entry hasPrefix:prefix]) {
+            [WCAFK_fragments addObject:WCAFK_entry];
         }
     }
-    return [fragments copy];
+    return [WCAFK_fragments copy];
 }
 
 - (NSDictionary *)WCAFKcompileResonanceReport {
-    NSMutableDictionary *report = [NSMutableDictionary dictionary];
-    [report setObject:@(self.WCAFK_synergyPulse) forKey:@"pulseIntensity"];
-    [report setObject:self.WCAFK_echoCascade forKey:@"cascadeEntries"];
-    [report setObject:self.WCAFK_resonanceArchive[@"seedTone"] forKey:@"baseTone"];
-    return report;
+    NSMutableDictionary *WCAFK_report = [NSMutableDictionary dictionary];
+    [WCAFK_report setObject:@(self.WCAFK_synergyPulse) forKey:@"pulseIntensity"];
+    [WCAFK_report setObject:self.WCAFK_echoCascade forKey:@"cascadeEntries"];
+    [WCAFK_report setObject:self.WCAFK_resonanceArchive[@"seedTone"] forKey:@"baseTone"];
+    return WCAFK_report;
 }
 
 @end

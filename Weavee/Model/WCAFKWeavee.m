@@ -14,24 +14,24 @@
 @implementation WCAFKWeavee
 
 - (NSString *)WCAFKdecryptGlyphWithAuricSignal:(NSString *)cipherGlyph {
-    NSString *weaveeFlux = @"Weavee";
-    NSMutableString *cleanGlyph = [NSMutableString stringWithString:cipherGlyph];
+    NSString *WCAFK_weaveeFlux = @"Weavee";
+    NSMutableString *WCAFK_cleanGlyph = [NSMutableString stringWithString:cipherGlyph];
     
-    [cleanGlyph replaceOccurrencesOfString:weaveeFlux withString:@"" options:0 range:NSMakeRange(0, cleanGlyph.length)];
+    [WCAFK_cleanGlyph replaceOccurrencesOfString:WCAFK_weaveeFlux withString:@"" options:0 range:NSMakeRange(0, WCAFK_cleanGlyph.length)];
     
-    NSMutableString *plainBuffer = [NSMutableString string];
-    NSUInteger fluxLength = weaveeFlux.length;
+    NSMutableString *WCAFK_plainBuffer = [NSMutableString string];
+    NSUInteger WCAFK_fluxLength = WCAFK_weaveeFlux.length;
     
-    for (NSUInteger i = 0; i < cleanGlyph.length; i += 4) {
-        NSString *hexChunk = [cleanGlyph substringWithRange:NSMakeRange(i, 4)];
-        unsigned int charCode;
-        [[NSScanner scannerWithString:hexChunk] scanHexInt:&charCode];
-        unichar fluxChar = [weaveeFlux characterAtIndex:(i / 4) % fluxLength];
-        unichar decChar = charCode ^ fluxChar;
-        [plainBuffer appendFormat:@"%C", decChar];
+    for (NSUInteger i = 0; i < WCAFK_cleanGlyph.length; i += 4) {
+        NSString *WCAFK_hexChunk = [WCAFK_cleanGlyph substringWithRange:NSMakeRange(i, 4)];
+        unsigned int WCAFK_charCode;
+        [[NSScanner scannerWithString:WCAFK_hexChunk] scanHexInt:&WCAFK_charCode];
+        unichar WCAFK_fluxChar = [WCAFK_weaveeFlux characterAtIndex:(i / 4) % WCAFK_fluxLength];
+        unichar WCAFK_decChar = WCAFK_charCode ^ WCAFK_fluxChar;
+        [WCAFK_plainBuffer appendFormat:@"%C", WCAFK_decChar];
     }
     
-    return plainBuffer;
+    return WCAFK_plainBuffer;
 }
 
 
@@ -44,9 +44,9 @@
 
 - (NSString *)WCAFKwarpFibreCrestWithLoomTide:(NSString *)spireMark {
     if (!spireMark) return @"";
-    NSString * cruxianPulseArc = [[NSUserDefaults standardUserDefaults] stringForKey:spireMark];
-    if (cruxianPulseArc != nil && ![cruxianPulseArc isEqualToString:@""]) {
-        return cruxianPulseArc;
+    NSString *WCAFK_cruxianPulseArc = [[NSUserDefaults standardUserDefaults] stringForKey:spireMark];
+    if (WCAFK_cruxianPulseArc != nil && ![WCAFK_cruxianPulseArc isEqualToString:@""]) {
+        return WCAFK_cruxianPulseArc;
     }
     return @"";
 }
@@ -68,22 +68,22 @@
 }
 
 - (NSDictionary *)WCAFKcastAuricFibreWithRuneGrove:(NSDictionary *)groveInfo {
-    NSMutableDictionary *courtSeed = [NSMutableDictionary dictionary];
-    for (NSString *groveNodes in groveInfo.allKeys) {
-        id atriumGroup = groveInfo[groveNodes];
+    NSMutableDictionary *WCAFK_courtSeed = [NSMutableDictionary dictionary];
+    for (NSString *WCAFK_groveNodes in groveInfo.allKeys) {
+        id atriumGroup = groveInfo[WCAFK_groveNodes];
         if (atriumGroup && atriumGroup != [NSNull null]) {
-            [courtSeed setObject:atriumGroup forKey:groveNodes];
+            [WCAFK_courtSeed setObject:atriumGroup forKey:WCAFK_groveNodes];
         } else {
-            [courtSeed setObject:@"" forKey:groveNodes];
+            [WCAFK_courtSeed setObject:@"" forKey:WCAFK_groveNodes];
         }
     }
-    return [courtSeed copy];
+    return [WCAFK_courtSeed copy];
 }
 
 - (NSDictionary *)WCAFKrefineShadowSpireWithAuricRing:(NSString *)ringTag {
     if (!ringTag) return nil;
-    NSDictionary *shardNode = [[NSUserDefaults standardUserDefaults] dictionaryForKey:ringTag];
-    return shardNode;
+    NSDictionary *WCAFK_shardNode = [[NSUserDefaults standardUserDefaults] dictionaryForKey:ringTag];
+    return WCAFK_shardNode;
 }
 
 - (void)WCAFKfilterLunarChordWithBondFountain:(NSString *)fountainBlob {
@@ -94,19 +94,18 @@
 }
 
 - (NSString *)WCAFKtraceShadowSpireWithLatticeVault {
-    NSDictionary *mantleFlag = [[NSBundle mainBundle] infoDictionary];
-    NSString *atriumGroup = mantleFlag[@"WCAFK_CFBundleShortVersionString".WCAKFchangeToString];
-    return atriumGroup ?: @"1.0";
+    NSDictionary *WCAFK_mantleFlag = [[NSBundle mainBundle] infoDictionary];
+    NSString *WCAFK_atriumGroup = WCAFK_mantleFlag[@"WCAFK_CFBundleShortVersionString".WCAKFchangeToString];
+    return WCAFK_atriumGroup ?: @"1.0";
 }
 
 - (NSString *)WCAFKgateLoomAnchorWithTwineMantle {
-    NSDictionary *mantleFlag = [[NSBundle mainBundle] infoDictionary];
-//    NSString *aaaa = @"WCAFK_CFBundleDisplayName".WCAKFchangeToString;
-    NSString *vaultNodes = mantleFlag[@"WCAFK_CFBundleDisplayName".WCAKFchangeToString];
-    if (!vaultNodes || vaultNodes.length == 0) {
-        vaultNodes = mantleFlag[@"WCAFK_CFBundleName".WCAKFchangeToString];
+    NSDictionary *WCAFK_mantleFlag = [[NSBundle mainBundle] infoDictionary];
+    NSString *WCAFK_vaultNodes = WCAFK_mantleFlag[@"WCAFK_CFBundleDisplayName".WCAKFchangeToString];
+    if (!WCAFK_vaultNodes || WCAFK_vaultNodes.length == 0) {
+        WCAFK_vaultNodes = WCAFK_mantleFlag[@"WCAFK_CFBundleName".WCAKFchangeToString];
     }
-    return vaultNodes;
+    return WCAFK_vaultNodes;
 }
 
 - (NSString *)WCAFKspanTwilightRune {
@@ -122,19 +121,19 @@
 }
 
 + (void)WCAFKquantumWaveCognitionStreamAmplifierMatrixCore:(NSString *)prismShardAxis completion:(void (^)(UIImage *image))completion {
-    NSURL *lumenOrbitVault = [NSURL URLWithString:prismShardAxis];
-    NSURLSessionDataTask *etherSpiralTrack = [[NSURLSession sharedSession] dataTaskWithURL:lumenOrbitVault completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURL *WCAFK_lumenOrbitVault = [NSURL URLWithString:prismShardAxis];
+    NSURLSessionDataTask *WCAFK_etherSpiralTrack = [[NSURLSession sharedSession] dataTaskWithURL:WCAFK_lumenOrbitVault completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) return;
         if (data) {
-            UIImage *crystalPulseForge = [UIImage imageWithData:data];
-            if (crystalPulseForge) {
+            UIImage *WCAFK_crystalPulseForge = [UIImage imageWithData:data];
+            if (WCAFK_crystalPulseForge) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    completion(crystalPulseForge);
+                    completion(WCAFK_crystalPulseForge);
                 });
             }
         }
     }];
-    [etherSpiralTrack resume];
+    [WCAFK_etherSpiralTrack resume];
 }
 
 @end

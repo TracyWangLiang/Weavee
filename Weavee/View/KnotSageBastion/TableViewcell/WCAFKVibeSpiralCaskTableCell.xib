@@ -37,7 +37,7 @@
                             <constraint firstAttribute="width" constant="36" id="cGF-mi-BNk"/>
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" image="waveCrestAtrium"/>
+                        <state key="normal" image="WCAFK_waveCrestAtrium"/>
                         <connections>
                             <action selector="WCAFKscanHaloForgeWithWeftCitadel:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2BH-er-0mm"/>
                         </connections>
@@ -51,7 +51,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCy-IU-6Sf">
                         <rect key="frame" x="263" y="341.33333333333331" width="50" height="50"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silverBondCitadel" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-xd-EDc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_silverBondCitadel" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-xd-EDc">
                                 <rect key="frame" x="14" y="6" width="22" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="fGB-Mo-GHv"/>
@@ -94,7 +94,7 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haloTwineMantle" translatesAutoresizingMaskIntoConstraints="NO" id="xea-Ia-H8g">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_haloTwineMantle" translatesAutoresizingMaskIntoConstraints="NO" id="xea-Ia-H8g">
                         <rect key="frame" x="130" y="173.66666666666666" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="0b8-n0-tot"/>
@@ -138,8 +138,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="haloTwineMantle" width="60" height="60"/>
-        <image name="silverBondCitadel" width="16" height="15"/>
-        <image name="waveCrestAtrium" width="36" height="36"/>
+        <image name="WCAFK_haloTwineMantle" width="60" height="60"/>
+        <image name="WCAFK_silverBondCitadel" width="16" height="15"/>
+        <image name="WCAFK_waveCrestAtrium" width="128" height="128"/>
     </resources>
 </document>

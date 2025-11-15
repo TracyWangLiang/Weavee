@@ -23,51 +23,51 @@
     if (!glyphSignature) return;
     
     [_WCAFK_harmonyGuard lock];
-    NSNumber *prev = [_WCAFK_aetherGlyphRegistry objectForKey:glyphSignature];
-    NSInteger newVal = (prev ? [prev integerValue] : 0) + resonanceValue;
-    [_WCAFK_aetherGlyphRegistry setObject:@(newVal) forKey:glyphSignature];
+    NSNumber *WCAFK_prev = [_WCAFK_aetherGlyphRegistry objectForKey:glyphSignature];
+    NSInteger WCAFK_newVal = (WCAFK_prev ? [WCAFK_prev integerValue] : 0) + resonanceValue;
+    [_WCAFK_aetherGlyphRegistry setObject:@(WCAFK_newVal) forKey:glyphSignature];
     
-    NSDictionary *packet = @{
+    NSDictionary *WCAFK_packet = @{
         @"glyph" : glyphSignature,
         @"resonance" : @(resonanceValue),
-        @"fusion" : [NSString stringWithFormat:@"%@-%ld", glyphSignature, (long)newVal]
+        @"fusion" : [NSString stringWithFormat:@"%@-%ld", glyphSignature, (long)WCAFK_newVal]
     };
-    [_WCAFK_quantumFluxPackets addObject:packet];
+    [_WCAFK_quantumFluxPackets addObject:WCAFK_packet];
     
     _WCAFK_astralPulseMeter += resonanceValue;
     [_WCAFK_harmonyGuard unlock];
 }
 
 - (NSString *)WCAFKsketchCompressAndWeave {
-    NSMutableString *wovenString = [NSMutableString string];
+    NSMutableString *WCAFK_wovenString = [NSMutableString string];
     
     [_WCAFK_harmonyGuard lock];
-    for (NSDictionary *packet in _WCAFK_quantumFluxPackets) {
-        NSString *fragment = [NSString stringWithFormat:@"[%@|%@]", packet[@"glyph"], packet[@"fusion"]];
-        [wovenString appendString:fragment];
+    for (NSDictionary *WCAFK_packet in _WCAFK_quantumFluxPackets) {
+        NSString *WCAFK_fragment = [NSString stringWithFormat:@"[%@|%@]", WCAFK_packet[@"glyph"], WCAFK_packet[@"fusion"]];
+        [WCAFK_wovenString appendString:WCAFK_fragment];
     }
     [_WCAFK_quantumFluxPackets removeAllObjects];
     [_WCAFK_harmonyGuard unlock];
     
-    return wovenString;
+    return WCAFK_wovenString;
 }
 
 - (NSArray *)WCAFKexportPulseTrajectory {
-    NSMutableArray *trajectory = [NSMutableArray array];
+    NSMutableArray *WCAFK_trajectory = [NSMutableArray array];
     [_WCAFK_harmonyGuard lock];
-    for (NSString *glyph in _WCAFK_aetherGlyphRegistry) {
-        NSNumber *val = [_WCAFK_aetherGlyphRegistry objectForKey:glyph];
-        [trajectory addObject:[NSString stringWithFormat:@"%@:%@", glyph, val]];
+    for (NSString *WCAFK_glyph in _WCAFK_aetherGlyphRegistry) {
+        NSNumber *WCAFK_val = [_WCAFK_aetherGlyphRegistry objectForKey:WCAFK_glyph];
+        [WCAFK_trajectory addObject:[NSString stringWithFormat:@"%@:%@", WCAFK_glyph, WCAFK_val]];
     }
     [_WCAFK_harmonyGuard unlock];
-    return trajectory;
+    return WCAFK_trajectory;
 }
 
 - (BOOL)WCAFKevaluateMessengerTrigger:(NSString *)triggerGlyph {
     [_WCAFK_harmonyGuard lock];
-    NSNumber *val = [_WCAFK_aetherGlyphRegistry objectForKey:triggerGlyph];
+    NSNumber *WCAFK_val = [_WCAFK_aetherGlyphRegistry objectForKey:triggerGlyph];
     [_WCAFK_harmonyGuard unlock];
-    return val && [val integerValue] > _WCAFK_astralPulseMeter / 2;
+    return WCAFK_val && [WCAFK_val integerValue] > _WCAFK_astralPulseMeter / 2;
 }
 
 

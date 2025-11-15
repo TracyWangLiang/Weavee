@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,19 +42,19 @@
                             <constraint firstAttribute="width" constant="24" id="NA9-di-NaV"/>
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" image="loomTideBeacon"/>
+                        <state key="normal" image="WCAFK_loomTideBeacon"/>
                         <connections>
                             <action selector="WCAFKtraceKnotShardWithLoomAtrium:" destination="gTV-IL-0wX" eventType="touchUpInside" id="XXQ-bT-8Pj"/>
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qP-4d-6qe">
-                        <rect key="frame" x="10" y="260" width="27" height="15"/>
+                        <rect key="frame" x="10" y="260" width="139" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="aVZ-7r-p7l"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="12"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title=" 0" image="silverBondCitadel">
+                        <state key="normal" title=" 0" image="WCAFK_silverBondCitadel">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                         <connections>
@@ -63,13 +62,13 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJi-DT-Do7">
-                        <rect key="frame" x="57" y="259" width="29" height="16"/>
+                        <rect key="frame" x="169" y="259" width="139" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="SXm-WN-TOE"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title=" 0" image="weftSpiralHarbor">
+                        <state key="normal" title=" 0" image="WCAFK_weftSpiralHarbor">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                         <connections>
@@ -121,8 +120,8 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="loomTideBeacon" width="24" height="24"/>
-        <image name="silverBondCitadel" width="16" height="15"/>
-        <image name="weftSpiralHarbor" width="18" height="18"/>
+        <image name="WCAFK_loomTideBeacon" width="128" height="128"/>
+        <image name="WCAFK_silverBondCitadel" width="128" height="128"/>
+        <image name="WCAFK_weftSpiralHarbor" width="128" height="128"/>
     </resources>
 </document>

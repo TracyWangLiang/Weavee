@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="170" height="226"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moonSwayCitadel" translatesAutoresizingMaskIntoConstraints="NO" id="RtI-Tv-ynh">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_moonSwayCitadel" translatesAutoresizingMaskIntoConstraints="NO" id="RtI-Tv-ynh">
                         <rect key="frame" x="0.0" y="0.0" width="170" height="226"/>
                     </imageView>
                 </subviews>
@@ -32,6 +32,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="moonSwayCitadel" width="170" height="226"/>
+        <image name="WCAFK_moonSwayCitadel" width="128" height="128"/>
     </resources>
 </document>

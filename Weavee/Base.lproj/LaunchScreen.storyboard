@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,17 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charmWeftVault" translatesAutoresizingMaskIntoConstraints="NO" id="16u-05-YUi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_charmWeftVault" translatesAutoresizingMaskIntoConstraints="NO" id="16u-05-YUi">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silkCrestAnchor" translatesAutoresizingMaskIntoConstraints="NO" id="pZW-mJ-bxT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_silkCrestAnchor" translatesAutoresizingMaskIntoConstraints="NO" id="pZW-mJ-bxT">
                                 <rect key="frame" x="136.66666666666666" y="538" width="119.99999999999997" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="KPV-8J-Ceo"/>
                                     <constraint firstAttribute="height" constant="38" id="LoQ-Mm-DZg"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="braidCrestVault" translatesAutoresizingMaskIntoConstraints="NO" id="mrv-ee-1N8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_braidCrestVault" translatesAutoresizingMaskIntoConstraints="NO" id="mrv-ee-1N8">
                                 <rect key="frame" x="151.66666666666666" y="438" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="TFg-cZ-zYz"/>
@@ -55,9 +54,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="braidCrestVault" width="90" height="90"/>
-        <image name="charmWeftVault" width="375" height="812"/>
-        <image name="silkCrestAnchor" width="126.33333587646484" height="39"/>
+        <image name="WCAFK_braidCrestVault" width="128" height="128"/>
+        <image name="WCAFK_charmWeftVault" width="128" height="128"/>
+        <image name="WCAFK_silkCrestAnchor" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

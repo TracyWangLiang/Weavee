@@ -71,7 +71,7 @@
                                     <constraint firstAttribute="width" secondItem="reQ-LC-yFe" secondAttribute="height" multiplier="375:350" id="8aj-6C-9pA"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mistyWeftSanctum" translatesAutoresizingMaskIntoConstraints="NO" id="zb7-HL-vdt">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_mistyWeftSanctum" translatesAutoresizingMaskIntoConstraints="NO" id="zb7-HL-vdt">
                                 <rect key="frame" x="12" y="122" width="109" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="109" id="oXP-ih-nJk"/>
@@ -85,7 +85,7 @@
                                     <constraint firstAttribute="width" constant="24" id="qM7-4s-74r"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="crystalFibreCourt"/>
+                                <state key="normal" image="WCAFK_crystalFibreCourt"/>
                                 <connections>
                                     <action selector="WCAFKgrindLoomForgeWithWeftSpire:" destination="bAd-nU-4z1" eventType="touchUpInside" id="q6c-TP-faQ"/>
                                 </connections>
@@ -111,7 +111,7 @@
                             <constraint firstItem="B3G-8J-waa" firstAttribute="bottom" secondItem="YBl-GF-YAX" secondAttribute="bottom" constant="5" id="ydZ-RN-1Wc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="flareBondAtrium" selectedImage="pulseHaloSanctum" id="Ou2-SU-ETg"/>
+                    <tabBarItem key="tabBarItem" title="" image="WCAFK_flareBondAtrium" selectedImage="WCAFK_pulseHaloSanctum" id="Ou2-SU-ETg"/>
                     <connections>
                         <outlet property="WCAFK_silkAuraHall" destination="YBl-GF-YAX" id="ulI-W9-tNu"/>
                     </connections>
@@ -128,10 +128,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="braidGlyphSpire" translatesAutoresizingMaskIntoConstraints="NO" id="rJG-aZ-4WJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_braidGlyphSpire" translatesAutoresizingMaskIntoConstraints="NO" id="rJG-aZ-4WJ">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duskTwineGrove" translatesAutoresizingMaskIntoConstraints="NO" id="7or-Hd-ZGq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_duskTwineGrove" translatesAutoresizingMaskIntoConstraints="NO" id="7or-Hd-ZGq">
                                 <rect key="frame" x="12" y="122" width="154" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="154" id="Y9I-Re-OML"/>
@@ -145,7 +145,7 @@
                                     <constraint firstAttribute="height" constant="24" id="y91-DK-ykQ"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="crystalFibreCourt"/>
+                                <state key="normal" image="WCAFK_crystalFibreCourt"/>
                                 <connections>
                                     <action selector="grindLoomForgeWithWeftSpire:" destination="MpU-NK-NHh" eventType="touchUpInside" id="Pct-i8-R3a"/>
                                 </connections>
@@ -157,7 +157,7 @@
                                     <constraint firstAttribute="width" constant="40" id="Dpk-Sr-9li"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="glyphSageVault"/>
+                                <state key="normal" image="WCAFK_glyphSageVault"/>
                                 <connections>
                                     <action selector="WCAFKscanHaloForgeWithWeftCitadel:" destination="MpU-NK-NHh" eventType="touchUpInside" id="bsb-Zv-zOd"/>
                                 </connections>
@@ -168,7 +168,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkd-gn-5Qs">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10000" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emberChordBastion" translatesAutoresizingMaskIntoConstraints="NO" id="Wt3-Tl-0qf">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10000" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_emberChordBastion" translatesAutoresizingMaskIntoConstraints="NO" id="Wt3-Tl-0qf">
                                                 <rect key="frame" x="12" y="34" width="34" height="6"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="34" id="SXF-yt-M5V"/>
@@ -181,7 +181,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10000" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vortexKnotAtrium" translatesAutoresizingMaskIntoConstraints="NO" id="ECB-rz-JvB">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10000" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_vortexKnotAtrium" translatesAutoresizingMaskIntoConstraints="NO" id="ECB-rz-JvB">
                                                 <rect key="frame" x="53" y="2" width="22" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="22" id="Dmx-ZS-JdC"/>
@@ -214,7 +214,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfk-e2-It6">
                                         <rect key="frame" x="90" y="0.0" width="45" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emberChordBastion" translatesAutoresizingMaskIntoConstraints="NO" id="QsI-hU-vr6">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_emberChordBastion" translatesAutoresizingMaskIntoConstraints="NO" id="QsI-hU-vr6">
                                                 <rect key="frame" x="-3" y="34" width="34" height="6"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="34" id="HUB-Z2-1jj"/>
@@ -227,7 +227,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vortexKnotAtrium" translatesAutoresizingMaskIntoConstraints="NO" id="ByB-9J-l8s">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_vortexKnotAtrium" translatesAutoresizingMaskIntoConstraints="NO" id="ByB-9J-l8s">
                                                 <rect key="frame" x="23" y="2" width="22" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="22" id="7BV-N1-I8I"/>
@@ -260,7 +260,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pR6-Uu-viO">
                                         <rect key="frame" x="155" y="0.0" width="50" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emberChordBastion" translatesAutoresizingMaskIntoConstraints="NO" id="Ee6-Oc-pgz">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_emberChordBastion" translatesAutoresizingMaskIntoConstraints="NO" id="Ee6-Oc-pgz">
                                                 <rect key="frame" x="0.33333333333334281" y="34" width="34" height="6"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="34" id="lge-V3-iBG"/>
@@ -273,7 +273,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vortexKnotAtrium" translatesAutoresizingMaskIntoConstraints="NO" id="6Jy-CO-YwY">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_vortexKnotAtrium" translatesAutoresizingMaskIntoConstraints="NO" id="6Jy-CO-YwY">
                                                 <rect key="frame" x="29.666666666666657" y="2" width="22" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="Q56-au-fKc"/>
@@ -341,7 +341,7 @@
                             <constraint firstItem="yrc-nh-ftb" firstAttribute="leading" secondItem="YGI-Vc-0de" secondAttribute="leading" id="xVt-zP-374"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="velvetChordLoom" selectedImage="radiantCrestHaven" id="XoF-JD-mhG"/>
+                    <tabBarItem key="tabBarItem" title="" image="WCAFK_velvetChordLoom" selectedImage="WCAFK_radiantCrestHaven" id="XoF-JD-mhG"/>
                     <connections>
                         <outlet property="WCAFK_flareKnotBeacon" destination="yrc-nh-ftb" id="HOm-ed-uJl"/>
                         <outletCollection property="WCAFK_auricSpireFlux" destination="WAe-r6-kF8" id="C9s-An-X11"/>
@@ -370,10 +370,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="braidGlyphSpire" translatesAutoresizingMaskIntoConstraints="NO" id="hvR-18-KVy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_braidGlyphSpire" translatesAutoresizingMaskIntoConstraints="NO" id="hvR-18-KVy">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charmKnotSanctum" translatesAutoresizingMaskIntoConstraints="NO" id="0hg-CI-7VM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_charmKnotSanctum" translatesAutoresizingMaskIntoConstraints="NO" id="0hg-CI-7VM">
                                 <rect key="frame" x="12" y="122" width="114" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="O2K-M7-cRp"/>
@@ -387,7 +387,7 @@
                                     <constraint firstAttribute="width" constant="24" id="Q17-mY-uv5"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="crystalFibreCourt"/>
+                                <state key="normal" image="WCAFK_crystalFibreCourt"/>
                                 <connections>
                                     <action selector="WCAFKgrindLoomForgeWithWeftSpire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARN-Ur-Qdg"/>
                                 </connections>
@@ -403,7 +403,7 @@
                                     <constraint firstAttribute="height" constant="48" id="n96-YB-Jhs"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="glyphSageVault"/>
+                                <state key="normal" image="WCAFK_glyphSageVault"/>
                                 <connections>
                                     <action selector="WCAFKscanHaloForgeWithWeftCitadel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFI-tj-KJg"/>
                                 </connections>
@@ -432,7 +432,7 @@
                             <constraint firstItem="hvR-18-KVy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ze3-tt-qAC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="prismTwineVault" selectedImage="sonicBondSpire" id="h9p-nx-399"/>
+                    <tabBarItem key="tabBarItem" title="" image="WCAFK_prismTwineVault" selectedImage="WCAFK_sonicBondSpire" id="h9p-nx-399"/>
                     <connections>
                         <outlet property="WCAFK_frostSpiralCourt" destination="oQe-hn-QHa" id="gs5-4m-z8E"/>
                     </connections>
@@ -449,7 +449,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="braidGlyphSpire" translatesAutoresizingMaskIntoConstraints="NO" id="Nqb-aF-4V1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_braidGlyphSpire" translatesAutoresizingMaskIntoConstraints="NO" id="Nqb-aF-4V1">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3KB-jx-jGz">
@@ -477,7 +477,7 @@
                             <constraint firstItem="cbA-hA-fjy" firstAttribute="bottom" secondItem="3KB-jx-jGz" secondAttribute="bottom" constant="5" id="ryH-JQ-66A"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="echoSwayHarbor" selectedImage="auroraWeftFountain" id="4sf-cj-c2F"/>
+                    <tabBarItem key="tabBarItem" title="" image="WCAFK_echoSwayHarbor" selectedImage="WCAFK_auroraWeftFountain" id="4sf-cj-c2F"/>
                     <connections>
                         <outlet property="WCAFK_flareKnotBeacon" destination="3KB-jx-jGz" id="8yE-Sy-etJ"/>
                     </connections>
@@ -494,7 +494,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silkGlyphHarbor" translatesAutoresizingMaskIntoConstraints="NO" id="603-UX-yVV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_silkGlyphHarbor" translatesAutoresizingMaskIntoConstraints="NO" id="603-UX-yVV">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOR-iy-VbT">
@@ -504,8 +504,8 @@
                                     <constraint firstAttribute="width" constant="22" id="m2P-ft-pEu"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="weftLoomSpire"/>
-                                <state key="selected" image="flareTwineHall"/>
+                                <state key="normal" image="WCAFK_weftLoomSpire"/>
+                                <state key="selected" image="WCAFK_flareTwineHall"/>
                                 <connections>
                                     <action selector="WCAFKspiralWraithCompose:" destination="BXs-3n-opL" eventType="touchUpInside" id="lje-gl-rIY"/>
                                 </connections>
@@ -526,7 +526,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KcE-r1-gyp">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="52"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tideFibreMantle" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-QQ-hzf">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_tideFibreMantle" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-QQ-hzf">
                                                 <rect key="frame" x="22" y="16" width="18" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="18" id="e6p-5i-o1X"/>
@@ -554,7 +554,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWp-hv-9cr">
                                         <rect key="frame" x="0.0" y="84" width="359" height="52"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duskSwayHaven" translatesAutoresizingMaskIntoConstraints="NO" id="RjZ-qc-cJU">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_duskSwayHaven" translatesAutoresizingMaskIntoConstraints="NO" id="RjZ-qc-cJU">
                                                 <rect key="frame" x="22" y="16" width="18" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="DXg-nf-fFc"/>
@@ -586,7 +586,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="LOGIN" backgroundImage="runeChordGrove"/>
+                                        <state key="normal" title="LOGIN" backgroundImage="WCAFK_runeChordGrove"/>
                                         <connections>
                                             <action selector="WCAFKmergeTwineVaultWithFibreBeacon:" destination="BXs-3n-opL" eventType="touchUpInside" id="FMs-Pw-Xvi"/>
                                         </connections>
@@ -606,7 +606,7 @@
                                     <constraint firstItem="KcE-r1-gyp" firstAttribute="leading" secondItem="iP6-XS-7y6" secondAttribute="leading" id="aCK-TS-qsB"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pearlBondCourt" translatesAutoresizingMaskIntoConstraints="NO" id="gmW-yC-8SB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_pearlBondCourt" translatesAutoresizingMaskIntoConstraints="NO" id="gmW-yC-8SB">
                                 <rect key="frame" x="13" y="215" width="115" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="FEY-Fz-Afs"/>
@@ -655,7 +655,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charmWeftVault" translatesAutoresizingMaskIntoConstraints="NO" id="FBF-5p-67v">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_charmWeftVault" translatesAutoresizingMaskIntoConstraints="NO" id="FBF-5p-67v">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ji-Y2-68j">
@@ -665,19 +665,19 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Quick login" backgroundImage="haloWeftBeacon"/>
+                                <state key="normal" title="Quick login" backgroundImage="WCAFK_haloWeftBeacon"/>
                                 <connections>
                                     <action selector="WCAFKinflectGeoThermaConduitChainSystem:" destination="ZJL-4K-emp" eventType="touchUpInside" id="wze-C1-TIe"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silkCrestAnchor" translatesAutoresizingMaskIntoConstraints="NO" id="JV5-LX-ga1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_silkCrestAnchor" translatesAutoresizingMaskIntoConstraints="NO" id="JV5-LX-ga1">
                                 <rect key="frame" x="136.66666666666666" y="538" width="119.99999999999997" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="FYk-px-q6Q"/>
                                     <constraint firstAttribute="height" constant="38" id="Tnx-FC-ctq"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="braidCrestVault" translatesAutoresizingMaskIntoConstraints="NO" id="NKn-Bm-2HM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCAFK_braidCrestVault" translatesAutoresizingMaskIntoConstraints="NO" id="NKn-Bm-2HM">
                                 <rect key="frame" x="151.66666666666666" y="438" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="DmJ-hR-drV"/>
@@ -715,33 +715,33 @@
         </scene>
     </scenes>
     <resources>
-        <image name="auroraWeftFountain" width="47" height="50"/>
-        <image name="braidCrestVault" width="1024" height="1024"/>
-        <image name="braidGlyphSpire" width="375" height="812"/>
-        <image name="charmKnotSanctum" width="114" height="20"/>
-        <image name="charmWeftVault" width="375" height="812"/>
-        <image name="crystalFibreCourt" width="24" height="24"/>
-        <image name="duskSwayHaven" width="17" height="20"/>
-        <image name="duskTwineGrove" width="153" height="24.666666030883789"/>
-        <image name="echoSwayHarbor" width="35" height="35"/>
-        <image name="emberChordBastion" width="34" height="6"/>
-        <image name="flareBondAtrium" width="35" height="35"/>
-        <image name="flareTwineHall" width="22" height="22"/>
-        <image name="glyphSageVault" width="43" height="44"/>
-        <image name="haloWeftBeacon" width="344" height="52"/>
-        <image name="mistyWeftSanctum" width="107.66666412353516" height="17.666666030883789"/>
-        <image name="pearlBondCourt" width="153" height="107"/>
-        <image name="prismTwineVault" width="35" height="35"/>
-        <image name="pulseHaloSanctum" width="47" height="50"/>
-        <image name="radiantCrestHaven" width="47" height="50"/>
-        <image name="runeChordGrove" width="341" height="48"/>
-        <image name="silkCrestAnchor" width="126.33333587646484" height="39"/>
-        <image name="silkGlyphHarbor" width="375" height="812"/>
-        <image name="sonicBondSpire" width="47" height="50"/>
-        <image name="tideFibreMantle" width="18" height="20"/>
-        <image name="velvetChordLoom" width="35" height="35"/>
-        <image name="vortexKnotAtrium" width="23" height="21"/>
-        <image name="weftLoomSpire" width="22" height="22"/>
+        <image name="WCAFK_auroraWeftFountain" width="128" height="128"/>
+        <image name="WCAFK_braidCrestVault" width="128" height="128"/>
+        <image name="WCAFK_braidGlyphSpire" width="375" height="812"/>
+        <image name="WCAFK_charmKnotSanctum" width="128" height="128"/>
+        <image name="WCAFK_charmWeftVault" width="128" height="128"/>
+        <image name="WCAFK_crystalFibreCourt" width="128" height="128"/>
+        <image name="WCAFK_duskSwayHaven" width="128" height="128"/>
+        <image name="WCAFK_duskTwineGrove" width="153" height="24.666666030883789"/>
+        <image name="WCAFK_echoSwayHarbor" width="128" height="128"/>
+        <image name="WCAFK_emberChordBastion" width="128" height="128"/>
+        <image name="WCAFK_flareBondAtrium" width="128" height="128"/>
+        <image name="WCAFK_flareTwineHall" width="128" height="128"/>
+        <image name="WCAFK_glyphSageVault" width="128" height="128"/>
+        <image name="WCAFK_haloWeftBeacon" width="128" height="128"/>
+        <image name="WCAFK_mistyWeftSanctum" width="128" height="128"/>
+        <image name="WCAFK_pearlBondCourt" width="128" height="128"/>
+        <image name="WCAFK_prismTwineVault" width="128" height="128"/>
+        <image name="WCAFK_pulseHaloSanctum" width="128" height="128"/>
+        <image name="WCAFK_radiantCrestHaven" width="128" height="128"/>
+        <image name="WCAFK_runeChordGrove" width="128" height="128"/>
+        <image name="WCAFK_silkCrestAnchor" width="128" height="128"/>
+        <image name="WCAFK_silkGlyphHarbor" width="128" height="128"/>
+        <image name="WCAFK_sonicBondSpire" width="128" height="128"/>
+        <image name="WCAFK_tideFibreMantle" width="128" height="128"/>
+        <image name="WCAFK_velvetChordLoom" width="128" height="128"/>
+        <image name="WCAFK_vortexKnotAtrium" width="128" height="128"/>
+        <image name="WCAFK_weftLoomSpire" width="128" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
